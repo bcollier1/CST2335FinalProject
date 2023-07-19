@@ -66,7 +66,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            tools:context=".AirportDisplayBoardActivity">
+            tools:context=".ui.AirportDisplayBoardActivity">
 
             <!--    0dp means match_constraint, or drag the edges all the way to the attachment point of the constraint.-->
             <androidx.recyclerview.widget.RecyclerView

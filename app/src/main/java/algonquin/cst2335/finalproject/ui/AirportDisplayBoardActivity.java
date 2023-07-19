@@ -1,4 +1,4 @@
-package algonquin.cst2335.finalproject;
+package algonquin.cst2335.finalproject.ui;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -41,6 +41,7 @@ import java.util.List;
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 
+import algonquin.cst2335.finalproject.R;
 import algonquin.cst2335.finalproject.data.Airport;
 import algonquin.cst2335.finalproject.data.AirportAdapter;
 import algonquin.cst2335.finalproject.data.AirportDAO;
