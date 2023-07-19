@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--    For app "Airport Flights Board"-->
+    <item
+        android:id="@+id/item_airport"
+        android:icon="@drawable/airport_icon"
+        android:title="Airport Flights Board"
+        app:showAsAction="always" />
+
+</menu>
