@@ -1,17 +1,12 @@
-package algonquin.cst2335.finalproject.UI;
+package algonquin.cst2335.finalproject.ui;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.RecyclerView;
 
 
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.LayoutInflater;
-import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
@@ -35,7 +30,7 @@ public class CurrencyActivity extends AppCompatActivity {
         rbtn = binding.btnReset;
         cBtn = binding.btnConvert;
 
-        SharedPreferences prefs = getSharedPreferences("MyData", Context.MODE_PRIVATE);
+        SharedPreferences prefs = getSharedPreferences("currencyData", Context.MODE_PRIVATE);
         float xChange = prefs.getFloat("decimalValue", 0.0f);
         binding.inFrom.setText(String.valueOf(xChange));
 
@@ -58,14 +53,15 @@ public class CurrencyActivity extends AppCompatActivity {
         cBtn.setOnClickListener(click ->{
             Toast.makeText(CurrencyActivity.this, "Converted!", Toast.LENGTH_SHORT).show();
             SharedPreferences.Editor editor = prefs.edit();
-            editor.putFloat("decimalValue",Float.parseFloat(binding.inFrom.getText().toString()));
+            editor.putFloat("decimalValue", Float.parseFloat(binding.inFrom.getText().toString()));
+            editor.apply();
         });
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-        SharedPreferences prefs = getSharedPreferences("MyData", Context.MODE_PRIVATE);
+        SharedPreferences prefs = getSharedPreferences("currencyData", Context.MODE_PRIVATE);
         float xChange = prefs.getFloat("decimalValue", 0.0f);
         binding.inFrom.setText(String.valueOf(xChange));
         SharedPreferences.Editor editor = prefs.edit();

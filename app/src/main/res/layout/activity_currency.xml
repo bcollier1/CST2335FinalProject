@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:paddingHorizontal="32dp"
     android:theme="@style/Theme.Currency"
-    tools:context=".UI.CurrencyActivity">
+    tools:context=".ui.CurrencyActivity">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"

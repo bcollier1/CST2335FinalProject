@@ -11,11 +11,11 @@
         android:theme="@style/Theme.Finalproject"
         tools:targetApi="31">
         <activity
-            android:name=".UI.MainActivity"
+            android:name=".ui.MainActivity"
             android:theme="@style/Theme.Currency"
             android:exported="false" />
         <activity
-            android:name=".UI.CurrencyActivity"
+            android:name=".ui.CurrencyActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
