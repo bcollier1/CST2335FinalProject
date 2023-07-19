@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white">
+    android:background="@color/white"
+    android:clickable="true">
 
     <TextView
         android:id="@+id/categoryLabel"
@@ -12,6 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="60dp"
+        android:textSize="35sp"
         android:text="Category"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -20,10 +22,11 @@
         android:id="@+id/categorySelector"
         android:layout_width="0dp"
         android:layout_height="50dp"
-        app:layout_constraintBottom_toBottomOf="@+id/categoryLabel"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/categoryLabel"
-        app:layout_constraintTop_toTopOf="@+id/categoryLabel" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/categoryLabel" />
 
     <TextView
         android:id="@+id/difficultyLabel"
@@ -31,6 +34,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="72dp"
+        android:textSize="35sp"
         android:text="Difficulty"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/categoryLabel" />
@@ -39,10 +43,11 @@
         android:id="@+id/difficultySelector"
         android:layout_width="0dp"
         android:layout_height="50dp"
-        app:layout_constraintBottom_toBottomOf="@+id/difficultyLabel"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/difficultyLabel"
-        app:layout_constraintTop_toTopOf="@+id/difficultyLabel" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/difficultyLabel" />
 
     <Button
         android:id="@+id/categoryButton"

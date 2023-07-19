@@ -24,14 +24,14 @@ public class TriviaSelectorFragment extends Fragment {
 
         // From https://developer.android.com/develop/ui/views/components/spinner#:~:text=In%20the%20default%20state%2C%20a,can%20select%20a%20new%20one.&text=To%20populate%20the%20spinner%20with,Activity%20or%20Fragment%20source%20code.
         ArrayAdapter<CharSequence> categoryAdapter = ArrayAdapter.createFromResource(this.getContext(),
-                R.array.trivia_categories_array, android.R.layout.simple_spinner_item);
-        categoryAdapter.setDropDownViewResource(android.R.layout.simple_spinner_item);
+                R.array.trivia_categories_array, R.layout.trivia_spinner_item);
+        categoryAdapter.setDropDownViewResource(R.layout.trivia_spinner_item);
 
         binding.categorySelector.setAdapter(categoryAdapter);
 
         ArrayAdapter<CharSequence> difficultyAdapter = ArrayAdapter.createFromResource(this.getContext(),
-                R.array.trivia_difficulties_array, android.R.layout.simple_spinner_item);
-        difficultyAdapter.setDropDownViewResource(android.R.layout.simple_spinner_item);
+                R.array.trivia_difficulties_array, R.layout.trivia_spinner_item);
+        difficultyAdapter.setDropDownViewResource(R.layout.trivia_spinner_item);
 
         binding.difficultySelector.setAdapter(difficultyAdapter);
 
