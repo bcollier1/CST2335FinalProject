@@ -1,14 +1,16 @@
-package algonquin.cst2335.finalproject;
+package algonquin.cst2335.finalproject.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class TriviaActivity extends AppCompatActivity {
+import algonquin.cst2335.finalproject.R;
+
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_trivia);
+        setContentView(R.layout.activity_main);
     }
 }
