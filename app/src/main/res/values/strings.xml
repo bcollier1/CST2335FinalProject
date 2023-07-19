@@ -1,5 +1,13 @@
 <resources>
     <string name="app_name">finalproject</string>
+
+    <string name="Amount">Amount</string>
+    <string name="Convert">Convert</string>
+    <string name="Reset">Reset</string>
+    <string name="From">From</string>
+    <string name="To">To</string>
+    <string name="CC">Currency Converter</string>
+
     <string-array name="trivia_categories_array">
         <item>Any Category</item>
         <item>General Knowledge</item>
@@ -33,4 +41,5 @@
         <item>Medium</item>
         <item>Hard</item>
     </string-array>
+
 </resources>

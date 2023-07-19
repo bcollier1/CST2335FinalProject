@@ -6,6 +6,7 @@ android {
     namespace 'algonquin.cst2335.finalproject'
     compileSdk 33
 
+
     buildFeatures {
         viewBinding true
     }

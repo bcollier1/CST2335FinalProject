@@ -11,21 +11,26 @@
         android:theme="@style/Theme.Finalproject"
         tools:targetApi="31">
         <activity
+            android:name=".ui.MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.CurrencyActivity"
+            android:exported="true">
+            <intent-filter>
+              <action android:name="android.intent.action.MAIN" />
+
+              <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+         </activity>
+         <activity
             android:name=".ui.TriviaActivity"
             android:exported="true">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+              <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
+              <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-
-        <activity
-            android:name=".ui.MainActivity"
-            android:exported="true">
-
-
-        </activity>
+         </activity> 
     </application>
 
 </manifest>
