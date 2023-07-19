@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_airport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <SearchView
+            android:id="@+id/search_view"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:queryHint="What??"/>
+
+<!--        <TextView-->
+<!--            android:id="@+id/toggle_button_label"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintEnd_toStartOf="@id/fav_btn"-->
+<!--            app:layout_constraintHorizontal_chainStyle="packed"-->
+<!--            app:layout_constraintBaseline_toBaselineOf="@id/fav_btn"-->
+<!--            android:text= "toggle_button" />-->
+
+        <androidx.appcompat.widget.AppCompatToggleButton
+            android:id="@+id/fav_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOff="My List"
+            android:textOn="All Flights"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/search_view"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+<!--        <Button-->
+<!--            android:id="@+id/fav_btn"-->
+<!--            android:layout_width="100dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:contentDescription="Favorite Switch"-->
+<!--            android:tooltipText="Favorite Swtich"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fragmentLocation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".AirportDisplayBoardActivity">
+
+            <!--    0dp means match_constraint, or drag the edges all the way to the attachment point of the constraint.-->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/flightListView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+
+
+
+</LinearLayout>
+
+
+

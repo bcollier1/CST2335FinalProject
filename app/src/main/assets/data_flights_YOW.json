@@ -1,0 +1,4875 @@
+{
+  "pagination": {
+    "limit": 100,
+    "offset": 0,
+    "count": 100,
+    "total": 366
+  },
+  "data": [
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "24",
+        "delay": 13,
+        "scheduled": "2023-07-09T07:15:00+00:00",
+        "estimated": "2023-07-09T07:15:00+00:00",
+        "actual": "2023-07-09T07:27:00+00:00",
+        "estimated_runway": "2023-07-09T07:27:00+00:00",
+        "actual_runway": "2023-07-09T07:27:00+00:00"
+      },
+      "arrival": {
+        "airport": "Vancouver International",
+        "timezone": "America\/Vancouver",
+        "iata": "YVR",
+        "icao": "CYVR",
+        "terminal": "D",
+        "gate": "B15",
+        "baggage": "1",
+        "delay": null,
+        "scheduled": "2023-07-09T09:39:00+00:00",
+        "estimated": "2023-07-09T09:39:00+00:00",
+        "actual": "2023-07-09T09:26:00+00:00",
+        "estimated_runway": "2023-07-09T09:26:00+00:00",
+        "actual_runway": "2023-07-09T09:26:00+00:00"
+      },
+      "airline": {
+        "name": "Air France",
+        "iata": "AF",
+        "icao": "AFR"
+      },
+      "flight": {
+        "number": "6590",
+        "iata": "AF6590",
+        "icao": "AFR6590",
+        "codeshared": {
+          "airline_name": "westjet",
+          "airline_iata": "ws",
+          "airline_icao": "wja",
+          "flight_number": "615",
+          "flight_iata": "ws615",
+          "flight_icao": "wja615"
+        }
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "scheduled",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": null,
+        "delay": null,
+        "scheduled": "2023-07-09T16:15:00+00:00",
+        "estimated": "2023-07-09T16:15:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Logan International",
+        "timezone": "America\/New_York",
+        "iata": "BOS",
+        "icao": "KBOS",
+        "terminal": "E",
+        "gate": null,
+        "baggage": null,
+        "delay": null,
+        "scheduled": "2023-07-09T17:25:00+00:00",
+        "estimated": "2023-07-09T17:25:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "empty",
+        "iata": null,
+        "icao": null
+      },
+      "flight": {
+        "number": "2345",
+        "iata": null,
+        "icao": null,
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "20",
+        "delay": null,
+        "scheduled": "2023-07-09T11:45:00+00:00",
+        "estimated": "2023-07-09T11:45:00+00:00",
+        "actual": "2023-07-09T11:44:00+00:00",
+        "estimated_runway": "2023-07-09T11:44:00+00:00",
+        "actual_runway": "2023-07-09T11:44:00+00:00"
+      },
+      "arrival": {
+        "airport": "Thunder Bay",
+        "timezone": "America\/Thunder_Bay",
+        "iata": "YQT",
+        "icao": "CYQT",
+        "terminal": null,
+        "gate": null,
+        "baggage": null,
+        "delay": null,
+        "scheduled": "2023-07-09T14:09:00+00:00",
+        "estimated": "2023-07-09T14:09:00+00:00",
+        "actual": "2023-07-09T13:44:00+00:00",
+        "estimated_runway": "2023-07-09T13:44:00+00:00",
+        "actual_runway": "2023-07-09T13:44:00+00:00"
+      },
+      "airline": {
+        "name": "Porter Airlines",
+        "iata": "PD",
+        "icao": "POE"
+      },
+      "flight": {
+        "number": "2353",
+        "iata": "PD2353",
+        "icao": "POE2353",
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "active",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "11",
+        "delay": 75,
+        "scheduled": "2023-07-09T16:15:00+00:00",
+        "estimated": "2023-07-09T16:15:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Logan International",
+        "timezone": "America\/New_York",
+        "iata": "BOS",
+        "icao": "KBOS",
+        "terminal": "E",
+        "gate": "E2",
+        "baggage": "1",
+        "delay": null,
+        "scheduled": "2023-07-09T17:25:00+00:00",
+        "estimated": "2023-07-09T17:25:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "Porter Airlines",
+        "iata": "PD",
+        "icao": "POE"
+      },
+      "flight": {
+        "number": "2345",
+        "iata": "PD2345",
+        "icao": "POE2345",
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "scheduled",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "14",
+        "delay": 2,
+        "scheduled": "2023-07-09T10:50:00+00:00",
+        "estimated": "2023-07-09T10:50:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Pierre Elliott Trudeau International",
+        "timezone": "America\/Montreal",
+        "iata": "YUL",
+        "icao": "CYUL",
+        "terminal": "A",
+        "gate": "A2",
+        "baggage": null,
+        "delay": null,
+        "scheduled": "2023-07-09T11:35:00+00:00",
+        "estimated": "2023-07-09T11:35:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "SWISS",
+        "iata": "LX",
+        "icao": "SWR"
+      },
+      "flight": {
+        "number": "4899",
+        "iata": "LX4899",
+        "icao": "SWR4899",
+        "codeshared": {
+          "airline_name": "air canada",
+          "airline_iata": "ac",
+          "airline_icao": "aca",
+          "flight_number": "8004",
+          "flight_iata": "ac8004",
+          "flight_icao": "aca8004"
+        }
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "active",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "15",
+        "delay": 10,
+        "scheduled": "2023-07-09T17:05:00+00:00",
+        "estimated": "2023-07-09T17:05:00+00:00",
+        "actual": "2023-07-09T17:14:00+00:00",
+        "estimated_runway": "2023-07-09T17:14:00+00:00",
+        "actual_runway": "2023-07-09T17:14:00+00:00"
+      },
+      "arrival": {
+        "airport": "Charles De Gaulle",
+        "timezone": "Europe\/Paris",
+        "iata": "CDG",
+        "icao": "LFPG",
+        "terminal": "2E",
+        "gate": null,
+        "baggage": "43",
+        "delay": null,
+        "scheduled": "2023-07-10T06:15:00+00:00",
+        "estimated": "2023-07-10T06:15:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "Air France",
+        "iata": "AF",
+        "icao": "AFR"
+      },
+      "flight": {
+        "number": "327",
+        "iata": "AF327",
+        "icao": "AFR327",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "F-GZCM",
+        "iata": "A332",
+        "icao": "A332",
+        "icao24": "39644C"
+      },
+      "live": {
+        "updated": "2023-07-09T21:46:22+00:00",
+        "latitude": 47.62,
+        "longitude": -71.37,
+        "altitude": 11803.4,
+        "direction": 53,
+        "speed_horizontal": 1029.71,
+        "speed_vertical": 0,
+        "is_ground": false
+      }
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "active",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "20",
+        "delay": 21,
+        "scheduled": "2023-07-09T17:40:00+00:00",
+        "estimated": "2023-07-09T17:40:00+00:00",
+        "actual": "2023-07-09T18:01:00+00:00",
+        "estimated_runway": "2023-07-09T18:01:00+00:00",
+        "actual_runway": "2023-07-09T18:01:00+00:00"
+      },
+      "arrival": {
+        "airport": "Toronto City Centre Airport",
+        "timezone": "America\/Toronto",
+        "iata": "YTZ",
+        "icao": "CYTZ",
+        "terminal": null,
+        "gate": "6",
+        "baggage": null,
+        "delay": 10,
+        "scheduled": "2023-07-09T18:44:00+00:00",
+        "estimated": "2023-07-09T18:44:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "Porter Airlines",
+        "iata": "PD",
+        "icao": "POE"
+      },
+      "flight": {
+        "number": "2260",
+        "iata": "PD2260",
+        "icao": "POE2260",
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "active",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "15",
+        "delay": 10,
+        "scheduled": "2023-07-09T17:05:00+00:00",
+        "estimated": "2023-07-09T17:05:00+00:00",
+        "actual": "2023-07-09T17:14:00+00:00",
+        "estimated_runway": "2023-07-09T17:14:00+00:00",
+        "actual_runway": "2023-07-09T17:14:00+00:00"
+      },
+      "arrival": {
+        "airport": "Charles De Gaulle",
+        "timezone": "Europe\/Paris",
+        "iata": "CDG",
+        "icao": "LFPG",
+        "terminal": "2E",
+        "gate": null,
+        "baggage": "43",
+        "delay": null,
+        "scheduled": "2023-07-10T06:15:00+00:00",
+        "estimated": "2023-07-10T06:15:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "KLM",
+        "iata": "KL",
+        "icao": "KLM"
+      },
+      "flight": {
+        "number": "2079",
+        "iata": "KL2079",
+        "icao": "KLM2079",
+        "codeshared": {
+          "airline_name": "air france",
+          "airline_iata": "af",
+          "airline_icao": "afr",
+          "flight_number": "327",
+          "flight_iata": "af327",
+          "flight_icao": "afr327"
+        }
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "scheduled",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "15",
+        "delay": null,
+        "scheduled": "2023-07-09T21:45:00+00:00",
+        "estimated": "2023-07-09T21:45:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Vancouver International",
+        "timezone": "America\/Vancouver",
+        "iata": "YVR",
+        "icao": "CYVR",
+        "terminal": "D",
+        "gate": "C45",
+        "baggage": "4",
+        "delay": null,
+        "scheduled": "2023-07-09T23:57:00+00:00",
+        "estimated": "2023-07-09T23:57:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "Air Canada",
+        "iata": "AC",
+        "icao": "ACA"
+      },
+      "flight": {
+        "number": "347",
+        "iata": "AC347",
+        "icao": "ACA347",
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "active",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "15",
+        "delay": 10,
+        "scheduled": "2023-07-09T17:05:00+00:00",
+        "estimated": "2023-07-09T17:05:00+00:00",
+        "actual": "2023-07-09T17:14:00+00:00",
+        "estimated_runway": "2023-07-09T17:14:00+00:00",
+        "actual_runway": "2023-07-09T17:14:00+00:00"
+      },
+      "arrival": {
+        "airport": "Charles De Gaulle",
+        "timezone": "Europe\/Paris",
+        "iata": "CDG",
+        "icao": "LFPG",
+        "terminal": "2E",
+        "gate": null,
+        "baggage": "43",
+        "delay": null,
+        "scheduled": "2023-07-10T06:15:00+00:00",
+        "estimated": "2023-07-10T06:15:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "Virgin Atlantic",
+        "iata": "VS",
+        "icao": "VIR"
+      },
+      "flight": {
+        "number": "6650",
+        "iata": "VS6650",
+        "icao": "VIR6650",
+        "codeshared": {
+          "airline_name": "air france",
+          "airline_iata": "af",
+          "airline_icao": "afr",
+          "flight_number": "327",
+          "flight_iata": "af327",
+          "flight_icao": "afr327"
+        }
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": null,
+        "delay": null,
+        "scheduled": "2023-07-09T11:42:00+00:00",
+        "estimated": "2023-07-09T11:42:00+00:00",
+        "actual": "2023-07-09T11:41:00+00:00",
+        "estimated_runway": "2023-07-09T11:41:00+00:00",
+        "actual_runway": "2023-07-09T11:41:00+00:00"
+      },
+      "arrival": {
+        "airport": "Charlotte Douglas",
+        "timezone": "America\/New_York",
+        "iata": "CLT",
+        "icao": "KCLT",
+        "terminal": "M",
+        "gate": null,
+        "baggage": null,
+        "delay": null,
+        "scheduled": "2023-07-09T13:58:00+00:00",
+        "estimated": "2023-07-09T13:58:00+00:00",
+        "actual": "2023-07-09T13:58:00+00:00",
+        "estimated_runway": "2023-07-09T13:58:00+00:00",
+        "actual_runway": "2023-07-09T13:58:00+00:00"
+      },
+      "airline": {
+        "name": "Airsprint",
+        "iata": null,
+        "icao": "ASP"
+      },
+      "flight": {
+        "number": "668",
+        "iata": null,
+        "icao": "ASP668",
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "scheduled",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "23",
+        "delay": 48,
+        "scheduled": "2023-07-09T17:30:00+00:00",
+        "estimated": "2023-07-09T17:30:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Pierre Elliott Trudeau International",
+        "timezone": "America\/Montreal",
+        "iata": "YUL",
+        "icao": "CYUL",
+        "terminal": null,
+        "gate": "21",
+        "baggage": null,
+        "delay": null,
+        "scheduled": "2023-07-09T18:15:00+00:00",
+        "estimated": "2023-07-09T18:15:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "Turkish Airlines",
+        "iata": "TK",
+        "icao": "THY"
+      },
+      "flight": {
+        "number": "9105",
+        "iata": "TK9105",
+        "icao": "THY9105",
+        "codeshared": {
+          "airline_name": "air canada",
+          "airline_iata": "ac",
+          "airline_icao": "aca",
+          "flight_number": "8014",
+          "flight_iata": "ac8014",
+          "flight_icao": "aca8014"
+        }
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "scheduled",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": null,
+        "delay": 13,
+        "scheduled": "2023-07-09T10:30:00+00:00",
+        "estimated": "2023-07-09T10:30:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Ronald Reagan Washington National Airport",
+        "timezone": "America\/New_York",
+        "iata": "DCA",
+        "icao": "KDCA",
+        "terminal": "2",
+        "gate": null,
+        "baggage": null,
+        "delay": null,
+        "scheduled": "2023-07-09T12:00:00+00:00",
+        "estimated": "2023-07-09T12:00:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "empty",
+        "iata": null,
+        "icao": null
+      },
+      "flight": {
+        "number": null,
+        "iata": null,
+        "icao": null,
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "scheduled",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "18",
+        "delay": 15,
+        "scheduled": "2023-07-09T19:05:00+00:00",
+        "estimated": "2023-07-09T19:05:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Thunder Bay",
+        "timezone": "America\/Thunder_Bay",
+        "iata": "YQT",
+        "icao": "CYQT",
+        "terminal": "MA",
+        "gate": null,
+        "baggage": null,
+        "delay": null,
+        "scheduled": "2023-07-09T21:29:00+00:00",
+        "estimated": "2023-07-09T21:29:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "Porter Airlines",
+        "iata": "PD",
+        "icao": "POE"
+      },
+      "flight": {
+        "number": "2355",
+        "iata": "PD2355",
+        "icao": "POE2355",
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": null,
+        "delay": 8,
+        "scheduled": "2023-07-09T10:30:00+00:00",
+        "estimated": "2023-07-09T10:30:00+00:00",
+        "actual": "2023-07-09T10:37:00+00:00",
+        "estimated_runway": "2023-07-09T10:37:00+00:00",
+        "actual_runway": "2023-07-09T10:37:00+00:00"
+      },
+      "arrival": {
+        "airport": "Ronald Reagan Washington National Airport",
+        "timezone": "America\/New_York",
+        "iata": "DCA",
+        "icao": "KDCA",
+        "terminal": "2",
+        "gate": null,
+        "baggage": null,
+        "delay": 3,
+        "scheduled": "2023-07-09T12:00:00+00:00",
+        "estimated": "2023-07-09T12:00:00+00:00",
+        "actual": "2023-07-09T12:03:00+00:00",
+        "estimated_runway": "2023-07-09T12:03:00+00:00",
+        "actual_runway": "2023-07-09T12:03:00+00:00"
+      },
+      "airline": {
+        "name": "Air Canada",
+        "iata": "AC",
+        "icao": "ACA"
+      },
+      "flight": {
+        "number": "871",
+        "iata": "AC871",
+        "icao": "ACA871",
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "scheduled",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "25",
+        "delay": 11,
+        "scheduled": "2023-07-09T14:30:00+00:00",
+        "estimated": "2023-07-09T14:30:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Pierre Elliott Trudeau International",
+        "timezone": "America\/Montreal",
+        "iata": "YUL",
+        "icao": "CYUL",
+        "terminal": "A",
+        "gate": "25",
+        "baggage": null,
+        "delay": null,
+        "scheduled": "2023-07-09T15:15:00+00:00",
+        "estimated": "2023-07-09T15:15:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "Air Canada",
+        "iata": "AC",
+        "icao": "ACA"
+      },
+      "flight": {
+        "number": "8008",
+        "iata": "AC8008",
+        "icao": "ACA8008",
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "scheduled",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "12",
+        "delay": 8,
+        "scheduled": "2023-07-09T10:30:00+00:00",
+        "estimated": "2023-07-09T10:30:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Ronald Reagan Washington National Airport",
+        "timezone": "America\/New_York",
+        "iata": "DCA",
+        "icao": "KDCA",
+        "terminal": "1",
+        "gate": "A3",
+        "baggage": null,
+        "delay": null,
+        "scheduled": "2023-07-09T12:06:00+00:00",
+        "estimated": "2023-07-09T12:06:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "Air Canada",
+        "iata": "AC",
+        "icao": "ACA"
+      },
+      "flight": {
+        "number": "8871",
+        "iata": "AC8871",
+        "icao": "ACA8871",
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": null,
+        "delay": 12,
+        "scheduled": "2023-07-09T14:30:00+00:00",
+        "estimated": "2023-07-09T14:30:00+00:00",
+        "actual": "2023-07-09T14:41:00+00:00",
+        "estimated_runway": "2023-07-09T14:41:00+00:00",
+        "actual_runway": "2023-07-09T14:41:00+00:00"
+      },
+      "arrival": {
+        "airport": "Pierre Elliott Trudeau International",
+        "timezone": "America\/Montreal",
+        "iata": "YUL",
+        "icao": "CYUL",
+        "terminal": "A",
+        "gate": null,
+        "baggage": null,
+        "delay": null,
+        "scheduled": "2023-07-09T15:15:00+00:00",
+        "estimated": "2023-07-09T15:15:00+00:00",
+        "actual": "2023-07-09T15:06:00+00:00",
+        "estimated_runway": "2023-07-09T15:06:00+00:00",
+        "actual_runway": "2023-07-09T15:06:00+00:00"
+      },
+      "airline": {
+        "name": "Air Canada",
+        "iata": "AC",
+        "icao": "ACA"
+      },
+      "flight": {
+        "number": "8",
+        "iata": "AC8",
+        "icao": "ACA8",
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "scheduled",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "12",
+        "delay": 8,
+        "scheduled": "2023-07-09T10:30:00+00:00",
+        "estimated": "2023-07-09T10:30:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Ronald Reagan Washington National Airport",
+        "timezone": "America\/New_York",
+        "iata": "DCA",
+        "icao": "KDCA",
+        "terminal": "1",
+        "gate": "A3",
+        "baggage": null,
+        "delay": null,
+        "scheduled": "2023-07-09T12:06:00+00:00",
+        "estimated": "2023-07-09T12:06:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "United Airlines",
+        "iata": "UA",
+        "icao": "UAL"
+      },
+      "flight": {
+        "number": "8486",
+        "iata": "UA8486",
+        "icao": "UAL8486",
+        "codeshared": {
+          "airline_name": "air canada",
+          "airline_iata": "ac",
+          "airline_icao": "aca",
+          "flight_number": "8871",
+          "flight_iata": "ac8871",
+          "flight_icao": "aca8871"
+        }
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "scheduled",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": null,
+        "delay": null,
+        "scheduled": "2023-07-09T12:00:00+00:00",
+        "estimated": "2023-07-09T12:00:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Toronto City Centre Airport",
+        "timezone": "America\/Toronto",
+        "iata": "YTZ",
+        "icao": "CYTZ",
+        "terminal": "B",
+        "gate": null,
+        "baggage": null,
+        "delay": null,
+        "scheduled": "2023-07-09T12:45:00+00:00",
+        "estimated": "2023-07-09T12:45:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "FlyGTA Airlines",
+        "iata": "SX",
+        "icao": "TOR"
+      },
+      "flight": {
+        "number": "126",
+        "iata": "SX126",
+        "icao": "TOR126",
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "scheduled",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "12",
+        "delay": 13,
+        "scheduled": "2023-07-09T06:30:00+00:00",
+        "estimated": "2023-07-09T06:30:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Newark Liberty International",
+        "timezone": "America\/New_York",
+        "iata": "EWR",
+        "icao": "KEWR",
+        "terminal": "C",
+        "gate": "52",
+        "baggage": "D1",
+        "delay": null,
+        "scheduled": "2023-07-09T07:42:00+00:00",
+        "estimated": "2023-07-09T07:42:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "empty",
+        "iata": null,
+        "icao": null
+      },
+      "flight": {
+        "number": "2339",
+        "iata": null,
+        "icao": null,
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "active",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "14",
+        "delay": 150,
+        "scheduled": "2023-07-09T15:45:00+00:00",
+        "estimated": "2023-07-09T15:45:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Pierre Elliott Trudeau International",
+        "timezone": "America\/Montreal",
+        "iata": "YUL",
+        "icao": "CYUL",
+        "terminal": "A",
+        "gate": "10",
+        "baggage": null,
+        "delay": null,
+        "scheduled": "2023-07-09T16:28:00+00:00",
+        "estimated": "2023-07-09T16:28:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "Austrian",
+        "iata": "OS",
+        "icao": "AUA"
+      },
+      "flight": {
+        "number": "8368",
+        "iata": "OS8368",
+        "icao": "AUA8368",
+        "codeshared": {
+          "airline_name": "air canada",
+          "airline_iata": "ac",
+          "airline_icao": "aca",
+          "flight_number": "8012",
+          "flight_iata": "ac8012",
+          "flight_icao": "aca8012"
+        }
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "cancelled",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "6",
+        "delay": 37,
+        "scheduled": "2023-07-09T11:26:00+00:00",
+        "estimated": "2023-07-09T11:26:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Newark Liberty International",
+        "timezone": "America\/New_York",
+        "iata": "EWR",
+        "icao": "KEWR",
+        "terminal": "C",
+        "gate": "84",
+        "baggage": "8",
+        "delay": null,
+        "scheduled": "2023-07-09T13:01:00+00:00",
+        "estimated": "2023-07-09T13:01:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "Air Canada",
+        "iata": "AC",
+        "icao": "ACA"
+      },
+      "flight": {
+        "number": "4386",
+        "iata": "AC4386",
+        "icao": "ACA4386",
+        "codeshared": {
+          "airline_name": "united airlines",
+          "airline_iata": "ua",
+          "airline_icao": "ual",
+          "flight_number": "3547",
+          "flight_iata": "ua3547",
+          "flight_icao": "ual3547"
+        }
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "24",
+        "delay": 13,
+        "scheduled": "2023-07-09T07:15:00+00:00",
+        "estimated": "2023-07-09T07:15:00+00:00",
+        "actual": "2023-07-09T07:27:00+00:00",
+        "estimated_runway": "2023-07-09T07:27:00+00:00",
+        "actual_runway": "2023-07-09T07:27:00+00:00"
+      },
+      "arrival": {
+        "airport": "Vancouver International",
+        "timezone": "America\/Vancouver",
+        "iata": "YVR",
+        "icao": "CYVR",
+        "terminal": "D",
+        "gate": "B15",
+        "baggage": "1",
+        "delay": null,
+        "scheduled": "2023-07-09T09:39:00+00:00",
+        "estimated": "2023-07-09T09:39:00+00:00",
+        "actual": "2023-07-09T09:26:00+00:00",
+        "estimated_runway": "2023-07-09T09:26:00+00:00",
+        "actual_runway": "2023-07-09T09:26:00+00:00"
+      },
+      "airline": {
+        "name": "Korean Air",
+        "iata": "KE",
+        "icao": "KAL"
+      },
+      "flight": {
+        "number": "6578",
+        "iata": "KE6578",
+        "icao": "KAL6578",
+        "codeshared": {
+          "airline_name": "westjet",
+          "airline_iata": "ws",
+          "airline_icao": "wja",
+          "flight_number": "615",
+          "flight_iata": "ws615",
+          "flight_icao": "wja615"
+        }
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "11",
+        "delay": 7,
+        "scheduled": "2023-07-09T06:00:00+00:00",
+        "estimated": "2023-07-09T06:00:00+00:00",
+        "actual": "2023-07-09T06:07:00+00:00",
+        "estimated_runway": "2023-07-09T06:07:00+00:00",
+        "actual_runway": "2023-07-09T06:07:00+00:00"
+      },
+      "arrival": {
+        "airport": "Newark Liberty International",
+        "timezone": "America\/New_York",
+        "iata": "EWR",
+        "icao": "KEWR",
+        "terminal": "C",
+        "gate": "85",
+        "baggage": "8",
+        "delay": null,
+        "scheduled": "2023-07-09T07:35:00+00:00",
+        "estimated": "2023-07-09T07:35:00+00:00",
+        "actual": "2023-07-09T07:06:00+00:00",
+        "estimated_runway": "2023-07-09T07:06:00+00:00",
+        "actual_runway": "2023-07-09T07:06:00+00:00"
+      },
+      "airline": {
+        "name": "Air Canada",
+        "iata": "AC",
+        "icao": "ACA"
+      },
+      "flight": {
+        "number": "4398",
+        "iata": "AC4398",
+        "icao": "ACA4398",
+        "codeshared": {
+          "airline_name": "united airlines",
+          "airline_iata": "ua",
+          "airline_icao": "ual",
+          "flight_number": "3439",
+          "flight_iata": "ua3439",
+          "flight_icao": "ual3439"
+        }
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "active",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "26",
+        "delay": 22,
+        "scheduled": "2023-07-09T17:45:00+00:00",
+        "estimated": "2023-07-09T17:45:00+00:00",
+        "actual": "2023-07-09T18:06:00+00:00",
+        "estimated_runway": "2023-07-09T18:06:00+00:00",
+        "actual_runway": "2023-07-09T18:06:00+00:00"
+      },
+      "arrival": {
+        "airport": "Vancouver International",
+        "timezone": "America\/Vancouver",
+        "iata": "YVR",
+        "icao": "CYVR",
+        "terminal": "D",
+        "gate": "B26",
+        "baggage": null,
+        "delay": null,
+        "scheduled": "2023-07-09T20:00:00+00:00",
+        "estimated": "2023-07-09T20:00:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "China Airlines",
+        "iata": "CI",
+        "icao": "CAL"
+      },
+      "flight": {
+        "number": "9333",
+        "iata": "CI9333",
+        "icao": "CAL9333",
+        "codeshared": {
+          "airline_name": "westjet",
+          "airline_iata": "ws",
+          "airline_icao": "wja",
+          "flight_number": "609",
+          "flight_iata": "ws609",
+          "flight_icao": "wja609"
+        }
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "cancelled",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "6",
+        "delay": null,
+        "scheduled": "2023-07-09T17:58:00+00:00",
+        "estimated": "2023-07-09T17:58:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Newark Liberty International",
+        "timezone": "America\/New_York",
+        "iata": "EWR",
+        "icao": "KEWR",
+        "terminal": "C",
+        "gate": "87",
+        "baggage": "8",
+        "delay": null,
+        "scheduled": "2023-07-09T19:33:00+00:00",
+        "estimated": "2023-07-09T19:33:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "Air Canada",
+        "iata": "AC",
+        "icao": "ACA"
+      },
+      "flight": {
+        "number": "4495",
+        "iata": "AC4495",
+        "icao": "ACA4495",
+        "codeshared": {
+          "airline_name": "united airlines",
+          "airline_iata": "ua",
+          "airline_icao": "ual",
+          "flight_number": "3477",
+          "flight_iata": "ua3477",
+          "flight_icao": "ual3477"
+        }
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "25",
+        "delay": 18,
+        "scheduled": "2023-07-09T11:15:00+00:00",
+        "estimated": "2023-07-09T11:15:00+00:00",
+        "actual": "2023-07-09T11:32:00+00:00",
+        "estimated_runway": "2023-07-09T11:32:00+00:00",
+        "actual_runway": "2023-07-09T11:32:00+00:00"
+      },
+      "arrival": {
+        "airport": "Pierre Elliott Trudeau International",
+        "timezone": "America\/Montreal",
+        "iata": "YUL",
+        "icao": "CYUL",
+        "terminal": "A",
+        "gate": "30",
+        "baggage": null,
+        "delay": 2,
+        "scheduled": "2023-07-09T11:59:00+00:00",
+        "estimated": "2023-07-09T11:59:00+00:00",
+        "actual": "2023-07-09T12:00:00+00:00",
+        "estimated_runway": "2023-07-09T12:00:00+00:00",
+        "actual_runway": "2023-07-09T12:00:00+00:00"
+      },
+      "airline": {
+        "name": "SWISS",
+        "iata": "LX",
+        "icao": "SWR"
+      },
+      "flight": {
+        "number": "4661",
+        "iata": "LX4661",
+        "icao": "SWR4661",
+        "codeshared": {
+          "airline_name": "air canada",
+          "airline_iata": "ac",
+          "airline_icao": "aca",
+          "flight_number": "8006",
+          "flight_iata": "ac8006",
+          "flight_icao": "aca8006"
+        }
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": null,
+        "delay": 1,
+        "scheduled": "2023-07-09T06:30:00+00:00",
+        "estimated": "2023-07-09T06:30:00+00:00",
+        "actual": "2023-07-09T06:31:00+00:00",
+        "estimated_runway": "2023-07-09T06:31:00+00:00",
+        "actual_runway": "2023-07-09T06:31:00+00:00"
+      },
+      "arrival": {
+        "airport": "Newark Liberty International",
+        "timezone": "America\/New_York",
+        "iata": "EWR",
+        "icao": "KEWR",
+        "terminal": "A",
+        "gate": null,
+        "baggage": null,
+        "delay": null,
+        "scheduled": "2023-07-09T07:51:00+00:00",
+        "estimated": "2023-07-09T07:51:00+00:00",
+        "actual": "2023-07-09T07:25:00+00:00",
+        "estimated_runway": "2023-07-09T07:25:00+00:00",
+        "actual_runway": "2023-07-09T07:25:00+00:00"
+      },
+      "airline": {
+        "name": "Air Canada",
+        "iata": "AC",
+        "icao": "ACA"
+      },
+      "flight": {
+        "number": "666",
+        "iata": "AC666",
+        "icao": "ACA666",
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "scheduled",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "22",
+        "delay": null,
+        "scheduled": "2023-07-09T19:00:00+00:00",
+        "estimated": "2023-07-09T19:00:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Toronto City Centre Airport",
+        "timezone": "America\/Toronto",
+        "iata": "YTZ",
+        "icao": "CYTZ",
+        "terminal": null,
+        "gate": "3",
+        "baggage": null,
+        "delay": null,
+        "scheduled": "2023-07-09T20:04:00+00:00",
+        "estimated": "2023-07-09T20:04:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "Porter Airlines",
+        "iata": "PD",
+        "icao": "POE"
+      },
+      "flight": {
+        "number": "2262",
+        "iata": "PD2262",
+        "icao": "POE2262",
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "active",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "12",
+        "delay": 1,
+        "scheduled": "2023-07-09T06:30:00+00:00",
+        "estimated": "2023-07-09T06:30:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Newark Liberty International",
+        "timezone": "America\/New_York",
+        "iata": "EWR",
+        "icao": "KEWR",
+        "terminal": "A",
+        "gate": "A1",
+        "baggage": null,
+        "delay": null,
+        "scheduled": "2023-07-09T07:51:00+00:00",
+        "estimated": "2023-07-09T07:51:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "Air Canada",
+        "iata": "AC",
+        "icao": "ACA"
+      },
+      "flight": {
+        "number": "8666",
+        "iata": "AC8666",
+        "icao": "ACA8666",
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "11",
+        "delay": 10,
+        "scheduled": "2023-07-09T07:55:00+00:00",
+        "estimated": "2023-07-09T07:55:00+00:00",
+        "actual": "2023-07-09T08:04:00+00:00",
+        "estimated_runway": "2023-07-09T08:04:00+00:00",
+        "actual_runway": "2023-07-09T08:04:00+00:00"
+      },
+      "arrival": {
+        "airport": "Newark Liberty International",
+        "timezone": "America\/New_York",
+        "iata": "EWR",
+        "icao": "KEWR",
+        "terminal": "B",
+        "gate": "52",
+        "baggage": "D1",
+        "delay": null,
+        "scheduled": "2023-07-09T09:25:00+00:00",
+        "estimated": "2023-07-09T09:25:00+00:00",
+        "actual": "2023-07-09T09:11:00+00:00",
+        "estimated_runway": "2023-07-09T09:11:00+00:00",
+        "actual_runway": "2023-07-09T09:11:00+00:00"
+      },
+      "airline": {
+        "name": "Porter Airlines",
+        "iata": "PD",
+        "icao": "POE"
+      },
+      "flight": {
+        "number": "2323",
+        "iata": "PD2323",
+        "icao": "POE2323",
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "scheduled",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": null,
+        "delay": null,
+        "scheduled": "2023-07-09T11:45:00+00:00",
+        "estimated": "2023-07-09T11:45:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Thunder Bay",
+        "timezone": "America\/Thunder_Bay",
+        "iata": "YQT",
+        "icao": "CYQT",
+        "terminal": null,
+        "gate": null,
+        "baggage": null,
+        "delay": null,
+        "scheduled": "2023-07-09T14:09:00+00:00",
+        "estimated": "2023-07-09T14:09:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "empty",
+        "iata": null,
+        "icao": null
+      },
+      "flight": {
+        "number": "2353",
+        "iata": null,
+        "icao": null,
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "cancelled",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "12",
+        "delay": 90,
+        "scheduled": "2023-07-09T16:10:00+00:00",
+        "estimated": "2023-07-09T16:10:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Newark Liberty International",
+        "timezone": "America\/New_York",
+        "iata": "EWR",
+        "icao": "KEWR",
+        "terminal": "B",
+        "gate": "52",
+        "baggage": "D1",
+        "delay": null,
+        "scheduled": "2023-07-09T17:40:00+00:00",
+        "estimated": "2023-07-09T17:40:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "Porter Airlines",
+        "iata": "PD",
+        "icao": "POE"
+      },
+      "flight": {
+        "number": "2339",
+        "iata": "PD2339",
+        "icao": "POE2339",
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "cancelled",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "6",
+        "delay": null,
+        "scheduled": "2023-07-09T17:58:00+00:00",
+        "estimated": "2023-07-09T17:58:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Newark Liberty International",
+        "timezone": "America\/New_York",
+        "iata": "EWR",
+        "icao": "KEWR",
+        "terminal": "C",
+        "gate": "87",
+        "baggage": "8",
+        "delay": null,
+        "scheduled": "2023-07-09T19:33:00+00:00",
+        "estimated": "2023-07-09T19:33:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "SAS",
+        "iata": "SK",
+        "icao": "SAS"
+      },
+      "flight": {
+        "number": "6799",
+        "iata": "SK6799",
+        "icao": "SAS6799",
+        "codeshared": {
+          "airline_name": "united airlines",
+          "airline_iata": "ua",
+          "airline_icao": "ual",
+          "flight_number": "3477",
+          "flight_iata": "ua3477",
+          "flight_icao": "ual3477"
+        }
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "scheduled",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "23",
+        "delay": 10,
+        "scheduled": "2023-07-09T06:00:00+00:00",
+        "estimated": "2023-07-09T06:00:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Pierre Elliott Trudeau International",
+        "timezone": "America\/Montreal",
+        "iata": "YUL",
+        "icao": "CYUL",
+        "terminal": "1",
+        "gate": "10",
+        "baggage": null,
+        "delay": null,
+        "scheduled": "2023-07-09T06:43:00+00:00",
+        "estimated": "2023-07-09T06:43:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "Air Canada",
+        "iata": "AC",
+        "icao": "ACA"
+      },
+      "flight": {
+        "number": "8002",
+        "iata": "AC8002",
+        "icao": "ACA8002",
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "cancelled",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "6",
+        "delay": null,
+        "scheduled": "2023-07-09T17:58:00+00:00",
+        "estimated": "2023-07-09T17:58:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Newark Liberty International",
+        "timezone": "America\/New_York",
+        "iata": "EWR",
+        "icao": "KEWR",
+        "terminal": "C",
+        "gate": "87",
+        "baggage": "8",
+        "delay": null,
+        "scheduled": "2023-07-09T19:33:00+00:00",
+        "estimated": "2023-07-09T19:33:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "SAS",
+        "iata": "SK",
+        "icao": "SAS"
+      },
+      "flight": {
+        "number": "8775",
+        "iata": "SK8775",
+        "icao": "SAS8775",
+        "codeshared": {
+          "airline_name": "united airlines",
+          "airline_iata": "ua",
+          "airline_icao": "ual",
+          "flight_number": "3477",
+          "flight_iata": "ua3477",
+          "flight_icao": "ual3477"
+        }
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "scheduled",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "23",
+        "delay": 48,
+        "scheduled": "2023-07-09T17:30:00+00:00",
+        "estimated": "2023-07-09T17:30:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Pierre Elliott Trudeau International",
+        "timezone": "America\/Montreal",
+        "iata": "YUL",
+        "icao": "CYUL",
+        "terminal": null,
+        "gate": "21",
+        "baggage": null,
+        "delay": null,
+        "scheduled": "2023-07-09T18:15:00+00:00",
+        "estimated": "2023-07-09T18:15:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "Lufthansa",
+        "iata": "LH",
+        "icao": "DLH"
+      },
+      "flight": {
+        "number": "6561",
+        "iata": "LH6561",
+        "icao": "DLH6561",
+        "codeshared": {
+          "airline_name": "air canada",
+          "airline_iata": "ac",
+          "airline_icao": "aca",
+          "flight_number": "8014",
+          "flight_iata": "ac8014",
+          "flight_icao": "aca8014"
+        }
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "cancelled",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "6",
+        "delay": 37,
+        "scheduled": "2023-07-09T11:26:00+00:00",
+        "estimated": "2023-07-09T11:26:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Newark Liberty International",
+        "timezone": "America\/New_York",
+        "iata": "EWR",
+        "icao": "KEWR",
+        "terminal": "C",
+        "gate": "84",
+        "baggage": "8",
+        "delay": null,
+        "scheduled": "2023-07-09T13:01:00+00:00",
+        "estimated": "2023-07-09T13:01:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "SAS",
+        "iata": "SK",
+        "icao": "SAS"
+      },
+      "flight": {
+        "number": "8821",
+        "iata": "SK8821",
+        "icao": "SAS8821",
+        "codeshared": {
+          "airline_name": "united airlines",
+          "airline_iata": "ua",
+          "airline_icao": "ual",
+          "flight_number": "3547",
+          "flight_iata": "ua3547",
+          "flight_icao": "ual3547"
+        }
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "active",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "14",
+        "delay": 150,
+        "scheduled": "2023-07-09T15:45:00+00:00",
+        "estimated": "2023-07-09T15:45:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Pierre Elliott Trudeau International",
+        "timezone": "America\/Montreal",
+        "iata": "YUL",
+        "icao": "CYUL",
+        "terminal": "A",
+        "gate": "10",
+        "baggage": null,
+        "delay": null,
+        "scheduled": "2023-07-09T16:28:00+00:00",
+        "estimated": "2023-07-09T16:28:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "Air Canada",
+        "iata": "AC",
+        "icao": "ACA"
+      },
+      "flight": {
+        "number": "8012",
+        "iata": "AC8012",
+        "icao": "ACA8012",
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "11",
+        "delay": 7,
+        "scheduled": "2023-07-09T06:00:00+00:00",
+        "estimated": "2023-07-09T06:00:00+00:00",
+        "actual": "2023-07-09T06:07:00+00:00",
+        "estimated_runway": "2023-07-09T06:07:00+00:00",
+        "actual_runway": "2023-07-09T06:07:00+00:00"
+      },
+      "arrival": {
+        "airport": "Newark Liberty International",
+        "timezone": "America\/New_York",
+        "iata": "EWR",
+        "icao": "KEWR",
+        "terminal": "C",
+        "gate": "85",
+        "baggage": "8",
+        "delay": null,
+        "scheduled": "2023-07-09T07:35:00+00:00",
+        "estimated": "2023-07-09T07:35:00+00:00",
+        "actual": "2023-07-09T07:06:00+00:00",
+        "estimated_runway": "2023-07-09T07:06:00+00:00",
+        "actual_runway": "2023-07-09T07:06:00+00:00"
+      },
+      "airline": {
+        "name": "United Airlines",
+        "iata": "UA",
+        "icao": "UAL"
+      },
+      "flight": {
+        "number": "3439",
+        "iata": "UA3439",
+        "icao": "UAL3439",
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": null,
+        "delay": 3,
+        "scheduled": "2023-07-09T10:50:00+00:00",
+        "estimated": "2023-07-09T10:50:00+00:00",
+        "actual": "2023-07-09T10:52:00+00:00",
+        "estimated_runway": "2023-07-09T10:52:00+00:00",
+        "actual_runway": "2023-07-09T10:52:00+00:00"
+      },
+      "arrival": {
+        "airport": "Pierre Elliott Trudeau International",
+        "timezone": "America\/Montreal",
+        "iata": "YUL",
+        "icao": "CYUL",
+        "terminal": "A",
+        "gate": null,
+        "baggage": null,
+        "delay": null,
+        "scheduled": "2023-07-09T11:35:00+00:00",
+        "estimated": "2023-07-09T11:35:00+00:00",
+        "actual": "2023-07-09T11:18:00+00:00",
+        "estimated_runway": "2023-07-09T11:18:00+00:00",
+        "actual_runway": "2023-07-09T11:18:00+00:00"
+      },
+      "airline": {
+        "name": "Air Canada",
+        "iata": "AC",
+        "icao": "ACA"
+      },
+      "flight": {
+        "number": "4",
+        "iata": "AC4",
+        "icao": "ACA4",
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "cancelled",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "6",
+        "delay": null,
+        "scheduled": "2023-07-09T17:58:00+00:00",
+        "estimated": "2023-07-09T17:58:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Newark Liberty International",
+        "timezone": "America\/New_York",
+        "iata": "EWR",
+        "icao": "KEWR",
+        "terminal": "C",
+        "gate": "87",
+        "baggage": "8",
+        "delay": null,
+        "scheduled": "2023-07-09T19:33:00+00:00",
+        "estimated": "2023-07-09T19:33:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "United Airlines",
+        "iata": "UA",
+        "icao": "UAL"
+      },
+      "flight": {
+        "number": "3477",
+        "iata": "UA3477",
+        "icao": "UAL3477",
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "18",
+        "delay": 9,
+        "scheduled": "2023-07-09T11:05:00+00:00",
+        "estimated": "2023-07-09T11:05:00+00:00",
+        "actual": "2023-07-09T11:14:00+00:00",
+        "estimated_runway": "2023-07-09T11:14:00+00:00",
+        "actual_runway": "2023-07-09T11:14:00+00:00"
+      },
+      "arrival": {
+        "airport": "Toronto City Centre Airport",
+        "timezone": "America\/Toronto",
+        "iata": "YTZ",
+        "icao": "CYTZ",
+        "terminal": "B",
+        "gate": "2",
+        "baggage": null,
+        "delay": null,
+        "scheduled": "2023-07-09T12:09:00+00:00",
+        "estimated": "2023-07-09T12:09:00+00:00",
+        "actual": "2023-07-09T12:03:00+00:00",
+        "estimated_runway": "2023-07-09T12:03:00+00:00",
+        "actual_runway": "2023-07-09T12:03:00+00:00"
+      },
+      "airline": {
+        "name": "Porter Airlines",
+        "iata": "PD",
+        "icao": "POE"
+      },
+      "flight": {
+        "number": "2224",
+        "iata": "PD2224",
+        "icao": "POE2224",
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "cancelled",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "6",
+        "delay": 37,
+        "scheduled": "2023-07-09T11:26:00+00:00",
+        "estimated": "2023-07-09T11:26:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Newark Liberty International",
+        "timezone": "America\/New_York",
+        "iata": "EWR",
+        "icao": "KEWR",
+        "terminal": "C",
+        "gate": "84",
+        "baggage": "8",
+        "delay": null,
+        "scheduled": "2023-07-09T13:01:00+00:00",
+        "estimated": "2023-07-09T13:01:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "United Airlines",
+        "iata": "UA",
+        "icao": "UAL"
+      },
+      "flight": {
+        "number": "3547",
+        "iata": "UA3547",
+        "icao": "UAL3547",
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "scheduled",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "25",
+        "delay": 13,
+        "scheduled": "2023-07-09T19:30:00+00:00",
+        "estimated": "2023-07-09T19:30:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Pierre Elliott Trudeau International",
+        "timezone": "America\/Montreal",
+        "iata": "YUL",
+        "icao": "CYUL",
+        "terminal": null,
+        "gate": "27",
+        "baggage": null,
+        "delay": null,
+        "scheduled": "2023-07-09T20:15:00+00:00",
+        "estimated": "2023-07-09T20:15:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "TAP Air Portugal",
+        "iata": "TP",
+        "icao": "TAP"
+      },
+      "flight": {
+        "number": "8286",
+        "iata": "TP8286",
+        "icao": "TAP8286",
+        "codeshared": {
+          "airline_name": "air canada",
+          "airline_iata": "ac",
+          "airline_icao": "aca",
+          "flight_number": "8016",
+          "flight_iata": "ac8016",
+          "flight_icao": "aca8016"
+        }
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "active",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "12",
+        "delay": 1,
+        "scheduled": "2023-07-09T06:30:00+00:00",
+        "estimated": "2023-07-09T06:30:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Newark Liberty International",
+        "timezone": "America\/New_York",
+        "iata": "EWR",
+        "icao": "KEWR",
+        "terminal": "A",
+        "gate": "A1",
+        "baggage": null,
+        "delay": null,
+        "scheduled": "2023-07-09T07:51:00+00:00",
+        "estimated": "2023-07-09T07:51:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "United Airlines",
+        "iata": "UA",
+        "icao": "UAL"
+      },
+      "flight": {
+        "number": "8518",
+        "iata": "UA8518",
+        "icao": "UAL8518",
+        "codeshared": {
+          "airline_name": "air canada",
+          "airline_iata": "ac",
+          "airline_icao": "aca",
+          "flight_number": "8666",
+          "flight_iata": "ac8666",
+          "flight_icao": "aca8666"
+        }
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "active",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "14",
+        "delay": 150,
+        "scheduled": "2023-07-09T15:45:00+00:00",
+        "estimated": "2023-07-09T15:45:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Pierre Elliott Trudeau International",
+        "timezone": "America\/Montreal",
+        "iata": "YUL",
+        "icao": "CYUL",
+        "terminal": "A",
+        "gate": "10",
+        "baggage": null,
+        "delay": null,
+        "scheduled": "2023-07-09T16:28:00+00:00",
+        "estimated": "2023-07-09T16:28:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "Brussels Airlines",
+        "iata": "SN",
+        "icao": "BEL"
+      },
+      "flight": {
+        "number": "9608",
+        "iata": "SN9608",
+        "icao": "BEL9608",
+        "codeshared": {
+          "airline_name": "air canada",
+          "airline_iata": "ac",
+          "airline_icao": "aca",
+          "flight_number": "8012",
+          "flight_iata": "ac8012",
+          "flight_icao": "aca8012"
+        }
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "active",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "5",
+        "delay": 291,
+        "scheduled": "2023-07-09T14:46:00+00:00",
+        "estimated": "2023-07-09T14:46:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Washington Dulles International",
+        "timezone": "America\/New_York",
+        "iata": "IAD",
+        "icao": "KIAD",
+        "terminal": "2",
+        "gate": "A3C",
+        "baggage": "7",
+        "delay": null,
+        "scheduled": "2023-07-09T16:25:00+00:00",
+        "estimated": "2023-07-09T16:25:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "Air Canada",
+        "iata": "AC",
+        "icao": "ACA"
+      },
+      "flight": {
+        "number": "4692",
+        "iata": "AC4692",
+        "icao": "ACA4692",
+        "codeshared": {
+          "airline_name": "united airlines",
+          "airline_iata": "ua",
+          "airline_icao": "ual",
+          "flight_number": "4441",
+          "flight_iata": "ua4441",
+          "flight_icao": "ual4441"
+        }
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "scheduled",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "25",
+        "delay": 11,
+        "scheduled": "2023-07-09T14:30:00+00:00",
+        "estimated": "2023-07-09T14:30:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Pierre Elliott Trudeau International",
+        "timezone": "America\/Montreal",
+        "iata": "YUL",
+        "icao": "CYUL",
+        "terminal": "A",
+        "gate": "25",
+        "baggage": null,
+        "delay": null,
+        "scheduled": "2023-07-09T15:15:00+00:00",
+        "estimated": "2023-07-09T15:15:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "SWISS",
+        "iata": "LX",
+        "icao": "SWR"
+      },
+      "flight": {
+        "number": "4657",
+        "iata": "LX4657",
+        "icao": "SWR4657",
+        "codeshared": {
+          "airline_name": "air canada",
+          "airline_iata": "ac",
+          "airline_icao": "aca",
+          "flight_number": "8008",
+          "flight_iata": "ac8008",
+          "flight_icao": "aca8008"
+        }
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "6",
+        "delay": 8,
+        "scheduled": "2023-07-09T09:45:00+00:00",
+        "estimated": "2023-07-09T09:45:00+00:00",
+        "actual": "2023-07-09T09:53:00+00:00",
+        "estimated_runway": "2023-07-09T09:53:00+00:00",
+        "actual_runway": "2023-07-09T09:53:00+00:00"
+      },
+      "arrival": {
+        "airport": "Washington Dulles International",
+        "timezone": "America\/New_York",
+        "iata": "IAD",
+        "icao": "KIAD",
+        "terminal": "2",
+        "gate": "D23",
+        "baggage": "5",
+        "delay": null,
+        "scheduled": "2023-07-09T11:25:00+00:00",
+        "estimated": "2023-07-09T11:25:00+00:00",
+        "actual": "2023-07-09T11:19:00+00:00",
+        "estimated_runway": "2023-07-09T11:19:00+00:00",
+        "actual_runway": "2023-07-09T11:19:00+00:00"
+      },
+      "airline": {
+        "name": "Air Canada",
+        "iata": "AC",
+        "icao": "ACA"
+      },
+      "flight": {
+        "number": "4696",
+        "iata": "AC4696",
+        "icao": "ACA4696",
+        "codeshared": {
+          "airline_name": "united airlines",
+          "airline_iata": "ua",
+          "airline_icao": "ual",
+          "flight_number": "6190",
+          "flight_iata": "ua6190",
+          "flight_icao": "ual6190"
+        }
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "scheduled",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "15",
+        "delay": 15,
+        "scheduled": "2023-07-09T17:55:00+00:00",
+        "estimated": "2023-07-09T17:55:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Vancouver International",
+        "timezone": "America\/Vancouver",
+        "iata": "YVR",
+        "icao": "CYVR",
+        "terminal": "D",
+        "gate": "C42",
+        "baggage": "4",
+        "delay": null,
+        "scheduled": "2023-07-09T20:07:00+00:00",
+        "estimated": "2023-07-09T20:07:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "Air Canada",
+        "iata": "AC",
+        "icao": "ACA"
+      },
+      "flight": {
+        "number": "345",
+        "iata": "AC345",
+        "icao": "ACA345",
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "active",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "5",
+        "delay": 291,
+        "scheduled": "2023-07-09T14:46:00+00:00",
+        "estimated": "2023-07-09T14:46:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Washington Dulles International",
+        "timezone": "America\/New_York",
+        "iata": "IAD",
+        "icao": "KIAD",
+        "terminal": "2",
+        "gate": "A3C",
+        "baggage": "7",
+        "delay": null,
+        "scheduled": "2023-07-09T16:25:00+00:00",
+        "estimated": "2023-07-09T16:25:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "United Airlines",
+        "iata": "UA",
+        "icao": "UAL"
+      },
+      "flight": {
+        "number": "4441",
+        "iata": "UA4441",
+        "icao": "UAL4441",
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "26",
+        "delay": 28,
+        "scheduled": "2023-07-09T10:35:00+00:00",
+        "estimated": "2023-07-09T10:35:00+00:00",
+        "actual": "2023-07-09T11:03:00+00:00",
+        "estimated_runway": "2023-07-09T11:03:00+00:00",
+        "actual_runway": "2023-07-09T11:03:00+00:00"
+      },
+      "arrival": {
+        "airport": "Yellowknife",
+        "timezone": "America\/Yellowknife",
+        "iata": "YZF",
+        "icao": "CYZF",
+        "terminal": "MA",
+        "gate": null,
+        "baggage": null,
+        "delay": null,
+        "scheduled": "2023-07-09T13:20:00+00:00",
+        "estimated": "2023-07-09T13:20:00+00:00",
+        "actual": "2023-07-09T13:17:00+00:00",
+        "estimated_runway": "2023-07-09T13:17:00+00:00",
+        "actual_runway": "2023-07-09T13:17:00+00:00"
+      },
+      "airline": {
+        "name": "Air North",
+        "iata": "4N",
+        "icao": "ANT"
+      },
+      "flight": {
+        "number": "832",
+        "iata": "4N832",
+        "icao": "ANT832",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "C-GANH",
+        "iata": "B735",
+        "icao": "B735",
+        "icao24": "C04602"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "6",
+        "delay": 8,
+        "scheduled": "2023-07-09T09:45:00+00:00",
+        "estimated": "2023-07-09T09:45:00+00:00",
+        "actual": "2023-07-09T09:53:00+00:00",
+        "estimated_runway": "2023-07-09T09:53:00+00:00",
+        "actual_runway": "2023-07-09T09:53:00+00:00"
+      },
+      "arrival": {
+        "airport": "Washington Dulles International",
+        "timezone": "America\/New_York",
+        "iata": "IAD",
+        "icao": "KIAD",
+        "terminal": "2",
+        "gate": "D23",
+        "baggage": "5",
+        "delay": null,
+        "scheduled": "2023-07-09T11:25:00+00:00",
+        "estimated": "2023-07-09T11:25:00+00:00",
+        "actual": "2023-07-09T11:19:00+00:00",
+        "estimated_runway": "2023-07-09T11:19:00+00:00",
+        "actual_runway": "2023-07-09T11:19:00+00:00"
+      },
+      "airline": {
+        "name": "United Airlines",
+        "iata": "UA",
+        "icao": "UAL"
+      },
+      "flight": {
+        "number": "6190",
+        "iata": "UA6190",
+        "icao": "UAL6190",
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "24",
+        "delay": 13,
+        "scheduled": "2023-07-09T07:15:00+00:00",
+        "estimated": "2023-07-09T07:15:00+00:00",
+        "actual": "2023-07-09T07:27:00+00:00",
+        "estimated_runway": "2023-07-09T07:27:00+00:00",
+        "actual_runway": "2023-07-09T07:27:00+00:00"
+      },
+      "arrival": {
+        "airport": "Vancouver International",
+        "timezone": "America\/Vancouver",
+        "iata": "YVR",
+        "icao": "CYVR",
+        "terminal": "D",
+        "gate": "B15",
+        "baggage": "1",
+        "delay": null,
+        "scheduled": "2023-07-09T09:39:00+00:00",
+        "estimated": "2023-07-09T09:39:00+00:00",
+        "actual": "2023-07-09T09:26:00+00:00",
+        "estimated_runway": "2023-07-09T09:26:00+00:00",
+        "actual_runway": "2023-07-09T09:26:00+00:00"
+      },
+      "airline": {
+        "name": "Jet Linx Aviation",
+        "iata": "JL",
+        "icao": "JTL"
+      },
+      "flight": {
+        "number": "5717",
+        "iata": "JL5717",
+        "icao": "JTL5717",
+        "codeshared": {
+          "airline_name": "westjet",
+          "airline_iata": "ws",
+          "airline_icao": "wja",
+          "flight_number": "615",
+          "flight_iata": "ws615",
+          "flight_icao": "wja615"
+        }
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "active",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "6",
+        "delay": 6,
+        "scheduled": "2023-07-09T17:01:00+00:00",
+        "estimated": "2023-07-09T17:01:00+00:00",
+        "actual": "2023-07-09T17:07:00+00:00",
+        "estimated_runway": "2023-07-09T17:07:00+00:00",
+        "actual_runway": "2023-07-09T17:07:00+00:00"
+      },
+      "arrival": {
+        "airport": "Chicago O'hare International",
+        "timezone": "America\/Chicago",
+        "iata": "ORD",
+        "icao": "KORD",
+        "terminal": "1",
+        "gate": "B1",
+        "baggage": "2",
+        "delay": null,
+        "scheduled": "2023-07-09T18:17:00+00:00",
+        "estimated": "2023-07-09T18:17:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "Air Canada",
+        "iata": "AC",
+        "icao": "ACA"
+      },
+      "flight": {
+        "number": "3553",
+        "iata": "AC3553",
+        "icao": "ACA3553",
+        "codeshared": {
+          "airline_name": "united airlines",
+          "airline_iata": "ua",
+          "airline_icao": "ual",
+          "flight_number": "5773",
+          "flight_iata": "ua5773",
+          "flight_icao": "ual5773"
+        }
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "17",
+        "delay": 34,
+        "scheduled": "2023-07-09T07:05:00+00:00",
+        "estimated": "2023-07-09T07:05:00+00:00",
+        "actual": "2023-07-09T07:39:00+00:00",
+        "estimated_runway": "2023-07-09T07:39:00+00:00",
+        "actual_runway": "2023-07-09T07:39:00+00:00"
+      },
+      "arrival": {
+        "airport": "Vancouver International",
+        "timezone": "America\/Vancouver",
+        "iata": "YVR",
+        "icao": "CYVR",
+        "terminal": "D",
+        "gate": "C46",
+        "baggage": "4",
+        "delay": 17,
+        "scheduled": "2023-07-09T09:17:00+00:00",
+        "estimated": "2023-07-09T09:17:00+00:00",
+        "actual": "2023-07-09T09:34:00+00:00",
+        "estimated_runway": "2023-07-09T09:34:00+00:00",
+        "actual_runway": "2023-07-09T09:34:00+00:00"
+      },
+      "airline": {
+        "name": "Air Canada",
+        "iata": "AC",
+        "icao": "ACA"
+      },
+      "flight": {
+        "number": "341",
+        "iata": "AC341",
+        "icao": "ACA341",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "C-GEJL",
+        "iata": "B38M",
+        "icao": "B38M",
+        "icao24": "C0502E"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "active",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "5",
+        "delay": 7,
+        "scheduled": "2023-07-09T06:52:00+00:00",
+        "estimated": "2023-07-09T06:52:00+00:00",
+        "actual": "2023-07-09T06:58:00+00:00",
+        "estimated_runway": "2023-07-09T06:58:00+00:00",
+        "actual_runway": "2023-07-09T06:58:00+00:00"
+      },
+      "arrival": {
+        "airport": "Chicago O'hare International",
+        "timezone": "America\/Chicago",
+        "iata": "ORD",
+        "icao": "KORD",
+        "terminal": "2",
+        "gate": "F15",
+        "baggage": "2",
+        "delay": null,
+        "scheduled": "2023-07-09T08:05:00+00:00",
+        "estimated": "2023-07-09T08:05:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "Air Canada",
+        "iata": "AC",
+        "icao": "ACA"
+      },
+      "flight": {
+        "number": "4103",
+        "iata": "AC4103",
+        "icao": "ACA4103",
+        "codeshared": {
+          "airline_name": "united airlines",
+          "airline_iata": "ua",
+          "airline_icao": "ual",
+          "flight_number": "4392",
+          "flight_iata": "ua4392",
+          "flight_icao": "ual4392"
+        }
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "scheduled",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "23",
+        "delay": 48,
+        "scheduled": "2023-07-09T17:30:00+00:00",
+        "estimated": "2023-07-09T17:30:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Pierre Elliott Trudeau International",
+        "timezone": "America\/Montreal",
+        "iata": "YUL",
+        "icao": "CYUL",
+        "terminal": null,
+        "gate": "21",
+        "baggage": null,
+        "delay": null,
+        "scheduled": "2023-07-09T18:15:00+00:00",
+        "estimated": "2023-07-09T18:15:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "SWISS",
+        "iata": "LX",
+        "icao": "SWR"
+      },
+      "flight": {
+        "number": "4623",
+        "iata": "LX4623",
+        "icao": "SWR4623",
+        "codeshared": {
+          "airline_name": "air canada",
+          "airline_iata": "ac",
+          "airline_icao": "aca",
+          "flight_number": "8014",
+          "flight_iata": "ac8014",
+          "flight_icao": "aca8014"
+        }
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "active",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "5",
+        "delay": 7,
+        "scheduled": "2023-07-09T06:52:00+00:00",
+        "estimated": "2023-07-09T06:52:00+00:00",
+        "actual": "2023-07-09T06:58:00+00:00",
+        "estimated_runway": "2023-07-09T06:58:00+00:00",
+        "actual_runway": "2023-07-09T06:58:00+00:00"
+      },
+      "arrival": {
+        "airport": "Chicago O'hare International",
+        "timezone": "America\/Chicago",
+        "iata": "ORD",
+        "icao": "KORD",
+        "terminal": "2",
+        "gate": "F15",
+        "baggage": "2",
+        "delay": null,
+        "scheduled": "2023-07-09T08:05:00+00:00",
+        "estimated": "2023-07-09T08:05:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "ANA",
+        "iata": "NH",
+        "icao": "ANA"
+      },
+      "flight": {
+        "number": "7775",
+        "iata": "NH7775",
+        "icao": "ANA7775",
+        "codeshared": {
+          "airline_name": "united airlines",
+          "airline_iata": "ua",
+          "airline_icao": "ual",
+          "flight_number": "4392",
+          "flight_iata": "ua4392",
+          "flight_icao": "ual4392"
+        }
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "20",
+        "delay": null,
+        "scheduled": "2023-07-09T08:55:00+00:00",
+        "estimated": "2023-07-09T08:55:00+00:00",
+        "actual": "2023-07-09T08:47:00+00:00",
+        "estimated_runway": "2023-07-09T08:47:00+00:00",
+        "actual_runway": "2023-07-09T08:47:00+00:00"
+      },
+      "arrival": {
+        "airport": "Toronto City Centre Airport",
+        "timezone": "America\/Toronto",
+        "iata": "YTZ",
+        "icao": "CYTZ",
+        "terminal": "B",
+        "gate": "2",
+        "baggage": null,
+        "delay": null,
+        "scheduled": "2023-07-09T09:59:00+00:00",
+        "estimated": "2023-07-09T09:59:00+00:00",
+        "actual": "2023-07-09T09:36:00+00:00",
+        "estimated_runway": "2023-07-09T09:36:00+00:00",
+        "actual_runway": "2023-07-09T09:36:00+00:00"
+      },
+      "airline": {
+        "name": "Porter Airlines",
+        "iata": "PD",
+        "icao": "POE"
+      },
+      "flight": {
+        "number": "2210",
+        "iata": "PD2210",
+        "icao": "POE2210",
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "active",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "5",
+        "delay": 7,
+        "scheduled": "2023-07-09T06:52:00+00:00",
+        "estimated": "2023-07-09T06:52:00+00:00",
+        "actual": "2023-07-09T06:58:00+00:00",
+        "estimated_runway": "2023-07-09T06:58:00+00:00",
+        "actual_runway": "2023-07-09T06:58:00+00:00"
+      },
+      "arrival": {
+        "airport": "Chicago O'hare International",
+        "timezone": "America\/Chicago",
+        "iata": "ORD",
+        "icao": "KORD",
+        "terminal": "2",
+        "gate": "F15",
+        "baggage": "2",
+        "delay": null,
+        "scheduled": "2023-07-09T08:05:00+00:00",
+        "estimated": "2023-07-09T08:05:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "Air New Zealand",
+        "iata": "NZ",
+        "icao": "ANZ"
+      },
+      "flight": {
+        "number": "9897",
+        "iata": "NZ9897",
+        "icao": "ANZ9897",
+        "codeshared": {
+          "airline_name": "united airlines",
+          "airline_iata": "ua",
+          "airline_icao": "ual",
+          "flight_number": "4392",
+          "flight_iata": "ua4392",
+          "flight_icao": "ual4392"
+        }
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "scheduled",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "22",
+        "delay": null,
+        "scheduled": "2023-07-09T20:35:00+00:00",
+        "estimated": "2023-07-09T20:35:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Greater Moncton International Airport",
+        "timezone": "America\/Moncton",
+        "iata": "YQM",
+        "icao": "CYQM",
+        "terminal": "1",
+        "gate": null,
+        "baggage": null,
+        "delay": null,
+        "scheduled": "2023-07-09T23:17:00+00:00",
+        "estimated": "2023-07-09T23:17:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "Porter Airlines",
+        "iata": "PD",
+        "icao": "POE"
+      },
+      "flight": {
+        "number": "2373",
+        "iata": "PD2373",
+        "icao": "POE2373",
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "active",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "6",
+        "delay": 6,
+        "scheduled": "2023-07-09T17:01:00+00:00",
+        "estimated": "2023-07-09T17:01:00+00:00",
+        "actual": "2023-07-09T17:07:00+00:00",
+        "estimated_runway": "2023-07-09T17:07:00+00:00",
+        "actual_runway": "2023-07-09T17:07:00+00:00"
+      },
+      "arrival": {
+        "airport": "Chicago O'hare International",
+        "timezone": "America\/Chicago",
+        "iata": "ORD",
+        "icao": "KORD",
+        "terminal": "1",
+        "gate": "B1",
+        "baggage": "2",
+        "delay": null,
+        "scheduled": "2023-07-09T18:17:00+00:00",
+        "estimated": "2023-07-09T18:17:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "Air New Zealand",
+        "iata": "NZ",
+        "icao": "ANZ"
+      },
+      "flight": {
+        "number": "9941",
+        "iata": "NZ9941",
+        "icao": "ANZ9941",
+        "codeshared": {
+          "airline_name": "united airlines",
+          "airline_iata": "ua",
+          "airline_icao": "ual",
+          "flight_number": "5773",
+          "flight_iata": "ua5773",
+          "flight_icao": "ual5773"
+        }
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "20",
+        "delay": 13,
+        "scheduled": "2023-07-09T13:15:00+00:00",
+        "estimated": "2023-07-09T13:15:00+00:00",
+        "actual": "2023-07-09T13:28:00+00:00",
+        "estimated_runway": "2023-07-09T13:28:00+00:00",
+        "actual_runway": "2023-07-09T13:28:00+00:00"
+      },
+      "arrival": {
+        "airport": "Toronto City Centre Airport",
+        "timezone": "America\/Toronto",
+        "iata": "YTZ",
+        "icao": "CYTZ",
+        "terminal": "B",
+        "gate": "4",
+        "baggage": null,
+        "delay": null,
+        "scheduled": "2023-07-09T14:19:00+00:00",
+        "estimated": "2023-07-09T14:19:00+00:00",
+        "actual": "2023-07-09T14:15:00+00:00",
+        "estimated_runway": "2023-07-09T14:15:00+00:00",
+        "actual_runway": "2023-07-09T14:15:00+00:00"
+      },
+      "airline": {
+        "name": "Porter Airlines",
+        "iata": "PD",
+        "icao": "POE"
+      },
+      "flight": {
+        "number": "2228",
+        "iata": "PD2228",
+        "icao": "POE2228",
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "scheduled",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "5",
+        "delay": 7,
+        "scheduled": "2023-07-09T06:52:00+00:00",
+        "estimated": "2023-07-09T06:52:00+00:00",
+        "actual": "2023-07-09T06:58:00+00:00",
+        "estimated_runway": "2023-07-09T06:58:00+00:00",
+        "actual_runway": "2023-07-09T06:58:00+00:00"
+      },
+      "arrival": {
+        "airport": "Chicago O'hare International",
+        "timezone": "America\/Chicago",
+        "iata": "ORD",
+        "icao": "KORD",
+        "terminal": "2",
+        "gate": "F15",
+        "baggage": "2",
+        "delay": null,
+        "scheduled": "2023-07-09T08:05:00+00:00",
+        "estimated": "2023-07-09T08:05:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "United Airlines",
+        "iata": "UA",
+        "icao": "UAL"
+      },
+      "flight": {
+        "number": "4392",
+        "iata": "UA4392",
+        "icao": "UAL4392",
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "scheduled",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": null,
+        "delay": 13,
+        "scheduled": "2023-07-09T19:30:00+00:00",
+        "estimated": "2023-07-09T19:30:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Pierre Elliott Trudeau International",
+        "timezone": "America\/Montreal",
+        "iata": "YUL",
+        "icao": "CYUL",
+        "terminal": "A",
+        "gate": null,
+        "baggage": null,
+        "delay": null,
+        "scheduled": "2023-07-09T20:09:00+00:00",
+        "estimated": "2023-07-09T20:09:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "empty",
+        "iata": null,
+        "icao": null
+      },
+      "flight": {
+        "number": null,
+        "iata": null,
+        "icao": null,
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "scheduled",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "6",
+        "delay": 6,
+        "scheduled": "2023-07-09T17:01:00+00:00",
+        "estimated": "2023-07-09T17:01:00+00:00",
+        "actual": "2023-07-09T17:07:00+00:00",
+        "estimated_runway": "2023-07-09T17:07:00+00:00",
+        "actual_runway": "2023-07-09T17:07:00+00:00"
+      },
+      "arrival": {
+        "airport": "Chicago O'hare International",
+        "timezone": "America\/Chicago",
+        "iata": "ORD",
+        "icao": "KORD",
+        "terminal": "1",
+        "gate": "B1",
+        "baggage": "2",
+        "delay": null,
+        "scheduled": "2023-07-09T18:17:00+00:00",
+        "estimated": "2023-07-09T18:17:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "United Airlines",
+        "iata": "UA",
+        "icao": "UAL"
+      },
+      "flight": {
+        "number": "5773",
+        "iata": "UA5773",
+        "icao": "UAL5773",
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "active",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": null,
+        "delay": null,
+        "scheduled": "2023-07-09T19:00:00+00:00",
+        "estimated": "2023-07-09T19:00:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Riga International",
+        "timezone": "Europe\/Riga",
+        "iata": "RIX",
+        "icao": "EVRA",
+        "terminal": null,
+        "gate": null,
+        "baggage": null,
+        "delay": null,
+        "scheduled": "2023-07-10T09:23:00+00:00",
+        "estimated": "2023-07-10T09:23:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "Canada - Royal Canadian Air Force",
+        "iata": null,
+        "icao": "CFC"
+      },
+      "flight": {
+        "number": "1",
+        "iata": null,
+        "icao": "CFC1",
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "scheduled",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "20",
+        "delay": null,
+        "scheduled": "2023-07-09T20:45:00+00:00",
+        "estimated": "2023-07-09T20:45:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Toronto City Centre Airport",
+        "timezone": "America\/Toronto",
+        "iata": "YTZ",
+        "icao": "CYTZ",
+        "terminal": null,
+        "gate": null,
+        "baggage": null,
+        "delay": null,
+        "scheduled": "2023-07-09T21:49:00+00:00",
+        "estimated": "2023-07-09T21:49:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "Porter Airlines",
+        "iata": "PD",
+        "icao": "POE"
+      },
+      "flight": {
+        "number": "2268",
+        "iata": "PD2268",
+        "icao": "POE2268",
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "13",
+        "delay": 23,
+        "scheduled": "2023-07-09T12:15:00+00:00",
+        "estimated": "2023-07-09T12:15:00+00:00",
+        "actual": "2023-07-09T12:37:00+00:00",
+        "estimated_runway": "2023-07-09T12:37:00+00:00",
+        "actual_runway": "2023-07-09T12:37:00+00:00"
+      },
+      "arrival": {
+        "airport": "Toronto City Centre Airport",
+        "timezone": "America\/Toronto",
+        "iata": "YTZ",
+        "icao": "CYTZ",
+        "terminal": "B",
+        "gate": "2",
+        "baggage": null,
+        "delay": 13,
+        "scheduled": "2023-07-09T13:19:00+00:00",
+        "estimated": "2023-07-09T13:19:00+00:00",
+        "actual": "2023-07-09T13:27:00+00:00",
+        "estimated_runway": "2023-07-09T13:27:00+00:00",
+        "actual_runway": "2023-07-09T13:27:00+00:00"
+      },
+      "airline": {
+        "name": "Porter Airlines",
+        "iata": "PD",
+        "icao": "POE"
+      },
+      "flight": {
+        "number": "2226",
+        "iata": "PD2226",
+        "icao": "POE2226",
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "scheduled",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": null,
+        "delay": null,
+        "scheduled": "2023-07-09T20:30:00+00:00",
+        "estimated": "2023-07-09T20:30:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Edmonton International Airport",
+        "timezone": "America\/Edmonton",
+        "iata": "YEG",
+        "icao": "CYEG",
+        "terminal": "MA",
+        "gate": null,
+        "baggage": null,
+        "delay": null,
+        "scheduled": "2023-07-09T22:55:00+00:00",
+        "estimated": "2023-07-09T22:55:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "empty",
+        "iata": null,
+        "icao": null
+      },
+      "flight": {
+        "number": "1438",
+        "iata": null,
+        "icao": null,
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "scheduled",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "27",
+        "delay": 60,
+        "scheduled": "2023-07-09T21:05:00+00:00",
+        "estimated": "2023-07-09T21:05:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Edmonton International Airport",
+        "timezone": "America\/Edmonton",
+        "iata": "YEG",
+        "icao": "CYEG",
+        "terminal": null,
+        "gate": "56",
+        "baggage": null,
+        "delay": null,
+        "scheduled": "2023-07-09T23:22:00+00:00",
+        "estimated": "2023-07-09T23:22:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "Air Canada",
+        "iata": "AC",
+        "icao": "ACA"
+      },
+      "flight": {
+        "number": "357",
+        "iata": "AC357",
+        "icao": "ACA357",
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "active",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": null,
+        "delay": null,
+        "scheduled": "2023-07-09T14:27:00+00:00",
+        "estimated": "2023-07-09T14:27:00+00:00",
+        "actual": "2023-07-09T13:52:00+00:00",
+        "estimated_runway": "2023-07-09T13:52:00+00:00",
+        "actual_runway": "2023-07-09T13:52:00+00:00"
+      },
+      "arrival": {
+        "airport": "Peterborough",
+        "timezone": "America\/Toronto",
+        "iata": "YPQ",
+        "icao": "CYPQ",
+        "terminal": null,
+        "gate": null,
+        "baggage": null,
+        "delay": null,
+        "scheduled": "2023-07-09T15:15:00+00:00",
+        "estimated": "2023-07-09T15:15:00+00:00",
+        "actual": "2023-07-09T14:22:00+00:00",
+        "estimated_runway": "2023-07-09T14:22:00+00:00",
+        "actual_runway": "2023-07-09T14:22:00+00:00"
+      },
+      "airline": {
+        "name": "NetJets Aviation",
+        "iata": "1I",
+        "icao": "EJA"
+      },
+      "flight": {
+        "number": "364",
+        "iata": "1I364",
+        "icao": "EJA364",
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "scheduled",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "28",
+        "delay": 1,
+        "scheduled": "2023-07-09T20:30:00+00:00",
+        "estimated": "2023-07-09T20:30:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Edmonton International Airport",
+        "timezone": "America\/Edmonton",
+        "iata": "YEG",
+        "icao": "CYEG",
+        "terminal": "MA",
+        "gate": null,
+        "baggage": null,
+        "delay": null,
+        "scheduled": "2023-07-09T22:55:00+00:00",
+        "estimated": "2023-07-09T22:55:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "Flair Airlines",
+        "iata": "F8",
+        "icao": "FLE"
+      },
+      "flight": {
+        "number": "799",
+        "iata": "F8799",
+        "icao": "FLE799",
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": null,
+        "delay": 10,
+        "scheduled": "2023-07-09T06:00:00+00:00",
+        "estimated": "2023-07-09T06:00:00+00:00",
+        "actual": "2023-07-09T06:10:00+00:00",
+        "estimated_runway": "2023-07-09T06:10:00+00:00",
+        "actual_runway": "2023-07-09T06:10:00+00:00"
+      },
+      "arrival": {
+        "airport": "Pierre Elliott Trudeau International",
+        "timezone": "America\/Montreal",
+        "iata": "YUL",
+        "icao": "CYUL",
+        "terminal": "1",
+        "gate": null,
+        "baggage": null,
+        "delay": null,
+        "scheduled": "2023-07-09T06:43:00+00:00",
+        "estimated": "2023-07-09T06:43:00+00:00",
+        "actual": "2023-07-09T06:35:00+00:00",
+        "estimated_runway": "2023-07-09T06:35:00+00:00",
+        "actual_runway": "2023-07-09T06:35:00+00:00"
+      },
+      "airline": {
+        "name": "Air Canada",
+        "iata": "AC",
+        "icao": "ACA"
+      },
+      "flight": {
+        "number": "2",
+        "iata": "AC2",
+        "icao": "ACA2",
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "active",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "26",
+        "delay": 9,
+        "scheduled": "2023-07-09T15:00:00+00:00",
+        "estimated": "2023-07-09T15:00:00+00:00",
+        "actual": "2023-07-09T15:08:00+00:00",
+        "estimated_runway": "2023-07-09T15:08:00+00:00",
+        "actual_runway": "2023-07-09T15:08:00+00:00"
+      },
+      "arrival": {
+        "airport": "Edmonton International Airport",
+        "timezone": "America\/Edmonton",
+        "iata": "YEG",
+        "icao": "CYEG",
+        "terminal": "MA",
+        "gate": "64",
+        "baggage": null,
+        "delay": null,
+        "scheduled": "2023-07-09T17:15:00+00:00",
+        "estimated": "2023-07-09T17:15:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "WestJet",
+        "iata": "WS",
+        "icao": "WJA"
+      },
+      "flight": {
+        "number": "225",
+        "iata": "WS225",
+        "icao": "WJA225",
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "25",
+        "delay": 18,
+        "scheduled": "2023-07-09T11:15:00+00:00",
+        "estimated": "2023-07-09T11:15:00+00:00",
+        "actual": "2023-07-09T11:32:00+00:00",
+        "estimated_runway": "2023-07-09T11:32:00+00:00",
+        "actual_runway": "2023-07-09T11:32:00+00:00"
+      },
+      "arrival": {
+        "airport": "Pierre Elliott Trudeau International",
+        "timezone": "America\/Montreal",
+        "iata": "YUL",
+        "icao": "CYUL",
+        "terminal": "A",
+        "gate": "30",
+        "baggage": null,
+        "delay": 2,
+        "scheduled": "2023-07-09T11:59:00+00:00",
+        "estimated": "2023-07-09T11:59:00+00:00",
+        "actual": "2023-07-09T12:00:00+00:00",
+        "estimated_runway": "2023-07-09T12:00:00+00:00",
+        "actual_runway": "2023-07-09T12:00:00+00:00"
+      },
+      "airline": {
+        "name": "Air Canada",
+        "iata": "AC",
+        "icao": "ACA"
+      },
+      "flight": {
+        "number": "8006",
+        "iata": "AC8006",
+        "icao": "ACA8006",
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "active",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "13",
+        "delay": 17,
+        "scheduled": "2023-07-09T15:40:00+00:00",
+        "estimated": "2023-07-09T15:40:00+00:00",
+        "actual": "2023-07-09T15:56:00+00:00",
+        "estimated_runway": "2023-07-09T15:56:00+00:00",
+        "actual_runway": "2023-07-09T15:56:00+00:00"
+      },
+      "arrival": {
+        "airport": "Iqaluit",
+        "timezone": "America\/Iqaluit",
+        "iata": "YFB",
+        "icao": "CYFB",
+        "terminal": null,
+        "gate": null,
+        "baggage": null,
+        "delay": null,
+        "scheduled": "2023-07-09T18:50:00+00:00",
+        "estimated": "2023-07-09T18:50:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "Canadian North",
+        "iata": "5T",
+        "icao": "AKT"
+      },
+      "flight": {
+        "number": "103",
+        "iata": "5T103",
+        "icao": "AKT103",
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "27",
+        "delay": 18,
+        "scheduled": "2023-07-09T10:00:00+00:00",
+        "estimated": "2023-07-09T10:00:00+00:00",
+        "actual": "2023-07-09T10:18:00+00:00",
+        "estimated_runway": "2023-07-09T10:18:00+00:00",
+        "actual_runway": "2023-07-09T10:18:00+00:00"
+      },
+      "arrival": {
+        "airport": "Iqaluit",
+        "timezone": "America\/Iqaluit",
+        "iata": "YFB",
+        "icao": "CYFB",
+        "terminal": null,
+        "gate": null,
+        "baggage": null,
+        "delay": 5,
+        "scheduled": "2023-07-09T13:10:00+00:00",
+        "estimated": "2023-07-09T13:10:00+00:00",
+        "actual": "2023-07-09T12:53:00+00:00",
+        "estimated_runway": "2023-07-09T12:53:00+00:00",
+        "actual_runway": "2023-07-09T12:53:00+00:00"
+      },
+      "airline": {
+        "name": "Canadian North",
+        "iata": "5T",
+        "icao": "AKT"
+      },
+      "flight": {
+        "number": "129",
+        "iata": "5T129",
+        "icao": "AKT129",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "C-GICN",
+        "iata": "B733",
+        "icao": "B733",
+        "icao24": "C05A0A"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": null,
+        "delay": 6,
+        "scheduled": "2023-07-09T07:00:00+00:00",
+        "estimated": "2023-07-09T07:00:00+00:00",
+        "actual": "2023-07-09T07:06:00+00:00",
+        "estimated_runway": "2023-07-09T07:06:00+00:00",
+        "actual_runway": "2023-07-09T07:06:00+00:00"
+      },
+      "arrival": {
+        "airport": "Iqaluit",
+        "timezone": "America\/Iqaluit",
+        "iata": "YFB",
+        "icao": "CYFB",
+        "terminal": null,
+        "gate": null,
+        "baggage": null,
+        "delay": null,
+        "scheduled": "2023-07-09T10:00:00+00:00",
+        "estimated": "2023-07-09T10:00:00+00:00",
+        "actual": "2023-07-09T09:32:00+00:00",
+        "estimated_runway": "2023-07-09T09:32:00+00:00",
+        "actual_runway": "2023-07-09T09:32:00+00:00"
+      },
+      "airline": {
+        "name": "Cargojet",
+        "iata": "W8",
+        "icao": "CJT"
+      },
+      "flight": {
+        "number": "470",
+        "iata": "W8470",
+        "icao": "CJT470",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "C-FPIJ",
+        "iata": "B763",
+        "icao": "B763",
+        "icao24": "C02876"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "scheduled",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": null,
+        "delay": null,
+        "scheduled": "2023-07-09T11:05:00+00:00",
+        "estimated": "2023-07-09T11:05:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Fredericton",
+        "timezone": "America\/Moncton",
+        "iata": "YFC",
+        "icao": "CYFC",
+        "terminal": null,
+        "gate": null,
+        "baggage": null,
+        "delay": null,
+        "scheduled": "2023-07-09T13:32:00+00:00",
+        "estimated": "2023-07-09T13:32:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "empty",
+        "iata": null,
+        "icao": null
+      },
+      "flight": {
+        "number": "2375",
+        "iata": null,
+        "icao": null,
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "scheduled",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "25",
+        "delay": 13,
+        "scheduled": "2023-07-09T19:30:00+00:00",
+        "estimated": "2023-07-09T19:30:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Pierre Elliott Trudeau International",
+        "timezone": "America\/Montreal",
+        "iata": "YUL",
+        "icao": "CYUL",
+        "terminal": "A",
+        "gate": "27",
+        "baggage": null,
+        "delay": null,
+        "scheduled": "2023-07-09T20:15:00+00:00",
+        "estimated": "2023-07-09T20:15:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "Air Canada",
+        "iata": "AC",
+        "icao": "ACA"
+      },
+      "flight": {
+        "number": "8016",
+        "iata": "AC8016",
+        "icao": "ACA8016",
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "22",
+        "delay": 8,
+        "scheduled": "2023-07-09T11:05:00+00:00",
+        "estimated": "2023-07-09T11:05:00+00:00",
+        "actual": "2023-07-09T11:12:00+00:00",
+        "estimated_runway": "2023-07-09T11:12:00+00:00",
+        "actual_runway": "2023-07-09T11:12:00+00:00"
+      },
+      "arrival": {
+        "airport": "Fredericton",
+        "timezone": "America\/Moncton",
+        "iata": "YFC",
+        "icao": "CYFC",
+        "terminal": null,
+        "gate": null,
+        "baggage": null,
+        "delay": 3,
+        "scheduled": "2023-07-09T13:32:00+00:00",
+        "estimated": "2023-07-09T13:32:00+00:00",
+        "actual": "2023-07-09T13:35:00+00:00",
+        "estimated_runway": "2023-07-09T13:35:00+00:00",
+        "actual_runway": "2023-07-09T13:35:00+00:00"
+      },
+      "airline": {
+        "name": "Porter Airlines",
+        "iata": "PD",
+        "icao": "POE"
+      },
+      "flight": {
+        "number": "2375",
+        "iata": "PD2375",
+        "icao": "POE2375",
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "active",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "25",
+        "delay": 13,
+        "scheduled": "2023-07-09T19:30:00+00:00",
+        "estimated": "2023-07-09T19:30:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Pierre Elliott Trudeau International",
+        "timezone": "America\/Montreal",
+        "iata": "YUL",
+        "icao": "CYUL",
+        "terminal": null,
+        "gate": "27",
+        "baggage": null,
+        "delay": null,
+        "scheduled": "2023-07-09T20:15:00+00:00",
+        "estimated": "2023-07-09T20:15:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "Lufthansa",
+        "iata": "LH",
+        "icao": "DLH"
+      },
+      "flight": {
+        "number": "6563",
+        "iata": "LH6563",
+        "icao": "DLH6563",
+        "codeshared": {
+          "airline_name": "air canada",
+          "airline_iata": "ac",
+          "airline_icao": "aca",
+          "flight_number": "8016",
+          "flight_iata": "ac8016",
+          "flight_icao": "aca8016"
+        }
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "scheduled",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": null,
+        "delay": 10,
+        "scheduled": "2023-07-09T18:35:00+00:00",
+        "estimated": "2023-07-09T18:35:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Halifax International",
+        "timezone": "America\/Halifax",
+        "iata": "YHZ",
+        "icao": "CYHZ",
+        "terminal": "1",
+        "gate": null,
+        "baggage": null,
+        "delay": null,
+        "scheduled": "2023-07-09T21:23:00+00:00",
+        "estimated": "2023-07-09T21:23:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "empty",
+        "iata": null,
+        "icao": null
+      },
+      "flight": {
+        "number": null,
+        "iata": null,
+        "icao": null,
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "scheduled",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "23",
+        "delay": 48,
+        "scheduled": "2023-07-09T17:30:00+00:00",
+        "estimated": "2023-07-09T17:30:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Pierre Elliott Trudeau International",
+        "timezone": "America\/Montreal",
+        "iata": "YUL",
+        "icao": "CYUL",
+        "terminal": "A",
+        "gate": "21",
+        "baggage": null,
+        "delay": null,
+        "scheduled": "2023-07-09T18:15:00+00:00",
+        "estimated": "2023-07-09T18:15:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "Air Canada",
+        "iata": "AC",
+        "icao": "ACA"
+      },
+      "flight": {
+        "number": "8014",
+        "iata": "AC8014",
+        "icao": "ACA8014",
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "scheduled",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "27",
+        "delay": 75,
+        "scheduled": "2023-07-09T16:05:00+00:00",
+        "estimated": "2023-07-09T16:05:00+00:00",
+        "actual": "2023-07-09T17:41:00+00:00",
+        "estimated_runway": "2023-07-09T17:41:00+00:00",
+        "actual_runway": "2023-07-09T17:41:00+00:00"
+      },
+      "arrival": {
+        "airport": "Halifax International",
+        "timezone": "America\/Halifax",
+        "iata": "YHZ",
+        "icao": "CYHZ",
+        "terminal": "1",
+        "gate": "23",
+        "baggage": null,
+        "delay": 81,
+        "scheduled": "2023-07-09T18:44:00+00:00",
+        "estimated": "2023-07-09T18:44:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "Air Canada",
+        "iata": "AC",
+        "icao": "ACA"
+      },
+      "flight": {
+        "number": "628",
+        "iata": "AC628",
+        "icao": "ACA628",
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "scheduled",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "14",
+        "delay": 2,
+        "scheduled": "2023-07-09T10:50:00+00:00",
+        "estimated": "2023-07-09T10:50:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Pierre Elliott Trudeau International",
+        "timezone": "America\/Montreal",
+        "iata": "YUL",
+        "icao": "CYUL",
+        "terminal": "A",
+        "gate": "A2",
+        "baggage": null,
+        "delay": null,
+        "scheduled": "2023-07-09T11:35:00+00:00",
+        "estimated": "2023-07-09T11:35:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "Air Canada",
+        "iata": "AC",
+        "icao": "ACA"
+      },
+      "flight": {
+        "number": "8004",
+        "iata": "AC8004",
+        "icao": "ACA8004",
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": null,
+        "delay": 5,
+        "scheduled": "2023-07-09T07:20:00+00:00",
+        "estimated": "2023-07-09T07:20:00+00:00",
+        "actual": "2023-07-09T07:24:00+00:00",
+        "estimated_runway": "2023-07-09T07:24:00+00:00",
+        "actual_runway": "2023-07-09T07:24:00+00:00"
+      },
+      "arrival": {
+        "airport": "Halifax International",
+        "timezone": "America\/Halifax",
+        "iata": "YHZ",
+        "icao": "CYHZ",
+        "terminal": "1",
+        "gate": null,
+        "baggage": null,
+        "delay": 1,
+        "scheduled": "2023-07-09T10:09:00+00:00",
+        "estimated": "2023-07-09T10:09:00+00:00",
+        "actual": "2023-07-09T10:06:00+00:00",
+        "estimated_runway": "2023-07-09T10:06:00+00:00",
+        "actual_runway": "2023-07-09T10:06:00+00:00"
+      },
+      "airline": {
+        "name": "Air Canada",
+        "iata": "AC",
+        "icao": "ACA"
+      },
+      "flight": {
+        "number": "64",
+        "iata": "AC64",
+        "icao": "ACA64",
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "scheduled",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": null,
+        "delay": 50,
+        "scheduled": "2023-07-09T17:30:00+00:00",
+        "estimated": "2023-07-09T17:30:00+00:00",
+        "actual": "2023-07-09T18:19:00+00:00",
+        "estimated_runway": "2023-07-09T18:19:00+00:00",
+        "actual_runway": "2023-07-09T18:19:00+00:00"
+      },
+      "arrival": {
+        "airport": "Pierre Elliott Trudeau International",
+        "timezone": "America\/Montreal",
+        "iata": "YUL",
+        "icao": "CYUL",
+        "terminal": null,
+        "gate": null,
+        "baggage": null,
+        "delay": null,
+        "scheduled": "2023-07-09T18:15:00+00:00",
+        "estimated": "2023-07-09T18:15:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "Air Canada",
+        "iata": "AC",
+        "icao": "ACA"
+      },
+      "flight": {
+        "number": "14",
+        "iata": "AC14",
+        "icao": "ACA14",
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "active",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": null,
+        "delay": null,
+        "scheduled": "2023-07-09T14:27:00+00:00",
+        "estimated": "2023-07-09T14:27:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Peterborough",
+        "timezone": "America\/Toronto",
+        "iata": "YPQ",
+        "icao": "CYPQ",
+        "terminal": null,
+        "gate": null,
+        "baggage": null,
+        "delay": null,
+        "scheduled": "2023-07-09T15:15:00+00:00",
+        "estimated": "2023-07-09T15:15:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "NetJets Aviation",
+        "iata": "1I",
+        "icao": "EJA"
+      },
+      "flight": {
+        "number": null,
+        "iata": "1I",
+        "icao": "EJA",
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "scheduled",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "25",
+        "delay": 4,
+        "scheduled": "2023-07-09T07:20:00+00:00",
+        "estimated": "2023-07-09T07:20:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Halifax International",
+        "timezone": "America\/Halifax",
+        "iata": "YHZ",
+        "icao": "CYHZ",
+        "terminal": "1",
+        "gate": "9",
+        "baggage": null,
+        "delay": null,
+        "scheduled": "2023-07-09T10:13:00+00:00",
+        "estimated": "2023-07-09T10:13:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "Air Canada",
+        "iata": "AC",
+        "icao": "ACA"
+      },
+      "flight": {
+        "number": "8064",
+        "iata": "AC8064",
+        "icao": "ACA8064",
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "active",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "14",
+        "delay": 150,
+        "scheduled": "2023-07-09T15:45:00+00:00",
+        "estimated": "2023-07-09T15:45:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Pierre Elliott Trudeau International",
+        "timezone": "America\/Montreal",
+        "iata": "YUL",
+        "icao": "CYUL",
+        "terminal": "A",
+        "gate": "10",
+        "baggage": null,
+        "delay": null,
+        "scheduled": "2023-07-09T16:28:00+00:00",
+        "estimated": "2023-07-09T16:28:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "SWISS",
+        "iata": "LX",
+        "icao": "SWR"
+      },
+      "flight": {
+        "number": "4621",
+        "iata": "LX4621",
+        "icao": "SWR4621",
+        "codeshared": {
+          "airline_name": "air canada",
+          "airline_iata": "ac",
+          "airline_icao": "aca",
+          "flight_number": "8012",
+          "flight_iata": "ac8012",
+          "flight_icao": "aca8012"
+        }
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "scheduled",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "13",
+        "delay": 10,
+        "scheduled": "2023-07-09T18:35:00+00:00",
+        "estimated": "2023-07-09T18:35:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Halifax International",
+        "timezone": "America\/Halifax",
+        "iata": "YHZ",
+        "icao": "CYHZ",
+        "terminal": "1",
+        "gate": "2A",
+        "baggage": null,
+        "delay": null,
+        "scheduled": "2023-07-09T21:28:00+00:00",
+        "estimated": "2023-07-09T21:28:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "Air Canada",
+        "iata": "AC",
+        "icao": "ACA"
+      },
+      "flight": {
+        "number": "8070",
+        "iata": "AC8070",
+        "icao": "ACA8070",
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "28",
+        "delay": 12,
+        "scheduled": "2023-07-09T13:15:00+00:00",
+        "estimated": "2023-07-09T13:15:00+00:00",
+        "actual": "2023-07-09T13:26:00+00:00",
+        "estimated_runway": "2023-07-09T13:26:00+00:00",
+        "actual_runway": "2023-07-09T13:26:00+00:00"
+      },
+      "arrival": {
+        "airport": "Halifax International",
+        "timezone": "America\/Halifax",
+        "iata": "YHZ",
+        "icao": "CYHZ",
+        "terminal": "1",
+        "gate": "18",
+        "baggage": null,
+        "delay": null,
+        "scheduled": "2023-07-09T16:00:00+00:00",
+        "estimated": "2023-07-09T16:00:00+00:00",
+        "actual": "2023-07-09T15:46:00+00:00",
+        "estimated_runway": "2023-07-09T15:46:00+00:00",
+        "actual_runway": "2023-07-09T15:46:00+00:00"
+      },
+      "airline": {
+        "name": "Flair Airlines",
+        "iata": "F8",
+        "icao": "FLE"
+      },
+      "flight": {
+        "number": "302",
+        "iata": "F8302",
+        "icao": "FLE302",
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "active",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "14",
+        "delay": 150,
+        "scheduled": "2023-07-09T15:45:00+00:00",
+        "estimated": "2023-07-09T15:45:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Pierre Elliott Trudeau International",
+        "timezone": "America\/Montreal",
+        "iata": "YUL",
+        "icao": "CYUL",
+        "terminal": "A",
+        "gate": "10",
+        "baggage": null,
+        "delay": null,
+        "scheduled": "2023-07-09T16:28:00+00:00",
+        "estimated": "2023-07-09T16:28:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "Lufthansa",
+        "iata": "LH",
+        "icao": "DLH"
+      },
+      "flight": {
+        "number": "6693",
+        "iata": "LH6693",
+        "icao": "DLH6693",
+        "codeshared": {
+          "airline_name": "air canada",
+          "airline_iata": "ac",
+          "airline_icao": "aca",
+          "flight_number": "8012",
+          "flight_iata": "ac8012",
+          "flight_icao": "aca8012"
+        }
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "22",
+        "delay": null,
+        "scheduled": "2023-07-09T09:25:00+00:00",
+        "estimated": "2023-07-09T09:25:00+00:00",
+        "actual": "2023-07-09T09:24:00+00:00",
+        "estimated_runway": "2023-07-09T09:24:00+00:00",
+        "actual_runway": "2023-07-09T09:24:00+00:00"
+      },
+      "arrival": {
+        "airport": "Halifax International",
+        "timezone": "America\/Halifax",
+        "iata": "YHZ",
+        "icao": "CYHZ",
+        "terminal": "1",
+        "gate": "15",
+        "baggage": null,
+        "delay": null,
+        "scheduled": "2023-07-09T12:17:00+00:00",
+        "estimated": "2023-07-09T12:17:00+00:00",
+        "actual": "2023-07-09T12:04:00+00:00",
+        "estimated_runway": "2023-07-09T12:04:00+00:00",
+        "actual_runway": "2023-07-09T12:04:00+00:00"
+      },
+      "airline": {
+        "name": "Porter Airlines",
+        "iata": "PD",
+        "icao": "POE"
+      },
+      "flight": {
+        "number": "2301",
+        "iata": "PD2301",
+        "icao": "POE2301",
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2023-07-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Ottawa Macdonald-Cartier International",
+        "timezone": "America\/Toronto",
+        "iata": "YOW",
+        "icao": "CYOW",
+        "terminal": null,
+        "gate": "22",
+        "delay": 2,
+        "scheduled": "2023-07-09T12:20:00+00:00",
+        "estimated": "2023-07-09T12:20:00+00:00",
+        "actual": "2023-07-09T12:21:00+00:00",
+        "estimated_runway": "2023-07-09T12:21:00+00:00",
+        "actual_runway": "2023-07-09T12:21:00+00:00"
+      },
+      "arrival": {
+        "airport": "Halifax International",
+        "timezone": "America\/Halifax",
+        "iata": "YHZ",
+        "icao": "CYHZ",
+        "terminal": "1",
+        "gate": "15",
+        "baggage": null,
+        "delay": null,
+        "scheduled": "2023-07-09T15:12:00+00:00",
+        "estimated": "2023-07-09T15:12:00+00:00",
+        "actual": "2023-07-09T15:02:00+00:00",
+        "estimated_runway": "2023-07-09T15:02:00+00:00",
+        "actual_runway": "2023-07-09T15:02:00+00:00"
+      },
+      "airline": {
+        "name": "Porter Airlines",
+        "iata": "PD",
+        "icao": "POE"
+      },
+      "flight": {
+        "number": "2233",
+        "iata": "PD2233",
+        "icao": "POE2233",
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    }
+  ]
+}
