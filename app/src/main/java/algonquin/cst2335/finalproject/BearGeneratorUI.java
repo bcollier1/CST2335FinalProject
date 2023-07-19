@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
@@ -34,13 +35,23 @@ public class BearGeneratorUI extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityBearGeneratorUiBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        SharedPreferences prefs = getSharedPreferences("MyData", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = prefs.edit();
         Context context = getApplicationContext();
         recyclerView = binding.recyclerView;
+
+        binding.widthInput.setText(prefs.getString("Width",""));
+        binding.heightInput.setText(prefs.getString("Height",""));
 
         uploadBTN = binding.newImage;
         deleteBTN = binding.garbageButton;
 
         uploadBTN.setOnClickListener(clk ->{
+            String width = binding.widthInput.getText().toString();
+            String height = binding.heightInput.getText().toString();
+            editor.putString("Width", width);
+            editor.putString("Height", height);
+            editor.apply();
             if(imageView != null){
                 Toast toast = Toast.makeText(context, "Upload Success!", Toast.LENGTH_SHORT);
                 toast.show();
