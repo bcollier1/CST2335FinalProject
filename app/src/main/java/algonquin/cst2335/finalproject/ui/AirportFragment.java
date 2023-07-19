@@ -1,4 +1,4 @@
-package algonquin.cst2335.finalproject;
+package algonquin.cst2335.finalproject.ui;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,6 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import algonquin.cst2335.finalproject.R;
 import algonquin.cst2335.finalproject.data.Airport;
 import algonquin.cst2335.finalproject.data.AirportViewModel;
 import algonquin.cst2335.finalproject.databinding.AirportFragmentBinding;
