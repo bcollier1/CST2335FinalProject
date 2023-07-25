@@ -6,30 +6,107 @@
     android:layout_height="match_parent"
     tools:context=".ui.MainActivity">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent" />
+    <ImageButton
+        android:id="@+id/flightTrackerButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:contentDescription="Flight Tracker App Button"
+
+        android:scaleType="fitCenter"
+        android:tooltipText="Flight Tracker App"
+        app:layout_constraintBottom_toTopOf="@+id/currencyExchangeButton"
+        app:layout_constraintEnd_toStartOf="@+id/bearButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/airport_icon" />
+
+    <ImageButton
+        android:id="@+id/bearButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:contentDescription="Bear Image Generator App Button"
+        android:scaleType="fitCenter"
+        android:tooltipText="Bear Image Generator App"
+        app:layout_constraintBottom_toTopOf="@+id/triviaButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/flightTrackerButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bear_icon" />
+
+    <ImageButton
+        android:id="@+id/currencyExchangeButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:contentDescription="Currency Converter App Button"
+        android:scaleType="fitCenter"
+        android:tooltipText="Currency Converter App"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/triviaButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flightTrackerButton"
+        app:srcCompat="@drawable/currency_exchange_icon" />
+
+    <ImageButton
+        android:id="@+id/triviaButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:contentDescription="Trivia App Button"
+        android:scaleType="fitCenter"
+        android:tooltipText="Trivia App"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/currencyExchangeButton"
+        app:layout_constraintTop_toBottomOf="@+id/bearButton"
+        app:srcCompat="@drawable/trivia_icon" />
 
     <TextView
+        android:id="@+id/mainMenuTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Main Menu"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/flightTrackerButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/bearGenerator"
+    <TextView
+        android:id="@+id/flightTrackerButtonLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="72dp"
-        android:text="Bear Generator"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:text="Flight Tracker"
+        app:layout_constraintEnd_toEndOf="@+id/flightTrackerButton"
+        app:layout_constraintStart_toStartOf="@+id/flightTrackerButton"
+        app:layout_constraintTop_toBottomOf="@+id/flightTrackerButton" />
+
+    <TextView
+        android:id="@+id/bearImageGeneratorButtonLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bear Image Generator"
+        app:layout_constraintEnd_toEndOf="@+id/bearButton"
+        app:layout_constraintStart_toStartOf="@+id/bearButton"
+        app:layout_constraintTop_toBottomOf="@+id/bearButton" />
+
+    <TextView
+        android:id="@+id/currencyConverterButtonLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Currency Converter"
+        app:layout_constraintBottom_toTopOf="@+id/currencyExchangeButton"
+        app:layout_constraintEnd_toEndOf="@+id/currencyExchangeButton"
+        app:layout_constraintStart_toStartOf="@+id/currencyExchangeButton" />
+
+    <TextView
+        android:id="@+id/triviaButtonLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trivia"
+        app:layout_constraintBottom_toTopOf="@+id/triviaButton"
+        app:layout_constraintEnd_toEndOf="@+id/triviaButton"
+        app:layout_constraintStart_toStartOf="@+id/triviaButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

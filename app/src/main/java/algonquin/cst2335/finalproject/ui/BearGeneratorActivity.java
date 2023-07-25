@@ -19,7 +19,7 @@ import com.google.android.material.snackbar.Snackbar;
 
 import algonquin.cst2335.finalproject.databinding.ActivityBearGeneratorUiBinding;
 
-public class BearGeneratorUI extends AppCompatActivity {
+public class BearGeneratorActivity extends AppCompatActivity {
 
     protected RecyclerView.Adapter myAdapter;
     protected RecyclerView recyclerView;
@@ -62,7 +62,7 @@ public class BearGeneratorUI extends AppCompatActivity {
         });
 
         deleteBTN.setOnClickListener(clk ->{
-            AlertDialog.Builder builder = new AlertDialog.Builder(BearGeneratorUI.this);
+            AlertDialog.Builder builder = new AlertDialog.Builder(BearGeneratorActivity.this);
             builder.setMessage("Do you want to delete this image?")
                     .setTitle("Question:")
                     .setNegativeButton("No", (((dialog, which) -> {})))
