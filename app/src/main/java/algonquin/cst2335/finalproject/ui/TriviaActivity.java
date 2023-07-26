@@ -2,13 +2,18 @@ package algonquin.cst2335.finalproject.ui;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
@@ -33,13 +38,56 @@ public class TriviaActivity extends AppCompatActivity {
 
     private RecyclerView.Adapter<AnswerHolder> answerListAdapter;
 
-    private final Context triviaContext = this;
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        super.onCreateOptionsMenu(menu);
+
+        getMenuInflater().inflate(R.menu.trivia_toolbar_menu, menu);
+
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        super.onOptionsItemSelected(item);
+
+        if (item.getItemId() == R.id.triviaToFlightTracker) {
+            Intent airTracker = new Intent(TriviaActivity.this, AirportDisplayBoardActivity.class);
+            TriviaActivity.this.startActivity(airTracker);
+        } else if (item.getItemId() == R.id.triviaToBear) {
+            Intent bear = new Intent(TriviaActivity.this, BearGeneratorActivity.class);
+            TriviaActivity.this.startActivity(bear);
+        } else if (item.getItemId() == R.id.triviaToCurrency) {
+            Intent currencyConverter = new Intent(TriviaActivity.this, CurrencyActivity.class);
+            TriviaActivity.this.startActivity(currencyConverter);
+        } else if (item.getItemId() == R.id.triviaHelp) {
+            AlertDialog.Builder builder = new AlertDialog.Builder( this );
+            builder.setMessage("Game Selector:\nSelect a topic from the Categories dropdown, then select a "
+                    + "difficulty level from the difficulty level dropdown. When you tap the Select button, "
+                    + "you will be prompted to check your selection. If it is satisfactory, hit 'Yes' to "
+                    + "the selected game of Trivia.\n\n"
+                    + "Trivia Game:\nBased on the previous selection, you will be put through a sequence of "
+                    + "questions. Tap on the answer that you think is best for each question. After you have "
+                    + "selected an answer, you will be told whether you got it right or not. Good Luck!\n\n"
+                    + "Top Scores:\nFinally, you will find yourself on the top scores page. Here, you will "
+                    + "find the top scorers in the trivia game. You will have the option to add your score "
+                    + "to the list, and examine previous games.\n\nHave Fun!")
+                    .setTitle("How to use the app.").setPositiveButton("Ok", (dialog, cl) -> {
+                    }).create().show();
+        }
+
+        return true;
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = ActivityTriviaBinding.inflate(getLayoutInflater());
 
         setContentView(binding.getRoot());
+
+        setSupportActionBar(binding.triviaToolbar);
+
 
         TriviaSelectorFragment categorySelection = new TriviaSelectorFragment();
         getSupportFragmentManager().beginTransaction()
