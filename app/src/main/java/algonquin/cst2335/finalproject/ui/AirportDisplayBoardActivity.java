@@ -1,6 +1,7 @@
 package algonquin.cst2335.finalproject.ui;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
@@ -11,7 +12,9 @@ import androidx.room.Room;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.graphics.Typeface;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -64,7 +67,7 @@ public class AirportDisplayBoardActivity extends AppCompatActivity {
     /**
      * Boolean value to indicate testing without API.
      */
-    boolean isTestNoAPI = true;
+    boolean isTestNoAPI = false;
     /**
      * Binding for this activity.
      */
@@ -133,6 +136,7 @@ public class AirportDisplayBoardActivity extends AppCompatActivity {
         binding = ActivityAirportDisplayBoardBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+        setTheme(R.style.Theme_Finalproject);
         setSupportActionBar(binding.toolbarAirport);
 
         SharedPreferences prefs = getSharedPreferences("AirportDisplayBoard", Context.MODE_PRIVATE);
@@ -164,7 +168,7 @@ public class AirportDisplayBoardActivity extends AppCompatActivity {
 
         //Setup observers
         flightModel.selectedFlight.observe(this, (newMessageValue) -> {
-            FlightFragment chatFragment = new FlightFragment(newMessageValue);
+            FlightFragment flightFragment = new FlightFragment(newMessageValue);
             FragmentManager supportFragmentManager = getSupportFragmentManager();
 
             supportFragmentManager.addOnBackStackChangedListener(new FragmentManager.OnBackStackChangedListener() {
@@ -178,7 +182,7 @@ public class AirportDisplayBoardActivity extends AppCompatActivity {
             });
 
             FragmentTransaction transaction = supportFragmentManager.beginTransaction();
-            transaction.replace(R.id.fragmentLocation, chatFragment);
+            transaction.replace(R.id.fragmentLocation, flightFragment);
             transaction.addToBackStack("");
             transaction.commit();
         });
@@ -188,9 +192,9 @@ public class AirportDisplayBoardActivity extends AppCompatActivity {
 
             binding.searchView.setActivated(true);
             if (StringUtils.isNotBlank(searchedCity)) {
-                binding.searchView.setQueryHint("Last Searched: " + searchedCity);
+                binding.searchView.setQueryHint(getString(R.string.AirportDisplayBoard_Hint_Last_Searched) + searchedCity);
             } else {
-                binding.searchView.setQueryHint("Type your keyword here");
+                binding.searchView.setQueryHint(getString(R.string.AirportDisplayBoard_Hint_Type_Your_KW));
             }
             binding.searchView.onActionViewExpanded();
             binding.searchView.setIconified(false);
@@ -214,6 +218,7 @@ public class AirportDisplayBoardActivity extends AppCompatActivity {
 
                     String text = newText;
                     if (text != null && text.trim().length() > 1) {
+                        text = text.trim();
                         airportAdapter.filter(text);
                     }
 
@@ -280,7 +285,7 @@ public class AirportDisplayBoardActivity extends AppCompatActivity {
                 holder.arrival_iata.setText(flight.getArrival_iata());
                 String departGate = flight.getDeparture_airport_gate();
                 if (StringUtils.isBlank(departGate)) {
-                    departGate = "TBD";
+                    departGate = getString(R.string.AirportDisplayBoard_Text_TBD);
                 }
                 holder.flight_gate.setText(departGate);
 
@@ -320,7 +325,7 @@ public class AirportDisplayBoardActivity extends AppCompatActivity {
 
         binding.favBtn.setOnClickListener(v -> {
             if (flights == null || flights.isEmpty()) {
-                Toast.makeText(this, "Please select an Airport first.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, getString(R.string.AirportDisplayBoard_Hint_Select_Airport_First), Toast.LENGTH_SHORT).show();
                 return;
             }
             flightThread.execute(() -> {
@@ -360,10 +365,31 @@ public class AirportDisplayBoardActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
         if (item.getItemId() == R.id.item_help) {
+            TextView helpTextView = new TextView(this);
+
+            helpTextView.setText(getString(R.string.AirportDisplayBoard_TextBlock_Help));
+            helpTextView.setTextSize(15.0F);
+            helpTextView.setTypeface(null, Typeface.BOLD);
+            helpTextView.setGravity(Gravity.LEFT);
+
+            TextView titleTextView = new TextView(this);
+
+            titleTextView.setText(getString(R.string.AirportDisplayBoard_Btn_Help));
+            titleTextView.setTextSize(25.0F);
+            titleTextView.setTypeface(null, Typeface.BOLD);
+            titleTextView.setGravity(Gravity.CENTER);
+
+
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            builder.setCustomTitle(titleTextView);
+            builder.setView(helpTextView);
+//            builder.setMessage("Do you want to delete the favorite: " + selected.getFlight_number());
+            builder.setNeutralButton(getString(R.string.AirportDisplayBoard_Dismiss), ((dialog, which) -> {
+
+            }));
+            builder.create().show();
+
         }
-        Toast.makeText(this, "Version 1.0, created by Tong Chi", Toast.LENGTH_SHORT).show();
-
-
         return true;
     }
 
@@ -384,7 +410,7 @@ public class AirportDisplayBoardActivity extends AppCompatActivity {
                 flightListAdapter.notifyDataSetChanged();
 //                binding.favBtn.setImageResource(R.drawable.star_on);
                 if (showToast)
-                    Toast.makeText(getApplicationContext(), "Showing All Flights.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), getString(R.string.AirportDisplayBoard_Hint_Show_All), Toast.LENGTH_SHORT).show();
             });
             starBtnOn = false;
         } else {
@@ -397,7 +423,7 @@ public class AirportDisplayBoardActivity extends AppCompatActivity {
                 flightListAdapter.notifyDataSetChanged();
 //                binding.favBtn.setImageResource(R.drawable.star_off);
                 if (showToast)
-                    Toast.makeText(getApplicationContext(), "Showing Favorite Flights.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), getString(R.string.AirportDisplayBoard_Hint_Show_Fav), Toast.LENGTH_SHORT).show();
             });
 
             starBtnOn = true;
@@ -431,7 +457,7 @@ public class AirportDisplayBoardActivity extends AppCompatActivity {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                Toast.makeText(getApplicationContext(), "Error in requesting data: " + error.getMessage(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), getString(R.string.AirportDisplayBoard_Exp_Request_Data) + error.getMessage(), Toast.LENGTH_SHORT).show();
             }
         });
         // Add the request to the RequestQueue.
