@@ -1,18 +1,23 @@
 package algonquin.cst2335.finalproject.data;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
-public class TriviaGame {
+public class TriviaGameState {
     private String category;
 
     private int numberOfQuestions;
+
+    private int currentQuestionNumber = 0;
+
+    private int numberAnsweredCorrectly = 0;
 
     private String difficulty;
 
     private ArrayList<Question> questions = new ArrayList<>();
 
-    public TriviaGame() {
-        this.numberOfQuestions = 10;
+    public TriviaGameState() {
+
     }
 
     public String getCategory() {
@@ -27,12 +32,44 @@ public class TriviaGame {
         return this.numberOfQuestions;
     }
 
+    public void setNumberOfQuestions(int numberOfQuestions) { this.numberOfQuestions = numberOfQuestions; }
+
+    public int getCurrentQuestionNumber() { return this.currentQuestionNumber; }
+
+    public void setCurrentQuestion(int currentQuestionNumber) { this.currentQuestionNumber = currentQuestionNumber; }
+
+    public int getNumberAnsweredCorrectly() {
+        return this.numberAnsweredCorrectly;
+    }
+
+    public void setNumberAnsweredCorrectly(int numberAnsweredCorrectly) {
+        this.numberAnsweredCorrectly = numberAnsweredCorrectly;
+    }
+
     public String getDifficulty() {
         return this.difficulty;
     }
 
     public void setDifficulty(String difficulty) {
         this.difficulty = difficulty;
+    }
+
+    public Question getCurrentQuestion() {
+        return this.questions.get(this.currentQuestionNumber-1);
+    }
+
+    public void addQuestion(Question question) {
+        this.questions.add(question);
+        ++this.numberOfQuestions;
+    }
+
+    public void resetGameState() {
+        this.category = null;
+        this.difficulty = null;
+        this.questions = new ArrayList<>();
+        this.numberOfQuestions = 0;
+        this.numberAnsweredCorrectly = 0;
+        this.currentQuestionNumber = 0;
     }
 
     public static class Question {

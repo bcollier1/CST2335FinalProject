@@ -35,7 +35,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="52dp"
-                android:text="Trivia"
+                android:text="@string/trivia_title"
                 android:textSize="30sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -46,7 +46,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="52dp"
-                android:text="Question Text"
+                android:text="@string/trivia_question_text_placeholder"
                 app:layout_constraintEnd_toEndOf="@+id/questionProgress"
                 app:layout_constraintStart_toStartOf="@+id/questionProgress"
                 app:layout_constraintTop_toBottomOf="@+id/questionProgress" />
@@ -56,14 +56,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
-                android:text="Question x/10"
+                android:text="@string/trivia_question_number_display"
                 app:layout_constraintEnd_toEndOf="@+id/titleView"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/titleView"
                 app:layout_constraintTop_toBottomOf="@+id/titleView" />
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/questionList"
+                android:id="@+id/answerList"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_marginTop="32dp"

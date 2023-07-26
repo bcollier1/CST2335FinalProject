@@ -7,6 +7,19 @@
     <string name="From">From</string>
     <string name="To">To</string>
     <string name="CC">Currency Converter</string>
+    <string name="trivia_title">Trivia</string>
+    <string name="trivia_question_number_display">"Question "</string>
+    <string name="trivia_question_text_placeholder" translatable="false">Question Text</string>
+    <string name="trivia_answer_text_placeholder" translatable="false">Answer Text Here</string>
+    <string name="trivia_category_header">Category</string>
+    <string name="trivia_difficulty_header">Difficulty</string>
+    <string name="trivia_select_button_text">Select</string>
+    <string name="trivia_player_name_placeholder" translatable="false">Player Name</string>
+    <string name="trivia_player_score_placeholder" translatable="false">x/10</string>
+    <string name="trivia_top_scores_header">Top 10 Scores in your category and difficulty:</string>
+    <string name="trivia_name_input_label">Your Name</string>
+    <string name="trivia_submit_button_text">Submit</string>
+    <string name="trivia_new_game_button_text">New Game</string>
 
     <string-array name="trivia_categories_array">
         <item>Any Category</item>
