@@ -3,10 +3,16 @@ package algonquin.cst2335.finalproject.data;
 import java.util.ArrayList;
 import java.util.Date;
 
+/**
+ * This class represents flight information.
+ */
 public class FlightPOJO {
     public Pagination pagination;
     public ArrayList<Datum> data;
 
+    /**
+     * This class represents pagination information.
+     */
     class Pagination {
         public int limit;
         public int offset;
@@ -14,6 +20,9 @@ public class FlightPOJO {
         public int total;
     }
 
+    /**
+     * This class represents specific flight data.
+     */
     public class Datum {
         public String flight_date;
         public String flight_status;
@@ -24,6 +33,9 @@ public class FlightPOJO {
         public Object aircraft;
         public Object live;
 
+        /**
+         * This class represents departure details.
+         */
         public class Departure {
             public String airport;
             public String timezone;
@@ -39,6 +51,9 @@ public class FlightPOJO {
             public Date actual_runway;
         }
 
+        /**
+         * This class represents arrival details.
+         */
         public class Arrival {
             public String airport;
             public String timezone;
@@ -55,18 +70,27 @@ public class FlightPOJO {
             public Date actual_runway;
         }
 
+        /**
+         * This class represents airline details.
+         */
         public class Airline {
             public String name;
             public String iata;
             public String icao;
         }
 
+        /**
+         * This class represents flight information.
+         */
         public class FlightInfo {
             public String number;
             public String iata;
             public String icao;
             public Codeshared codeshared;
 
+            /**
+             * This class represents details of code-shared flights.
+             */
             public class Codeshared {
                 public String airline_name;
                 public String airline_iata;

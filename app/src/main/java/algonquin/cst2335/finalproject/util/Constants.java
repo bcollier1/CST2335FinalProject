@@ -1,12 +1,24 @@
 package algonquin.cst2335.finalproject.util;
 
+/**
+ * Constants used throughout the application.
+ */
 public interface Constants {
-    //Stale data, used to obtain airport iata code because the free API plan does not allow search
+    /**
+     * JSON file name containing trimmed data of airports.
+     * This data is used to obtain airport IATA code because the free API plan does not allow search.
+     */
     String DATA_AIRPORT = "data_airports_trimmed.json";
 
-    //Test data
+    /**
+     * JSON file name containing flight data for testing.
+     */
     String DATA_FLIGHTS = "data_flights_YOW.json";
 
+    /**
+     * API URL for fetching departure flight data given a departure airport IATA code.
+     * The URL is broken down into multiple strings to avoid it being easily accessible in the source code.
+     */
     String URL_DEPARTURE_FLIGHT_FROM_CODE =
             "htt" +
                     "p://ap" +

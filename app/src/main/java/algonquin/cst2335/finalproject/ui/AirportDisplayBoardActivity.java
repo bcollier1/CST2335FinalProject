@@ -56,28 +56,76 @@ import algonquin.cst2335.finalproject.databinding.ActivityAirportDisplayBoardBin
 import algonquin.cst2335.finalproject.util.Constants;
 import algonquin.cst2335.finalproject.util.DataUtils;
 
+/**
+ * This Activity is used to manage the display of airport and flight information.
+ * The UI is set up with different fragments and RecyclerViews to display data.
+ */
 public class AirportDisplayBoardActivity extends AppCompatActivity {
+    /**
+     * Boolean value to indicate testing without API.
+     */
     boolean isTestNoAPI = true;
+    /**
+     * Binding for this activity.
+     */
     ActivityAirportDisplayBoardBinding binding;
 
+    /**
+     * Flight Data Access Object.
+     */
     public static FlightDAO flightDAO;
+    /**
+     * Airport Data Access Object.
+     */
     AirportDAO airportDAO;
 
+    /**
+     * List of Flights.
+     */
     List<Flight> flights;
+    /**
+     * Temporary list of flights.
+     */
     List<Flight> flightsTemp = new ArrayList<>();
 
+    /**
+     * ViewModel for Flight.
+     */
     FlightViewModel flightModel;
+    /**
+     * ViewModel for Airport.
+     */
     AirportViewModel airportModel;
 
+    /**
+     * Adapter for Flight List.
+     */
     public static RecyclerView.Adapter flightListAdapter;
+    /**
+     * Adapter for Airport.
+     */
     AirportAdapter airportAdapter;
 
+    /**
+     * Executor for Flight Thread.
+     */
     public static Executor flightThread = Executors.newSingleThreadExecutor();
 
+    /**
+     * Boolean value to indicate status of star button.
+     */
     boolean starBtnOn = false;
 
+    /**
+     * Fragment for Airport.
+     */
     AirportFragment airportFragment;
 
+    /**
+     * Initializes the activity.
+     *
+     * @param savedInstanceState the Bundle contains the data it most recently recovered or it is null.
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         //Initialization UI
@@ -139,9 +187,9 @@ public class AirportDisplayBoardActivity extends AppCompatActivity {
             ListView airportListView = newMessageValue;
 
             binding.searchView.setActivated(true);
-            if(StringUtils.isNotBlank(searchedCity)){
+            if (StringUtils.isNotBlank(searchedCity)) {
                 binding.searchView.setQueryHint("Last Searched: " + searchedCity);
-            }else{
+            } else {
                 binding.searchView.setQueryHint("Type your keyword here");
             }
             binding.searchView.onActionViewExpanded();
@@ -194,9 +242,9 @@ public class AirportDisplayBoardActivity extends AppCompatActivity {
 
         airportModel.airportSelected.observe(this, (Airport newMessageValue) -> {
 //            Toast.makeText(this, newMessageValue.getCode(), Toast.LENGTH_SHORT).show();
-            if(isTestNoAPI){
+            if (isTestNoAPI) {
                 initDbForFlights(null, null, false);
-            }else{
+            } else {
                 sendAndRequestResponse(newMessageValue.getIata());
             }
         });
@@ -231,14 +279,14 @@ public class AirportDisplayBoardActivity extends AppCompatActivity {
                 holder.departure_iata.setText(flight.getDeparture_iata());
                 holder.arrival_iata.setText(flight.getArrival_iata());
                 String departGate = flight.getDeparture_airport_gate();
-                if(StringUtils.isBlank(departGate)){
+                if (StringUtils.isBlank(departGate)) {
                     departGate = "TBD";
                 }
                 holder.flight_gate.setText(departGate);
 
-                if(flight.getDeparture_delay() > 0){
+                if (flight.getDeparture_delay() > 0) {
                     holder.status_image.setImageResource(R.drawable.flight_delay);
-                }else{
+                } else {
                     holder.status_image.setImageResource(R.drawable.flight_on_time);
                 }
             }
@@ -271,7 +319,7 @@ public class AirportDisplayBoardActivity extends AppCompatActivity {
         binding.flightListView.setItemAnimator(null);
 
         binding.favBtn.setOnClickListener(v -> {
-            if(flights == null || flights.isEmpty()){
+            if (flights == null || flights.isEmpty()) {
                 Toast.makeText(this, "Please select an Airport first.", Toast.LENGTH_SHORT).show();
                 return;
             }
@@ -281,6 +329,18 @@ public class AirportDisplayBoardActivity extends AppCompatActivity {
         });
     }
 
+    /**
+     * Inflates the options menu for this activity.
+     *
+     * @param menu The options menu in which you place your items.
+     * @return boolean Return true to display the menu.
+     */
+    /**
+     * Inflates the options menu for this activity.
+     *
+     * @param menu The options menu in which you place your items.
+     * @return boolean Return true to display the menu.
+     */
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         super.onCreateOptionsMenu(menu);
@@ -290,6 +350,12 @@ public class AirportDisplayBoardActivity extends AppCompatActivity {
         return true;
     }
 
+    /**
+     * Handles the selection of an item in the options menu.
+     *
+     * @param item The menu item that was selected.
+     * @return boolean Return false to allow normal menu processing to proceed, true to consume it here.
+     */
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
@@ -301,6 +367,12 @@ public class AirportDisplayBoardActivity extends AppCompatActivity {
         return true;
     }
 
+    /**
+     * Shows or hides the list of favorite flights.
+     *
+     * @param showFav   If true, shows the favorite flights, otherwise shows all flights.
+     * @param showToast If true, shows a toast message.
+     */
     public void showHideFav(boolean showFav, boolean showToast) {
         if (!showFav) {
             //Show all fav flights
@@ -332,6 +404,11 @@ public class AirportDisplayBoardActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * Sends a GET request to a specified URL and handles the response.
+     *
+     * @param code The code of the airport.
+     */
     private void sendAndRequestResponse(String code) {
         RequestQueue requestQueue;
         // Instantiate the cache
@@ -361,13 +438,20 @@ public class AirportDisplayBoardActivity extends AppCompatActivity {
         requestQueue.add(stringRequest);
     }
 
+    /**
+     * Initializes the database for flights based on provided data.
+     *
+     * @param data_flights    The data of flights in JSON format.
+     * @param airportIataCode The IATA code of the airport.
+     * @param showFavOnly     If true, shows only favorite flights, otherwise shows all flights.
+     */
     private void initDbForFlights(String data_flights, String airportIataCode, boolean showFavOnly) {
 //        Executor thread = Executors.newSingleThreadExecutor();
         flightThread.execute(() -> {
             String jsonData = null;
-            if(data_flights == null){
+            if (data_flights == null) {
                 jsonData = DataUtils.getJsonFromAsset(getApplicationContext(), Constants.DATA_FLIGHTS);
-            }else{
+            } else {
                 jsonData = data_flights;
             }
 
@@ -399,6 +483,9 @@ public class AirportDisplayBoardActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * Hides the airport fragment.
+     */
     private void hideAirportFrag() {
         if (airportFragment == null) {
             return;
@@ -412,6 +499,9 @@ public class AirportDisplayBoardActivity extends AppCompatActivity {
         airportFragment = null;
     }
 
+    /**
+     * Switches to the airport fragment.
+     */
     private void switchToAirportFrag() {
         airportFragment = new AirportFragment(airportModel);
         FragmentManager supportFragmentManager = getSupportFragmentManager();
@@ -432,6 +522,9 @@ public class AirportDisplayBoardActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * A ViewHolder class for RecyclerView, used to represent a row in the list.
+     */
     class MyRowHolder extends RecyclerView.ViewHolder {
         TextView flight_number;
         TextView airline;
@@ -440,6 +533,11 @@ public class AirportDisplayBoardActivity extends AppCompatActivity {
         TextView flight_gate;
         ImageView status_image;
 
+        /**
+         * RowHolder instance, also it sets up its views.
+         *
+         * @param itemView The view that holds the item views.
+         */
         public MyRowHolder(@NonNull View itemView) {
             super(itemView);
 
