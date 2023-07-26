@@ -1,4 +1,9 @@
 <resources>
+
+    <string name="info_title">Info:</string>
+    <string name="info_message">Add the amount in the box, and then select which two nations you want to convert the currency too!</string>
+    <string name="ok_button">OK!</string>
+
     <string name="app_name">finalproject</string>
 
     <string name="Amount">Amount</string>
