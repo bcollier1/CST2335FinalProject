@@ -14,7 +14,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="60dp"
         android:textSize="35sp"
-        android:text="Category"
+        android:text="@string/trivia_category_header"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -35,7 +35,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="72dp"
         android:textSize="35sp"
-        android:text="Difficulty"
+        android:text="@string/trivia_difficulty_header"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/categoryLabel" />
 
@@ -54,7 +54,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="72dp"
-        android:text="Select"
+        android:text="@string/trivia_select_button_text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

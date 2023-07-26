@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">finalproject</string>
+    <string name="trivia_title">Trivia</string>
+    <string name="trivia_question_number_display">"Question "</string>
+    <string name="trivia_category_header">Category</string>
+    <string name="trivia_difficulty_header">Difficulty</string>
+    <string name="trivia_select_button_text">Select</string>
+    <string name="trivia_top_scores_header">Top 10 Scores in your category and difficulty:</string>
+    <string name="trivia_name_input_label">Your Name</string>
+    <string name="trivia_submit_button_text">Submit</string>
+    <string name="trivia_new_game_button_text">New Game</string>
+</resources>
