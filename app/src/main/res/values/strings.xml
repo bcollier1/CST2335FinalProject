@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">finalproject</string>
+    <string name="app_name">Final Project</string>
 
     <string name="Amount">Amount</string>
     <string name="Convert">Convert</string>
@@ -41,5 +41,59 @@
         <item>Medium</item>
         <item>Hard</item>
     </string-array>
+
+    <!--AirportDisplayBoardStrings Starts-->
+    <!-- General -->
+    <string name="AirportDisplayBoard.Yes">Yes</string>
+    <string name="AirportDisplayBoard.No">No</string>
+    <string name="AirportDisplayBoard.Dismiss">Dismiss</string>
+    <string name="AirportDisplayBoard.Undo">Undo</string>
+    <string name="AirportDisplayBoard.Confirm">Confirm?</string>
+    <string name="AirportDisplayBoard.Btn.Help">Help</string>
+
+    <!-- App Text -->
+    <string name="AirportDisplayBoard.Text.TBD">TBD</string>
+
+    <!-- App Component -->
+    <string name="AirportDisplayBoard.Btn.My_List">My List</string>
+    <string name="AirportDisplayBoard.Btn.All_Flight">All Flights</string>
+    <string name="AirportDisplayBoard.Label.Airport">Airport : </string>
+    <string name="AirportDisplayBoard.Hint.Gate">Gate:</string>
+    <string name="AirportDisplayBoard.Hint.Delayed_Depart">Departure Delayed: </string>
+    <string name="AirportDisplayBoard.Hint.IATA_Depart">Departure IATA: </string>
+    <string name="AirportDisplayBoard.Hint.IATA_Arrival">Arrival IATA: </string>
+    <string name="AirportDisplayBoard.Hint.Airport_Depart">Departure Airport: </string>
+    <string name="AirportDisplayBoard.Hint.Airport_Arrival">Arrival Airport: </string>
+    <string name="AirportDisplayBoard.Hint.Flight_Number">Flight Number</string>
+    <string name="AirportDisplayBoard.Hint.Airline_Name">Airline Name</string>
+    <string name="AirportDisplayBoard.Hint.Departure">Departure</string>
+    <string name="AirportDisplayBoard.Hint.Arrival">Arrival</string>
+    <string name="AirportDisplayBoard.Hint.Last_Searched">Last Searched: </string>
+    <string name="AirportDisplayBoard.Hint.Type_Your_KW">Type your keyword here: </string>
+    <string name="AirportDisplayBoard.Hint.Select_Airport_First">Please select an Airport first</string>
+
+    <!--    Save and remove favorite feature-->
+    <string name="AirportDisplayBoard.Btn.Save_Fav">Save Favorite</string>
+    <string name="AirportDisplayBoard.Btn.Remove_Fav">Remove Favorite</string>
+    <string name="AirportDisplayBoard.Btn.Remove_Fav_Text">Do you want to delete the favorite: </string>
+    <string name="AirportDisplayBoard.Btn.Remove_Fav_Result">You removed favorite flight #</string>
+
+    <!--    Show fav or all flights-->
+    <string name="AirportDisplayBoard.Hint.Show_All">Shwoing Favorite Flights</string>
+    <string name="AirportDisplayBoard.Hint.Show_Fav">Showing All Flights</string>
+
+    <!-- Exceptions -->
+    <string name="AirportDisplayBoard.Exp.Request_Data">Error in requesting data</string>
+
+    <!-- Long Text -->
+    <string name="AirportDisplayBoard.TextBlock.Help">
+        1. You can search airport by their name, city, or code\n
+        2. After airport being selected, you will see the departure flights\"\n
+        3. You can click each item of the flight list to see the more detailed information\n
+        4. In the detailed information part, \"Save Favorite\" button will save the flight\n
+        5. Remove Favorite\" button will remove the flight\n
+        6. \"MY LIST\" button will show the flights you\'ve saved
+    </string>
+    <!--AirportDisplayBoardStrings Ends-->
 
 </resources>

@@ -184,6 +184,8 @@ public class AirportDisplayBoardActivity extends AppCompatActivity {
                 editor.putString("city", airport.getCity());
                 editor.apply();
 
+                binding.searchView.setQueryHint(getString(R.string.AirportDisplayBoard_Hint_Last_Searched) + airport.getCity());
+
                 onBackPressed();
                 hideAirportFrag();
 
