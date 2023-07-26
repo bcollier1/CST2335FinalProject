@@ -44,7 +44,7 @@ public class TriviaAPIURLBuilder {
     }
 
     public TriviaAPIURLBuilder setDifficultySegment(@NonNull String difficulty) {
-        this.difficultySegment = (difficulty.equals("Any Difficulty")) ? "" : "&difficulty=" + difficulty;
+        this.difficultySegment = (difficulty.equals("Any Difficulty")) ? "" : "&difficulty=" + difficulty.toLowerCase();
         return this;
     }
 

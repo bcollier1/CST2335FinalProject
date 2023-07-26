@@ -310,7 +310,7 @@ public class TriviaActivity extends AppCompatActivity {
         if (isCorrect) {
             Toast.makeText(this, "Correct", Toast.LENGTH_SHORT).show();
         } else {
-            Toast.makeText(this, "Incorrect", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Incorrect: Answer was '" + this.game.getCurrentQuestion().getCorrectAnswer() + "'", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -322,7 +322,7 @@ public class TriviaActivity extends AppCompatActivity {
 
         TriviaGameState.Question question = game.getCurrentQuestion();
 
-        binding.questionProgress.setText(R.string.trivia_question_number_display + game.getCurrentQuestionNumber() + "/" + game.getNumberOfQuestions());
+        binding.questionProgress.setText("Question " + game.getCurrentQuestionNumber() + "/" + game.getNumberOfQuestions());
 
         binding.questionText.setText(question.getQuestionText());
         int correctAnswerSlot = 0;
