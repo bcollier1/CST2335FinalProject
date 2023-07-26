@@ -6,15 +6,18 @@ import androidx.lifecycle.ViewModel;
 import java.util.List;
 
 /**
- * The ChatRoomViewModel class represents the ViewModel for a chat room.
- * It holds the MutableLiveData object for storing and observing the list of chat messages.
+ * The FlightViewModel class represents the Flight ViewModel.
  */
 public class FlightViewModel extends ViewModel {
     /**
-     * The MutableLiveData object that holds the list of chat messages.
-     * It allows observers to be notified of any changes to the list.
+     * A MutableLiveData object that Holds the list of Flight.
+     * Observers to be notified of any changes to the list.
      */
     public MutableLiveData<List<Flight>> flights = new MutableLiveData<>();
 
+    /**
+     * A MutableLiveData object that holds the Flight object.
+     * Observers to be notified of any changes.
+     */
     public MutableLiveData<Flight> selectedFlight = new MutableLiveData<>();
 }

@@ -27,9 +27,24 @@ import algonquin.cst2335.finalproject.data.Flight;
 import algonquin.cst2335.finalproject.databinding.FlightFragmentBinding;
 import algonquin.cst2335.finalproject.util.DataUtils;
 
+/**
+ * Fragment used to display details of a specific flight.
+ */
 public class FlightFragment extends Fragment {
-    Flight selected;
+    /**
+     * Selected flight data
+     */
+    private Flight selected;
 
+    /**
+     * Inflates the view for the FlightFragment.
+     *
+     * @param inflater           used to inflate any views in the fragment
+     * @param container          container to be attached to
+     * @param savedInstanceState previous state of the fragment
+     *
+     * @return view for the fragment's UI, or null
+     */
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -84,7 +99,10 @@ public class FlightFragment extends Fragment {
         return binding.getRoot();
     }
 
-    private void updateFlight(){
+    /**
+     * Updates flight information in the database and refreshes the UI.
+     */
+    private void updateFlight() {
         AirportDisplayBoardActivity.flightThread.execute(() -> {
             AirportDisplayBoardActivity.flightDAO.insertFlights(selected);
             getActivity().runOnUiThread(() -> {
@@ -93,6 +111,11 @@ public class FlightFragment extends Fragment {
         });
     }
 
+    /**
+     * Constructor of the FlightFragment.
+     *
+     * @param msg flight data to be displayed
+     */
     public FlightFragment(Flight msg) {
         selected = msg;
     }

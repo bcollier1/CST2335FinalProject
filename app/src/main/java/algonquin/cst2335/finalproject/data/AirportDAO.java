@@ -13,12 +13,26 @@ import java.util.List;
  */
 @Dao
 public interface AirportDAO {
+    /**
+     * Inserts an array of airports.
+     * If an airport with the same primary key already exists, it will be replaced.
+     *
+     * @param airports array of Airport objects to be inserted
+     */
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     public void insertAirports(Airport ... airports);
 
+    /**
+     * Retrieves all airports.
+     *
+     * @return List of all Airport objects.
+     */
     @Query("Select * from Airport")
     public List<Airport> getAllAirports();
 
+    /**
+     * Deletes all airports.
+     */
     @Query("Delete from Airport")
     void deleteAllAirport();
 }
