@@ -1,9 +1,15 @@
 package algonquin.cst2335.finalproject.ui;
 
+import android.content.Context;
+import android.content.res.Configuration;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TableLayout;
+import android.widget.TableRow;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -12,8 +18,11 @@ import androidx.fragment.app.Fragment;
 
 import com.google.android.material.snackbar.Snackbar;
 
+import org.apache.commons.lang3.StringUtils;
+
 import java.sql.Date;
 
+import algonquin.cst2335.finalproject.R;
 import algonquin.cst2335.finalproject.data.Flight;
 import algonquin.cst2335.finalproject.databinding.FlightFragmentBinding;
 import algonquin.cst2335.finalproject.util.DataUtils;
@@ -26,34 +35,47 @@ public class FlightFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         super.onCreateView(inflater, container, savedInstanceState);
         FlightFragmentBinding binding = FlightFragmentBinding.inflate(inflater);
+        String departGate = selected.getDeparture_airport_gate();
+        if (StringUtils.isBlank(departGate)) {
+            departGate = getString(R.string.AirportDisplayBoard_Text_TBD);
+        }
 
-        binding.flightNumber.setText(selected.getFlight_number());
-        binding.airline.setText(selected.getAirline());
-        binding.departureIata.setText(selected.getDeparture_iata());
-        binding.departureAirportName.setText(selected.getDeparture_airport_name());
+        binding.flightNumber     .setText(getString(R.string.AirportDisplayBoard_Hint_Flight_Number) + ":" +  selected.getFlight_number());
+        binding.airline          .setText(getString(R.string.AirportDisplayBoard_Hint_Airline_Name) +  ":"+selected.getAirline());
+        binding.departureGate    .setText(getString(R.string.AirportDisplayBoard_Hint_Gate) + departGate);
+        binding.delayTime        .setText(getString(R.string.AirportDisplayBoard_Hint_Delayed_Depart) + selected.getDeparture_delay());
+        binding.departureIata    .setText(getString(R.string.AirportDisplayBoard_Hint_IATA_Depart) + selected.getDeparture_iata());
+        binding.arrivalIata      .setText(getString(R.string.AirportDisplayBoard_Hint_IATA_Arrival) + selected.getArrival_iata());
+        binding.departureAirport .setText(getString(R.string.AirportDisplayBoard_Hint_Airport_Depart) + selected.getDeparture_airport_name());
+        binding.arrivalAirport   .setText(getString(R.string.AirportDisplayBoard_Hint_Airport_Arrival) + selected.getArrival_airport_name());
+
+
         if (selected.getFav_date() == null) {
-            binding.saveBtn.setText("Save Favorite");
+            binding.saveBtn.setText(getString(R.string.AirportDisplayBoard_Btn_Save_Fav));
         } else {
-            binding.saveBtn.setText("Remove Favorite");
+            binding.saveBtn.setText(getString(R.string.AirportDisplayBoard_Btn_Remove_Fav));
         }
 
         Date fav_date = selected.getFav_date();
         binding.saveBtn.setOnClickListener(v -> {
             if (selected.getFav_date() == null) {
                 selected.setFav_date(DataUtils.getSqlDateFromUtilDate(new java.util.Date()));
-                binding.saveBtn.setText("Remove Favorite");
+                binding.saveBtn.setText(getString(R.string.AirportDisplayBoard_Btn_Remove_Fav));
             } else {
                 AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-                builder.setTitle("Questions").setMessage("Do you want to delete the favorite: " + selected.getFlight_number()).setPositiveButton("Yes", ((dialog, which) -> {
-                    Snackbar.make(binding.saveBtn, "You removed favorite flight #" + selected.getFlight_number(), Snackbar.LENGTH_LONG).setAction("Undo", click -> {
+                builder.setTitle(getString(R.string.AirportDisplayBoard_Confirm))
+                        .setMessage(getString(R.string.AirportDisplayBoard_Btn_Remove_Fav_Text)
+                                + selected.getFlight_number()).setPositiveButton(getString(R.string.AirportDisplayBoard_Yes),
+                                ((dialog, which) -> {
+                    Snackbar.make(binding.saveBtn, getString(R.string.AirportDisplayBoard_Btn_Remove_Fav_Result) + selected.getFlight_number(), Snackbar.LENGTH_LONG).setAction(getString(R.string.AirportDisplayBoard_Undo), click -> {
                         selected.setFav_date(fav_date);
-                        binding.saveBtn.setText("Remove Favorite");
+                        binding.saveBtn.setText(getString(R.string.AirportDisplayBoard_Btn_Remove_Fav));
                         updateFlight();
                     }).show();
                     selected.setFav_date(null);
-                    binding.saveBtn.setText("Save Favorite");
+                    binding.saveBtn.setText(getString(R.string.AirportDisplayBoard_Btn_Save_Fav));
                     updateFlight();
-                })).setNegativeButton("No", ((dialog, which) -> {
+                })).setNegativeButton(getString(R.string.AirportDisplayBoard_No), ((dialog, which) -> {
                 })).create().show();
 
             }

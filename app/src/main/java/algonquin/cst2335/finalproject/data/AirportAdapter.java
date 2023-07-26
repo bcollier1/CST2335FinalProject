@@ -23,8 +23,8 @@ public class AirportAdapter extends BaseAdapter {
 
     public AirportAdapter(Context context, List<Airport> airportList) {
         mContext = context;
-        this.sourceList = new ArrayList<Airport>();
-        this.airportList = new ArrayList<Airport>();
+        this.sourceList = new ArrayList<>();
+        this.airportList = new ArrayList<>();
         if (airportList == null || airportList.isEmpty()) {
 
         } else {
@@ -71,7 +71,6 @@ public class AirportAdapter extends BaseAdapter {
 
     // Filter Class
     public void filter(String charText) {
-        charText = charText.toLowerCase(Locale.getDefault());
         airportList.clear();
         if (charText.length() == 0) {
             airportList.addAll(sourceList);

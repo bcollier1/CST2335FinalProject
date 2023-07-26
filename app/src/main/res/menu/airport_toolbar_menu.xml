@@ -4,7 +4,7 @@
 
     <item
         android:id="@+id/item_help"
-        android:icon="@drawable/flight_star_on"
+        android:icon="@drawable/flight_help"
         android:title="Delete this item"
         app:showAsAction="always" />
 

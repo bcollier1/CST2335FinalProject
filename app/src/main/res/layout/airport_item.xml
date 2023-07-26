@@ -7,7 +7,7 @@
         android:id="@+id/nameLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Airport : " />
+        android:text="@string/AirportDisplayBoard.Label.Airport" />
 
     <TextView
         android:id="@+id/name"
