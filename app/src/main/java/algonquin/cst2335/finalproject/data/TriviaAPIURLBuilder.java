@@ -1,5 +1,7 @@
 package algonquin.cst2335.finalproject.data;
 
+import android.text.Html;
+
 import androidx.annotation.NonNull;
 
 import java.util.HashMap;
@@ -33,7 +35,7 @@ public class TriviaAPIURLBuilder {
             categoryAPIMap.put("Any Category", "");
             String[] categoryArray = Constants.triviaCategoryArray;
             for (int i = 1; i < categoryArray.length; ++i) {
-                categoryAPIMap.put(categoryArray[i], "&category=" + (i + INDEX_OFFSET));
+                categoryAPIMap.put(Html.fromHtml(categoryArray[i], Html.FROM_HTML_MODE_LEGACY).toString(), "&category=" + (i + INDEX_OFFSET));
             }
         }
     }
