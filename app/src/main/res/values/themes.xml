@@ -12,6 +12,10 @@
         <item name="colorPrimary">@color/trivia_light_primary</item>
     </style>
 
+    <style name="Theme.BearGenerator" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/my_primary</item>
+    </style>
+
     <style name="Theme.Finalproject" parent="Base.Theme.Finalproject" >
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>

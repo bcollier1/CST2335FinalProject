@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">finalproject</string>
+    <string name="Amount">Amount</string>
+    <string name="Convert">Convert</string>
+    <string name="Reset">Reset</string>
+    <string name="From">From</string>
+    <string name="To">To</string>
+    <string name="CC">Current Convert</string>
+    <string name="heightText">Height</string>
+    <string name="heightHint">E.g. 100</string>
+    <string name="widthText">Width</string>
+    <string name="widthHint">E.g. 100</string>
+</resources>

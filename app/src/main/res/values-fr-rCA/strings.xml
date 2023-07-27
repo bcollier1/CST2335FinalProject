@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">finalproject</string>
+    <string name="Amount">Montant</string>
+    <string name="Convert">Convertir</string>
+    <string name="Reset">Réinitialiser</string>
+    <string name="From">Depuis</string>
+    <string name="To">Pour</string>
+    <string name="CC">Convertisseur de devises</string>
+    <string name="heightText">Hauteur</string>
+    <string name="heightHint">Par exemple : 100</string>
+    <string name="widthText">Largeur</string>
+    <string name="widthHint">Par exemple : 100</string>
+</resources>
