@@ -1,6 +1,26 @@
 <resources>
+
+
+    <string name="info_title">Info:</string>
+    <string name="info_message">Add the amount in the box, and then select which two nations you want to convert the currency too!</string>
+    <string name="ok_button">OK!</string>
+
+
     <string name="app_name">Final Project</string>
 
+
+    <string-array name="currencies">
+        <item>CAD</item>
+        <item>USD</item>
+        <item>EUR</item>
+        <item>GBP</item>
+        <item>AUD</item>
+        <item>JPY</item>
+        <item>CHF</item>
+        <item>CNY</item>
+        <item>SEK</item>
+        <item>NZD</item>
+    </string-array>
     <string name="Amount">Amount</string>
     <string name="Convert">Convert</string>
     <string name="Reset">Reset</string>

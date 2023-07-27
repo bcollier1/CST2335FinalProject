@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="info_title">اطلاعات</string>
+    <string name="info_message">مقدار را در کادر اضافه کنید، سپس دو کشور را که می خواهید ارز را به آن تبدیل کنید انتخاب کنید!</string>
+    <string name="ok_button">ټيکه!</string>
+    <string name="app_name">finalproject</string>
+    <string name="Amount">مقدار</string>
+    <string name="Convert">بدلول</string>
+    <string name="Reset">بیا تنظیم کړئ</string>
+    <string name="From">څخه</string>
+    <string name="To">ته</string>
+    <string name="CC">د اسعارو بدلونکی</string>
+</resources>
