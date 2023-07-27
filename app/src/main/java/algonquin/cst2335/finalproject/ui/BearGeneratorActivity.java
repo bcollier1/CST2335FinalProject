@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -14,17 +15,21 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.google.android.material.snackbar.Snackbar;
+import com.android.volley.RequestQueue;
+import com.android.volley.toolbox.ImageRequest;
+import com.android.volley.toolbox.Volley;
 
-import java.util.concurrent.Executor;
-import java.util.concurrent.Executors;
+import java.util.ArrayList;
+import java.util.List;
 
 import algonquin.cst2335.finalproject.R;
 import algonquin.cst2335.finalproject.databinding.ActivityBearGeneratorUiBinding;
+import algonquin.cst2335.finalproject.databinding.ActivityBearLoaderBinding;
 
 public class BearGeneratorActivity extends AppCompatActivity {
 
@@ -32,10 +37,13 @@ public class BearGeneratorActivity extends AppCompatActivity {
     protected RecyclerView recyclerView;
     ActivityBearGeneratorUiBinding binding;
     protected ImageButton uploadBTN;
-    protected ImageView imageView;
-    protected ImageButton deleteBTN;
+    protected ImageView bear;
+    protected EditText width;
+    protected EditText height;
+    final List<String> imageUrls = new ArrayList<>();
 
 
+    @SuppressLint("NotifyDataSetChanged")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,19 +54,24 @@ public class BearGeneratorActivity extends AppCompatActivity {
         Context context = getApplicationContext();
         setSupportActionBar(binding.toolBar);
         recyclerView = binding.recyclerView;
-
         binding.widthInput.setText(prefs.getString("Width",""));
         binding.heightInput.setText(prefs.getString("Height",""));
-
+        width = binding.widthInput;
+        height = binding.heightInput;
         uploadBTN = binding.newImage;
 
         uploadBTN.setOnClickListener(clk ->{
-            String width = binding.widthInput.getText().toString();
-            String height = binding.heightInput.getText().toString();
-            editor.putString("Width", width);
-            editor.putString("Height", height);
+            String widthStr = binding.widthInput.getText().toString();
+            String heightStr = binding.heightInput.getText().toString();
+            editor.putString("Width", widthStr);
+            editor.putString("Height", heightStr);
             editor.apply();
-            if(imageView != null){
+            String imageUrl = "https://placebear.com/" + widthStr + "/" + heightStr;
+            bear = new ImageView(this);
+            loadImage(imageUrl, bear);
+            imageUrls.add(imageUrl);
+            myAdapter.notifyDataSetChanged();
+            if(bear != null){
                 Toast toast = Toast.makeText(context, "Upload Success!", Toast.LENGTH_SHORT);
                 toast.show();
             }
@@ -72,20 +85,19 @@ public class BearGeneratorActivity extends AppCompatActivity {
             @NonNull
             @Override
             public MyRowHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-                return null;
-            }
-
-            public int getItemViewType(int position){
-                return position;
+                ActivityBearLoaderBinding bearLoaderBinding = ActivityBearLoaderBinding.inflate(getLayoutInflater(), parent, false);
+                return new MyRowHolder(bearLoaderBinding.getRoot());
             }
 
             @Override
             public void onBindViewHolder(@NonNull MyRowHolder holder, int position) {
+                String imageUrl = imageUrls.get(position);
+                loadImage(imageUrl, holder.imageView);
             }
 
             @Override
             public int getItemCount() {
-                return 0;
+                return imageUrls.size();
             }
 
         });
@@ -93,6 +105,25 @@ public class BearGeneratorActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
     }
 
+    public void loadImage(String imageUrl, ImageView bear) {
+        // Load the image into the ImageView using the Volley response
+        RequestQueue queue = Volley.newRequestQueue(this);
+        // Set the loaded image bitmap to the ImageView
+        ImageRequest request = new ImageRequest(imageUrl,
+                response -> {
+                    // Set the loaded image to the ImageView
+                    bear.setImageBitmap(response);
+                },
+                0, 0, ImageView.ScaleType.CENTER_INSIDE, null,
+                error -> {
+                    // Handle error if image retrieval fails
+                    Toast.makeText(BearGeneratorActivity.this, "Failed to load image", Toast.LENGTH_SHORT).show();
+                });
+        queue.add(request);
+    }
+
+
+    @SuppressLint("NotifyDataSetChanged")
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
@@ -136,7 +167,8 @@ public class BearGeneratorActivity extends AppCompatActivity {
         }
 
         else if(item.getItemId() == R.id.trashBin) {
-            words = "Test 2";
+            imageUrls.clear();
+            myAdapter.notifyDataSetChanged();
         }
 
         Toast.makeText(this, words, Toast.LENGTH_LONG).show();
@@ -153,10 +185,12 @@ public class BearGeneratorActivity extends AppCompatActivity {
         return true;
     }
 
-    protected static class MyRowHolder extends RecyclerView.ViewHolder {
 
+    protected static class MyRowHolder extends RecyclerView.ViewHolder {
+        ImageView imageView;
         public MyRowHolder(@NonNull View itemView) {
             super(itemView);
+            imageView = itemView.findViewById(R.id.bear);
         }
     }
 }
