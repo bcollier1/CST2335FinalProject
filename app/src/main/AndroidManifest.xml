@@ -20,11 +20,11 @@
         <activity
             android:name=".ui.CurrencyActivity"
             android:exported="true">
-         </activity>
-         <activity
+        </activity>
+        <activity
             android:name=".ui.TriviaActivity"
             android:exported="true">
-         </activity>
+        </activity>
         <activity
             android:name=".ui.BearGeneratorActivity"
             android:exported="true">
