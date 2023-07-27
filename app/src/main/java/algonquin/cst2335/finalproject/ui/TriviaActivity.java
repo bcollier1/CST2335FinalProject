@@ -10,6 +10,7 @@ import androidx.viewbinding.ViewBinding;
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -184,7 +185,7 @@ public class TriviaActivity extends AppCompatActivity {
 
                             TriviaGameState.Question question = new TriviaGameState.Question();
 
-                            question.setQuestionText(JSONQuestion.getString("question"));
+                            question.setQuestionText(Html.fromHtml(JSONQuestion.getString("question"), Html.FROM_HTML_MODE_LEGACY).toString());
                             question.setCorrectAnswer(JSONQuestion.getString("correct_answer"));
 
                             JSONArray JSONIncorrectAnswers = JSONQuestion.getJSONArray("incorrect_answers");
