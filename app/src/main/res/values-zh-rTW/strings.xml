@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">期末專案</string>
+    <string name="Amount">金額</string>
+    <string name="Convert">轉換</string>
+    <string name="Reset">重設</string>
+    <string name="From">從</string>
+    <string name="To">到</string>
+    <string name="CC">貨幣轉換器</string>
+
+    <string-array name="trivia_categories_array">
+        <item>任何類別</item>
+        <item>一般知識</item>
+        <item>娛樂：書籍</item>
+        <item>娛樂：電影</item>
+        <item>娛樂：音樂</item>
+        <item>娛樂：音樂劇及戲劇</item>
+        <item>娛樂：電視節目</item>
+        <item>娛樂：電子遊戲</item>
+        <item>娛樂：桌上遊戲</item>
+        <item>科學與自然</item>
+        <item>科學：電腦</item>
+        <item>科學：數學</item>
+        <item>神話</item>
+        <item>體育</item>
+        <item>地理</item>
+        <item>歷史</item>
+        <item>政治</item>
+        <item>藝術</item>
+        <item>名人</item>
+        <item>動物</item>
+        <item>車輛</item>
+        <item>娛樂：漫畫</item>
+        <item>科學：科技小玩意</item>
+        <item>娛樂：日本動漫與漫畫</item>
+        <item>娛樂：卡通與動畫</item>
+    </string-array>
+    <string-array name="trivia_difficulties_array">
+        <item>任何難度</item>
+        <item>簡單</item>
+        <item>中等</item>
+        <item>困難</item>
+    </string-array>
+
+    <!--AirportDisplayBoardStrings Starts-->
+    <!-- General -->
+    <string name="AirportDisplayBoard.Yes">是</string>
+    <string name="AirportDisplayBoard.No">否</string>
+    <string name="AirportDisplayBoard.Dismiss">取消</string>
+    <string name="AirportDisplayBoard.Undo">復原</string>
+    <string name="AirportDisplayBoard.Confirm">確認？</string>
+    <string name="AirportDisplayBoard.Btn.Help">幫助</string>
+
+    <!-- App Text -->
+    <string name="AirportDisplayBoard.Text.TBD">待定</string>
+
+    <!-- App Component -->
+    <string name="AirportDisplayBoard.Btn.My_List">我的清單</string>
+    <string name="AirportDisplayBoard.Btn.All_Flight">所有航班</string>
+    <string name="AirportDisplayBoard.Label.Airport">機場:</string>
+    <string name="AirportDisplayBoard.Hint.Gate">登機門:</string>
+    <string name="AirportDisplayBoard.Hint.Delayed_Depart">起飛延誤: </string>
+    <string name="AirportDisplayBoard.Hint.IATA_Depart">起飛機場代碼: </string>
+    <string name="AirportDisplayBoard.Hint.IATA_Arrival">抵達機場代碼: </string>
+    <string name="AirportDisplayBoard.Hint.Airport_Depart">起飛機場: </string>
+    <string name="AirportDisplayBoard.Hint.Airport_Arrival">抵達機場: </string>
+    <string name="AirportDisplayBoard.Hint.Flight_Number">航班號碼</string>
+    <string name="AirportDisplayBoard.Hint.Airline_Name">航空公司名稱</string>
+    <string name="AirportDisplayBoard.Hint.Departure">起飛時間</string>
+    <string name="AirportDisplayBoard.Hint.Arrival">抵達時間</string>
+    <string name="AirportDisplayBoard.Hint.Last_Searched">上次搜尋：</string>
+    <string name="AirportDisplayBoard.Hint.Type_Your_KW">在此輸入關鍵字：</string>
+    <string name="AirportDisplayBoard.Hint.Select_Airport_First">請先選擇機場</string>
+
+
+    <!-- Save and remove favorite feature -->
+    <string name="AirportDisplayBoard.Btn.Save_Fav">儲存收藏</string>
+    <string name="AirportDisplayBoard.Btn.Remove_Fav">移除收藏</string>
+    <string name="AirportDisplayBoard.Btn.Remove_Fav_Text">您確定要刪除這個收藏嗎：</string>
+    <string name="AirportDisplayBoard.Btn.Remove_Fav_Result">您已移除收藏航班 #</string>
+
+    <!-- Show fav or all flights -->
+    <string name="AirportDisplayBoard.Hint.Show_All">顯示收藏的航班</string>
+    <string name="AirportDisplayBoard.Hint.Show_Fav">顯示所有航班</string>
+
+    <!-- Exceptions -->
+    <string name="AirportDisplayBoard.Exp.Request_Data">請求資料時發生錯誤</string>
+
+    <!-- Long Text -->
+    <string name="AirportDisplayBoard.TextBlock.Help">
+    1. 您可以透過名稱、城市或代碼搜尋機場\n
+    2. 選擇機場後，您將看到出發航班\n
+    3. 您可以點擊航班清單的每個項目，查看更詳細的資訊\n
+    4. 在詳細資訊部分，「儲存收藏」按鈕將會儲存這個航班\n
+    5. 「移除收藏」按鈕將會移除這個航班\n
+    6. 「我的清單」按鈕將會顯示您儲存的航班
+    </string>
+    <!--AirportDisplayBoardStrings Ends-->
+
+
+</resources>
