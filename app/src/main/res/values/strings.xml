@@ -27,6 +27,10 @@
     <string name="From">From</string>
     <string name="To">To</string>
     <string name="CC">Currency Converter</string>
+    <string name="heightText">Height</string>
+    <string name="heightHint">E.g. 100</string>
+    <string name="widthText">Width</string>
+    <string name="widthHint">E.g. 100</string>
     <string name="trivia_title">Trivia</string>
     <string name="trivia_question_number_display">"Question "</string>
     <string name="trivia_question_text_placeholder" translatable="false">Question Text</string>
