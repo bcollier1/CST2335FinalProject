@@ -117,10 +117,10 @@ public class TriviaActivity extends AppCompatActivity {
                 .commit();
         binding.answerList.setLayoutManager(new LinearLayoutManager(this));
 
-        Answer answerA = new Answer("Placeholder Text", 0);
-        Answer answerB = new Answer("Placeholder Text", 2);
-        Answer answerC = new Answer("Placeholder Text", 4);
-        Answer answerD = new Answer("Placeholder Text", 6);
+        Answer answerA = new Answer("Loading...", 0);
+        Answer answerB = new Answer("Loading...", 2);
+        Answer answerC = new Answer("Loading...", 4);
+        Answer answerD = new Answer("Loading...", 6);
         displayedAnswers.add(answerA);
         displayedAnswers.add(answerB);
         displayedAnswers.add(answerC);
@@ -161,7 +161,7 @@ public class TriviaActivity extends AppCompatActivity {
 
             @Override
             public void onBindViewHolder(@NonNull AnswerHolder holder, int position) {
-                holder.answerText.setText(displayedAnswers.get(position).getAnswerText());
+                holder.answerText.setText(Html.fromHtml(displayedAnswers.get(position).getAnswerText(), Html.FROM_HTML_MODE_LEGACY).toString());
             }
 
             @Override
@@ -311,7 +311,7 @@ public class TriviaActivity extends AppCompatActivity {
         if (isCorrect) {
             Toast.makeText(this, "Correct", Toast.LENGTH_SHORT).show();
         } else {
-            Toast.makeText(this, "Incorrect: Answer was '" + this.game.getCurrentQuestion().getCorrectAnswer() + "'", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Incorrect: Answer was '" + Html.fromHtml(this.game.getCurrentQuestion().getCorrectAnswer(), Html.FROM_HTML_MODE_LEGACY).toString() + "'", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -325,7 +325,7 @@ public class TriviaActivity extends AppCompatActivity {
 
         binding.questionProgress.setText("Question " + game.getCurrentQuestionNumber() + "/" + game.getNumberOfQuestions());
 
-        binding.questionText.setText(question.getQuestionText());
+        binding.questionText.setText(Html.fromHtml(question.getQuestionText(), Html.FROM_HTML_MODE_LEGACY).toString());
         int correctAnswerSlot = 0;
         do {
              correctAnswerSlot = getRandomCorrectAnswerSlot();
@@ -339,7 +339,6 @@ public class TriviaActivity extends AppCompatActivity {
             }
         }
         binding.answerList.getAdapter().notifyDataSetChanged();
-        //binding.answerList.setAdapter(answerListAdapter);
 
     }
 

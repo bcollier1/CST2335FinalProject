@@ -18,6 +18,8 @@
         android:layout_width="0dp"
         android:layout_height="75dp"
         android:layout_marginStart="75dp"
+        android:textAlignment="center"
+        android:textSize="25sp"
         android:text="@string/trivia_answer_text_placeholder"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
