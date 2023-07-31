@@ -9,22 +9,28 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale;
 
 import algonquin.cst2335.finalproject.R;
 
+/**
+ * This is a custom adapter class for displaying list of Airports.
+ */
 public class AirportAdapter extends BaseAdapter {
-    // Declare Variables
-
     Context mContext;
     LayoutInflater inflater;
     private List<Airport> airportList;
     private ArrayList<Airport> sourceList;
 
+    /**
+     * This is the constructor method for AirportAdapter.
+     *
+     * @param context     the context of the current state of the application.
+     * @param airportList the list of airports.
+     */
     public AirportAdapter(Context context, List<Airport> airportList) {
         mContext = context;
-        this.sourceList = new ArrayList<Airport>();
-        this.airportList = new ArrayList<Airport>();
+        this.sourceList = new ArrayList<>();
+        this.airportList = new ArrayList<>();
         if (airportList == null || airportList.isEmpty()) {
 
         } else {
@@ -34,25 +40,54 @@ public class AirportAdapter extends BaseAdapter {
         inflater = LayoutInflater.from(mContext);
     }
 
+    /**
+     * ViewHolder class to describe item view and metadata about its place within the RecyclerView.
+     */
     public class ViewHolder {
         TextView name;
     }
 
+    /**
+     * Get the count of the airports list.
+     *
+     * @return the size of the airports list.
+     */
     @Override
     public int getCount() {
         return airportList.size();
     }
 
+
+    /**
+     * Get the Airport at the specified position in the list.
+     *
+     * @param position the position of the item within the adapter's data set.
+     * @return the Airport at the specified position.
+     */
     @Override
     public Airport getItem(int position) {
         return airportList.get(position);
     }
 
+    /**
+     * Get the row id associated with the specified position in the list.
+     *
+     * @param position the position of the item within the adapter's data set.
+     * @return the id of the item at the specified position.
+     */
     @Override
     public long getItemId(int position) {
         return position;
     }
 
+    /**
+     * Get a View that displays the data at the specified position in the data set.
+     *
+     * @param position the position of the item within the adapter's data set.
+     * @param view     the old view to reuse, if possible.
+     * @param parent   the parent that this view will eventually be attached to.
+     * @return a View corresponding to the data at the specified position.
+     */
     public View getView(final int position, View view, ViewGroup parent) {
         final ViewHolder holder;
         if (view == null) {
@@ -69,19 +104,28 @@ public class AirportAdapter extends BaseAdapter {
         return view;
     }
 
-    // Filter Class
+    /**
+     * Filter the airport list based on a character sequence.
+     *
+     * @param charText the character sequence to match
+     */
     public void filter(String charText) {
-        charText = charText.toLowerCase(Locale.getDefault());
         airportList.clear();
         if (charText.length() == 0) {
             airportList.addAll(sourceList);
         } else {
+            //Filter by city
             for (Airport airport : sourceList) {
                 String iata = airport.getIata();
                 String city = airport.getCity();
-                if (iata == null) iata = "";
-                if (city == null) city = "";
-                if (city.toLowerCase().contains(charText) || iata.toLowerCase().contains(charText)) {
+                String name = airport.getName();
+                iata = iata == null ? "" : iata;
+                city = city == null ? "" : city;
+                name = name == null ? "" : name;
+                if (city.toLowerCase().contains(charText)
+                        || iata.toLowerCase().contains(charText)
+                        || name.toLowerCase().contains(charText)
+                ) {
                     airportList.add(airport);
                 }
             }

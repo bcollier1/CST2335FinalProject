@@ -13,7 +13,19 @@ import java.util.ArrayList;
 import algonquin.cst2335.finalproject.data.Flight;
 import algonquin.cst2335.finalproject.data.FlightPOJO;
 
+/**
+ * This class contains utility methods.
+ */
 public class DataUtils {
+    /**
+     * Reads a JSON file from assets and returns its content as a string.
+     *
+     * @param context   the context to access the assets.
+     * @param assetName the name of the asset JSON file to read.
+     * @return the content of the JSON file as a string.
+     *
+     * @throws RuntimeException if a runtime error occurs.
+     */
     public static String getJsonFromAsset(Context context, String assetName) {
         String result = null;
         try (InputStream is = context.getAssets().open(assetName)) {
@@ -28,6 +40,15 @@ public class DataUtils {
         return result;
     }
 
+    /**
+     * Parses a JSON string and returns its content as an array of objects of type T.
+     *
+     * @param <T>     the type of the objects.
+     * @param jsonKey the key to the array in the JSON data.
+     * @param data    the JSON data.
+     * @param clazz   the class of type T.
+     * @return an array of objects of type T.
+     */
     public static <T> T[] getObjArrayFromJson(String jsonKey, String data, Class<T[]> clazz) {
         T[] result;
 //        Type type = TypeToken.getParameterized(clazz).getType();
@@ -36,6 +57,14 @@ public class DataUtils {
         return result;
     }
 
+    /**
+     * Parses a JSON string and returns its content as an object of type T.
+     *
+     * @param <T>   the type of the object.
+     * @param data  the JSON data.
+     * @param clazz the class of type T.
+     * @return an object of type T.
+     */
     public static <T> T getObjFromJson(String data, Class<T> clazz) {
         T result;
 //        Type type = TypeToken.getParameterized(clazz).getType();
@@ -44,8 +73,14 @@ public class DataUtils {
         return result;
     }
 
-    public static Flight[] getFlightDbObjsFromPojo(FlightPOJO pojo){
-        if(pojo == null || pojo.data == null || pojo.data.size() == 0){
+    /**
+     * Converts a FlightPOJO object into an array of Flight objects.
+     *
+     * @param pojo the FlightPOJO object.
+     * @return an array of Flight objects.
+     */
+    public static Flight[] getFlightDbObjsFromPojo(FlightPOJO pojo) {
+        if (pojo == null || pojo.data == null || pojo.data.size() == 0) {
             return null;
         }
         ArrayList<FlightPOJO.Datum> data = pojo.data;
@@ -54,19 +89,19 @@ public class DataUtils {
             FlightPOJO.Datum datum = data.get(i);
             Flight flight = new Flight();
             String flightNumber = datum.flight.iata;
-            if(StringUtils.isBlank(flightNumber)){
+            if (StringUtils.isBlank(flightNumber)) {
                 flightNumber = datum.flight.icao;
             }
-            if(StringUtils.isBlank(flightNumber)){
+            if (StringUtils.isBlank(flightNumber)) {
                 flightNumber = datum.flight.number;
             }
-            if(StringUtils.isBlank(flightNumber)){
+            if (StringUtils.isBlank(flightNumber)) {
                 flightNumber = "TBD";
             }
             flight.setFlight_number(flightNumber);
 
-            flight.setAirline(StringUtils.isBlank(datum.airline.name)?"TBD":datum.airline.name);
-            if(datum.flight.codeshared != null){
+            flight.setAirline(StringUtils.isBlank(datum.airline.name) ? "TBD" : datum.airline.name);
+            if (datum.flight.codeshared != null) {
                 flight.setFlight_number_codeshared(datum.flight.codeshared.airline_iata);
                 flight.setAirline_codeshared(datum.flight.codeshared.airline_name);
             }
@@ -82,7 +117,7 @@ public class DataUtils {
             flight.setDeparture_actual_date(getSqlDateFromUtilDate(datum.departure.actual));
             flight.setDeparture_estimated_runway_date(getSqlDateFromUtilDate(datum.departure.estimated_runway));
             flight.setDeparture_actual_runway_date(getSqlDateFromUtilDate(datum.departure.actual_runway));
-            
+
             //arrival info
             flight.setArrival_iata(datum.arrival.iata);
             flight.setArrival_airport_name(datum.arrival.airport);
@@ -105,8 +140,14 @@ public class DataUtils {
         return flights;
     }
 
-    public static java.sql.Date getSqlDateFromUtilDate(java.util.Date from){
-        if(from == null){
+    /**
+     * Converts a java.util.Date object into a java.sql.Date object.
+     *
+     * @param from the java.util.Date object.
+     * @return a java.sql.Date object with the same time as the input, or null if the input is null.
+     */
+    public static java.sql.Date getSqlDateFromUtilDate(java.util.Date from) {
+        if (from == null) {
             return null;
         }
         return new java.sql.Date(from.getTime());

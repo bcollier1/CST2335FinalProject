@@ -22,7 +22,7 @@
             android:layout_height="50dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:queryHint="What??"/>
+            android:queryHint=""/>
 
 <!--        <TextView-->
 <!--            android:id="@+id/toggle_button_label"-->
@@ -38,8 +38,8 @@
             android:id="@+id/fav_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textOff="My List"
-            android:textOn="All Flights"
+            android:textOff="@string/AirportDisplayBoard.Btn.My_List"
+            android:textOn="@string/AirportDisplayBoard.Btn.All_Flight"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/search_view"

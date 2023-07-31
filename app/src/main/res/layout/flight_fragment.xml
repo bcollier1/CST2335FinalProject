@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
-        android:text="Message Goes Here"
+        android:text="Flight Number"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -22,27 +22,64 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="Time Goes Here"
+        android:text="Airline Number"
         app:layout_constraintStart_toStartOf="@+id/flight_number"
         app:layout_constraintTop_toBottomOf="@+id/flight_number" />
+
+    <TextView
+        android:id="@+id/departure_gate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Airline Number"
+        app:layout_constraintStart_toStartOf="@+id/airline"
+        app:layout_constraintTop_toBottomOf="@+id/airline" />
+
+    <TextView
+        android:id="@+id/delay_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Deplayed Time"
+        app:layout_constraintStart_toStartOf="@+id/departure_gate"
+        app:layout_constraintTop_toBottomOf="@+id/departure_gate" />
 
     <TextView
         android:id="@+id/departure_iata"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="Send Receive Status"
-        app:layout_constraintStart_toStartOf="@+id/airline"
-        app:layout_constraintTop_toBottomOf="@+id/airline" />
+        android:text="Departure IATA"
+        app:layout_constraintStart_toStartOf="@+id/delay_time"
+        app:layout_constraintTop_toBottomOf="@+id/delay_time" />
 
     <TextView
-        android:id="@+id/departure_airport_name"
+        android:id="@+id/arrival_iata"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="Database ID Goes Here"
+        android:text="Arrival IATA"
         app:layout_constraintStart_toStartOf="@+id/departure_iata"
         app:layout_constraintTop_toBottomOf="@+id/departure_iata" />
+
+    <TextView
+        android:id="@+id/departure_airport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Departure Airport"
+        app:layout_constraintStart_toStartOf="@+id/arrival_iata"
+        app:layout_constraintTop_toBottomOf="@+id/arrival_iata" />
+
+    <TextView
+        android:id="@+id/arrival_airport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Departure IATA"
+        app:layout_constraintStart_toStartOf="@+id/departure_airport"
+        app:layout_constraintTop_toBottomOf="@+id/departure_airport" />
+
 
     <Button
         android:id="@+id/save_btn"

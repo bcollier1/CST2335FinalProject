@@ -12,7 +12,6 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 
@@ -22,11 +21,20 @@ import java.util.ArrayList;
 
 
 import algonquin.cst2335.finalproject.R;
+import algonquin.cst2335.finalproject.data.TriviaAPIURLBuilder;
+import algonquin.cst2335.finalproject.data.TriviaGameState;
+import algonquin.cst2335.finalproject.data.TriviaViewModel;
 import algonquin.cst2335.finalproject.databinding.TriviaScoreRecordBinding;
 import algonquin.cst2335.finalproject.databinding.TriviaTopScoresBinding;
 
 
 public class TriviaScoreFragment extends Fragment {
+
+    private TriviaGameState game;
+
+    private TriviaAPIURLBuilder urlBuilder;
+
+    private TriviaViewModel triviaModel;
 
     private ArrayList<Score> scores = new ArrayList<>();
 
@@ -37,6 +45,13 @@ public class TriviaScoreFragment extends Fragment {
     private RecyclerView.Adapter<ScoreHolder> scoreListAdapter;
 
     private SharedPreferences sharedPreferences;
+
+    public TriviaScoreFragment(TriviaGameState game, TriviaAPIURLBuilder urlBuilder, TriviaViewModel triviaModel) {
+        super();
+        this.game = game;
+        this.urlBuilder = urlBuilder;
+        this.triviaModel = triviaModel;
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -113,9 +128,10 @@ public class TriviaScoreFragment extends Fragment {
     }
 
     private void returnToCategorySelection() {
+        this.game.resetGameState();
         Fragment thisFragment = getParentFragmentManager().findFragmentByTag("Top Scores");
         getParentFragmentManager().beginTransaction().remove(thisFragment).commit();
-        TriviaSelectorFragment categorySelection = new TriviaSelectorFragment();
+        TriviaSelectorFragment categorySelection = new TriviaSelectorFragment(this.game, this.urlBuilder, this.triviaModel);
         getParentFragmentManager().beginTransaction()
                 .add(R.id.fragmentLocation, categorySelection, "Category Selection")
                 .commit();
