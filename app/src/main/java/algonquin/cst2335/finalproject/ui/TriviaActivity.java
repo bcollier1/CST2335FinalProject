@@ -291,11 +291,11 @@ public class TriviaActivity extends AppCompatActivity {
             itemView.setOnClickListener((v) -> {
                 if (viewType % 2 == 0) {
                     reportCorrectIncorrect(true);
+                    game.setNumberAnsweredCorrectly(game.getNumberAnsweredCorrectly()+1);
                 } else {
                     reportCorrectIncorrect(false);
                 }
                 if (game.getCurrentQuestionNumber()+1 > game.getNumberOfQuestions()) {
-                    game.setCurrentQuestion(0); // Reset for next game
                     TriviaScoreFragment scoreFragment = new TriviaScoreFragment(game, urlBuilder, triviaModel);
                     getSupportFragmentManager().beginTransaction()
                             .add(R.id.fragmentLocation, scoreFragment, "Top Scores")
