@@ -8,6 +8,11 @@ import java.util.HashMap;
 
 import algonquin.cst2335.finalproject.util.Constants;
 
+/**
+ * This class is used to take the {@code String}s of both the category and difficulty of an OpenTDB
+ * trivia game and produce a URL that will retrieve the desired game type.
+ * @author Jay Pyefinch
+ */
 public class TriviaAPIURLBuilder {
 
     /**
@@ -47,15 +52,28 @@ public class TriviaAPIURLBuilder {
     private static HashMap<String, String> categoryAPIMap;
 
     /**
-     *
+     * This constant uses the {@link #NUMBER_OF_QUESTIONS} constant to create the amount segment of
+     * the OpenTDB API address.
      */
     private final String numberOfQuestionsSegment = "amount=" + NUMBER_OF_QUESTIONS;
 
+    /**
+     * This field stores the category segment. It will be populated with the URL segment of the
+     * desired category, blank if 'Any Category' is selected.
+     */
     private String categorySegment = "";
 
+    /**
+     * This field stores the difficulty segment. It will be populated with the URL segment of the
+     * desired difficulty, blank if 'Any Difficulty' is selected.
+     */
     private String difficultySegment = "";
 
-
+    /**
+     * This constructor builds the object with default values, but also checks if the {@code static}
+     * {@link #categoryAPIMap} has been initialized. If not, it generates the key-value pairs for
+     * the category mapping for future {@link TriviaAPIURLBuilder} instances to use.
+     */
     public TriviaAPIURLBuilder() {
         if (categoryAPIMap == null) {
             categoryAPIMap = new HashMap<>();
@@ -67,21 +85,34 @@ public class TriviaAPIURLBuilder {
         }
     }
 
+    /**
+     * This method sets the category for this URL builder instance.
+     * @param category the {@code String} representation of the category to play
+     * @return {@link TriviaAPIURLBuilder this}
+     */
     public TriviaAPIURLBuilder setCategorySegment(@NonNull String category) {
         this.categorySegment = categoryAPIMap.get(category);
         return this;
     }
 
+    /**
+     * This method sets the diificulty for this URL builder instance.
+     * @param difficulty the {@code String} representation of the difficulty to play
+     * @return {@link TriviaAPIURLBuilder this}
+     */
     public TriviaAPIURLBuilder setDifficultySegment(@NonNull String difficulty) {
         this.difficultySegment = (difficulty.equals("Any Difficulty")) ? "" : "&difficulty=" + difficulty.toLowerCase();
         return this;
     }
 
+    /**
+     * This method uses the different segments to create a completed URL {@code String} for the
+     * OpenTDB API.
+     * @return {@code String } of the URL to access the OpenTDB API with the specified category and
+     * difficulty
+     */
     public String build() {
         return URL_START + numberOfQuestionsSegment + categorySegment + difficultySegment + URL_END;
     }
-
-
-
 
 }

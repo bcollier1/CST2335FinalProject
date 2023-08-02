@@ -20,19 +20,47 @@ import algonquin.cst2335.finalproject.R;
 import algonquin.cst2335.finalproject.data.TriviaScoresDAO;
 import algonquin.cst2335.finalproject.databinding.TriviaScoreDetailsBinding;
 
+/**
+ * This class displays details about a selected player score.
+ * @author Jay Pyefinch
+ */
 public class TriviaScoreDetailFragment extends Fragment {
 
+    /**
+     * This field stores the binding associated with the fragment.
+     */
     private TriviaScoreDetailsBinding binding;
 
+    /**
+     * This field stores an ArrayList of scores currently displayed.
+     */
     private List<TriviaScoreFragment.Score> displayedScores;
 
+    /**
+     * This field stores the adapter associated with the list of displayed scores.
+     */
     private RecyclerView.Adapter<TriviaScoreFragment.ScoreHolder> listAdapter;
 
+    /**
+     * This field stores the position of the selected score.
+     */
     private int position;
 
+    /**
+     * This field stores the DAO that is used to access the score database
+     */
     private TriviaScoresDAO scoreDAO;
 
 
+    /**
+     * This constructor initializes the object with references to the currently displayed scores,
+     * the position of the selected score, the adpater to notify of the change if deleted, and the
+     * DAO with which to delete the score.
+     * @param displayedScores the currently displayed score
+     * @param position the position of this score in the displayed scores
+     * @param listAdapter the adapter of the list of scores
+     * @param scoreDAO the DAO used to delete the score
+     */
     public TriviaScoreDetailFragment(List<TriviaScoreFragment.Score> displayedScores, int position, RecyclerView.Adapter<TriviaScoreFragment.ScoreHolder> listAdapter, TriviaScoresDAO scoreDAO) {
         this.displayedScores = displayedScores;
         this.listAdapter = listAdapter;
@@ -40,6 +68,9 @@ public class TriviaScoreDetailFragment extends Fragment {
         this.scoreDAO = scoreDAO;
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         super.onCreateView(inflater, container, savedInstanceState);

@@ -41,22 +41,55 @@ import algonquin.cst2335.finalproject.databinding.TriviaAnswerBBinding;
 import algonquin.cst2335.finalproject.databinding.TriviaAnswerCBinding;
 import algonquin.cst2335.finalproject.databinding.TriviaAnswerDBinding;
 
+/**
+ * This class facilitates the playing of a trivia using OpenTDB's API.
+ * @author Jay Pyefinch
+ */
 public class TriviaActivity extends AppCompatActivity {
 
+    /**
+     * This field stores the current {@link TriviaGameState game state} of the trivia.
+     */
     private TriviaGameState game = new TriviaGameState();
 
+    /**
+     * This field stores the {@link TriviaAPIURLBuilder URL Builder} used to generate the API URL.
+     */
     private TriviaAPIURLBuilder urlBuilder = new TriviaAPIURLBuilder();
 
+    /**
+     * This field stores the queue for sending requests to the OpenTDB API.
+     */
     private RequestQueue queue;
 
+    /**
+     * This field stores the {@link TriviaViewModel} associated with this activity.
+     */
     TriviaViewModel triviaModel;
+
+    /**
+     * This field stores the list of currently displayed answers.
+     */
     private ArrayList<Answer> displayedAnswers = new ArrayList<>();
+
+    /**
+     * This field stores the binding of this activity.
+     */
     private ActivityTriviaBinding binding;
 
+    /**
+     * This field stores the adapter attached to the list of displayed answers.
+     */
     private RecyclerView.Adapter<AnswerHolder> answerListAdapter;
 
+    /**
+     * This field stores the {@link Random} instance used to generate the correct answer slot.
+     */
     private Random randomNumber = new Random();
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         super.onCreateOptionsMenu(menu);
@@ -66,6 +99,9 @@ public class TriviaActivity extends AppCompatActivity {
         return true;
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         super.onOptionsItemSelected(item);
@@ -98,6 +134,9 @@ public class TriviaActivity extends AppCompatActivity {
         return true;
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -221,40 +260,95 @@ public class TriviaActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * This class associates an answer with the viewType it was assigned to.
+     * @author Jay Pyefinch
+     */
     public static class Answer {
+        /**
+         * This field stores the text of the answer to be displayed to the user.
+         */
         private String answerText;
 
+        /**
+         * This field stores the viewType associated with the answer.
+         */
         private int viewType;
 
+        /**
+         * This constructor initializes the object with default values.
+         */
         public Answer() {}
+
+        /**
+         * This constructor initializes the fields with the indicated values
+         * @param answerText the text of the answer
+         * @param viewType the viewType the answer is in
+         */
         public Answer(String answerText, int viewType) {
             this.answerText = answerText;
             this.viewType = viewType;
         }
 
+        /**
+         * This method gets the answer text
+         * @return the answer text
+         */
         public String getAnswerText() {
             return this.answerText;
         }
 
+        /**
+         * This method sets the answer text
+         * @param answerText the text associated with the answer.
+         */
         public void setAnswerText(String answerText) {
             this.answerText = answerText;
         }
 
+        /**
+         * This method gets the viewType associated with the answer
+         * @return the viewType
+         */
         public int getViewType() {
             return this.viewType;
         }
 
+        /**
+         * This method sets the viewType associated with the answer
+         * @param viewType the viewType
+         */
         public void setViewType(int viewType) {
             this.viewType = viewType;
         }
     }
 
+    /**
+     * This class holds an answer in the associated recyclerView.
+     * @author Jay Pyefinch
+     */
     private class AnswerHolder extends RecyclerView.ViewHolder {
 
+        /**
+         * This field stores the view that holds the answer text.
+         */
         TextView answerText;
+
+        /**
+         * This field stores the boolean determining if this answer is correct.
+         */
         boolean isCorrect;
 
+        /**
+         * This field stores the viewType of this holder
+         */
         int viewType;
+
+        /**
+         * This Constructor inflates the holder and gives it an on-click listener
+         * @param itemView the holder's associated view
+         * @param viewType the holder's viewType
+         */
         public AnswerHolder(@NonNull View itemView, int viewType) {
             super(itemView);
             this.isCorrect = false;
@@ -307,6 +401,11 @@ public class TriviaActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * This method displays a Toast whether the answer was right or wrong. Will say the right answer
+     * if wrong.
+     * @param isCorrect whether the question is right or wrong.
+     */
     private void reportCorrectIncorrect(boolean isCorrect) {
         if (isCorrect) {
             Toast.makeText(this, "Correct", Toast.LENGTH_SHORT).show();
@@ -315,6 +414,9 @@ public class TriviaActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * This method transitions the game-state to the next question.
+     */
     private void goToNextQuestion() {
         while (!displayedAnswers.isEmpty()) {
             displayedAnswers.remove(displayedAnswers.size()-1);
@@ -342,6 +444,10 @@ public class TriviaActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * This method generates a random number for the correct answer slot.
+     * @return the correct answer slot to use.
+     */
     private int getRandomCorrectAnswerSlot() {
         return randomNumber.nextInt(4);
     }

@@ -38,29 +38,71 @@ import algonquin.cst2335.finalproject.data.TriviaViewModel;
 import algonquin.cst2335.finalproject.databinding.TriviaScoreRecordBinding;
 import algonquin.cst2335.finalproject.databinding.TriviaTopScoresBinding;
 
-
+/**
+ * This class hosts the player scores associated with the last-played trivia's category and
+ * difficulty.
+ * @author Jay Pyefinch
+ */
 public class TriviaScoreFragment extends Fragment {
 
+    /**
+     * This field stores the last trivia's game-state
+     */
     private TriviaGameState game;
 
+    /**
+     * This field stores the URL builder to send to the category selector fragment.
+     */
     private TriviaAPIURLBuilder urlBuilder;
 
+    /**
+     * This field stores the model associated with the trivia activity.
+     */
     private TriviaViewModel triviaModel;
 
+    /**
+     * This field stores an ArrayList of displayed Scores.
+     */
     private ArrayList<Score> displayedScores = new ArrayList<>();
 
+    /**
+     * This field stores the DAO used to add and delete scores, as well as retrieve them for the
+     * list.
+     */
     private TriviaScoresDAO scoreDAO;
 
+    /**
+     * This field stores the binding associated with this fragment.
+     */
     private TriviaTopScoresBinding binding;
 
+    /**
+     * This field stores a boolean that checks if a score has been added.
+     */
     private boolean scoreSubmitted = false;
 
+    /**
+     * This field stores the adapter of the list of displayed answers.
+     */
     private RecyclerView.Adapter<ScoreHolder> scoreListAdapter;
 
+    /**
+     * This field stores the shared preferences of the previously entered name.
+     */
     private SharedPreferences sharedPreferences;
 
+    /**
+     * This field stores a reference to the add score button.
+     */
     private Button scoreButton;
 
+    /**
+     * This constructor initializes the object with the game state, the url builder for the selector
+     * fragment, and the model associated with the activity.
+     * @param game the game state of the played trivia
+     * @param urlBuilder the url builder
+     * @param triviaModel the viewModel
+     */
     public TriviaScoreFragment(TriviaGameState game, TriviaAPIURLBuilder urlBuilder, TriviaViewModel triviaModel) {
         super();
         this.game = game;
@@ -69,6 +111,9 @@ public class TriviaScoreFragment extends Fragment {
         this.displayedScores = new ArrayList<>();
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         super.onCreateView(inflater, container, savedInstanceState);
@@ -177,6 +222,10 @@ public class TriviaScoreFragment extends Fragment {
         return binding.getRoot();
     }
 
+    /**
+     * This method returns the user to the category selection using the game-state, the url builder,
+     * and the viewModel.
+     */
     private void returnToCategorySelection() {
         this.game.resetGameState();
         Fragment thisFragment = getParentFragmentManager().findFragmentByTag("Top Scores");
@@ -187,28 +236,64 @@ public class TriviaScoreFragment extends Fragment {
                 .commit();
     }
 
+    /**
+     * This class stores the score of the user in a trivia game, and allows it to be added to a
+     * database.
+     * @author Jay Pyefinch
+     */
     @Entity
     public static class Score {
 
+        /**
+         * This field stores the database-assigned id.
+         */
         @PrimaryKey(autoGenerate = true)
         @ColumnInfo(name = "id")
         public int id;
+
+        /**
+         * This field stores the player's name.
+         */
         @ColumnInfo(name = "name")
         private String name;
+
+        /**
+         * This field stores the number of questions answered correctly.
+         */
         @ColumnInfo(name = "score")
         private int score;
 
+        /**
+         * This field stores the category of the trivia played.
+         */
         @ColumnInfo(name = "category")
         private String category;
 
+        /**
+         * This field stores the difficulty of the played trivia.
+         */
         @ColumnInfo(name = "difficulty")
         private String difficulty;
 
+        /**
+         * This field stores the number of questions answered.
+         */
         @ColumnInfo(name = "length")
         private int triviaLength;
 
+        /**
+         * This Constructor initializes the object with default values.
+         */
         public Score() {}
 
+        /**
+         * This contructor initializes the object with specified values.
+         * @param name the player name
+         * @param score the amount answered correctly
+         * @param category the category of trivia
+         * @param difficulty the difficulty of trivia
+         * @param triviaLength the number of questions answered
+         */
         public Score(String name, int score, String category, String difficulty, int triviaLength) {
             this.name = name;
             this.score = score;
@@ -217,42 +302,96 @@ public class TriviaScoreFragment extends Fragment {
             this.triviaLength = triviaLength;
         }
 
+        /**
+         * This method gets the player name.
+         * @return the player name.
+         */
         public String getName() {
             return this.name;
         }
 
+        /**
+         * This method sets the player name.
+         * @param name the player name.
+         */
         public void setName(String name) {
             this.name = name;
         }
 
+        /**
+         * This method gets the score
+         * @return the score
+         */
         public int getScore() {
             return this.score;
         }
 
+        /**
+         * This method sets the score
+         * @param score the score
+         */
         public void setScore(int score) {
             this.score = score;
         }
 
+        /**
+         * This method gets the score's category
+         * @return the category
+         */
         public String getCategory() { return this.category; }
 
+        /**
+         * This method sets the score's category
+         * @param category the category
+         */
         public void setCategory(String category) { this.category = category; }
 
+        /**
+         * This method gets the score's difficulty
+         * @return the difficulty
+         */
         public String getDifficulty() { return this.difficulty; }
 
+        /**
+         * This method sets the score's difficulty
+         * @param difficulty  the difficulty
+         */
         public void setDifficulty(String difficulty) { this.difficulty = difficulty; }
 
+        /**
+         * This method gets the number of questions in the completed trivia
+         * @return the number of questions answered
+         */
         public int getTriviaLength() { return this.triviaLength; }
 
+        /**
+         * This method sets the number of questions in the completed trivia
+         * @param triviaLength the number of questions answered
+         */
         public void setTriviaLength(int triviaLength) { this.triviaLength = triviaLength; }
 
     }
 
+    /**
+     * This class is the holder for a score instance.
+     * @author Jay Pyefinch
+     */
     public class ScoreHolder extends RecyclerView.ViewHolder {
 
+        /**
+         * This field stores the player name textView
+         */
         private final TextView playerName;
 
+        /**
+         * This field stores the score value's textView
+         */
         private final TextView score;
 
+        /**
+         * This constructor binds the holder
+         * @param itemView the associated view
+         */
         public ScoreHolder(@NonNull View itemView) {
             super(itemView);
             TriviaScoreRecordBinding binding = TriviaScoreRecordBinding.bind(itemView);
