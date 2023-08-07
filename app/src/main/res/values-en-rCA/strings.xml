@@ -11,6 +11,11 @@
     <string name="heightHint">E.g. 100</string>
     <string name="widthText">Width</string>
     <string name="widthHint">E.g. 100</string>
+    <string name="imageID">Image ID</string>
+    <string name="imageName">Image Name</string>
+    <string name="imageHeight">Image Height</string>
+    <string name="imageWidth">Image Width</string>
+    <string name="saveText">Save</string>
     <string name="trivia_title">Trivia</string>
     <string name="trivia_question_number_display">"Question "</string>
     <string name="trivia_category_header">Category</string>

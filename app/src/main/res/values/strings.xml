@@ -131,6 +131,11 @@
         5. Remove Favorite\" button will remove the flight\n
         6. \"MY LIST\" button will show the flights you\'ve saved
     </string>
+    <string name="imageID">Image ID</string>
+    <string name="imageName">Image Name</string>
+    <string name="imageHeight">Image Height</string>
+    <string name="imageWidth">Image Width</string>
+    <string name="saveText">Save</string>
     <!--AirportDisplayBoardStrings Ends-->
 
 </resources>
