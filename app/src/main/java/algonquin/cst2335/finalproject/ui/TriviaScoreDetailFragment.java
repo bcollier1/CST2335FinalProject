@@ -105,6 +105,8 @@ public class TriviaScoreDetailFragment extends Fragment {
 
                                 Snackbar.make(binding.scoreTitleView, "You deleted score #" + position, Snackbar.LENGTH_LONG)
                                         .setAction("Undo", clk -> {
+                                            Executor thread2 = Executors.newSingleThreadExecutor();
+                                            thread2.execute(() -> scoreDAO.insertScore(removedScore));
                                             displayedScores.add(position, removedScore);
                                             listAdapter.notifyItemInserted(position);
                                         }).show();

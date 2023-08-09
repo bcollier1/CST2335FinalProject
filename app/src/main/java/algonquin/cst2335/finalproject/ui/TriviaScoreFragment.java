@@ -190,7 +190,7 @@ public class TriviaScoreFragment extends Fragment {
                 thread.execute(() -> {
                     scoreDAO.insertScore(playerScore);
                     Executor thread2 = Executors.newSingleThreadExecutor();
-                    thread.execute(() -> {
+                    thread2.execute(() -> {
                         displayedScores = new ArrayList<>();
                         displayedScores.addAll( scoreDAO.getScores(game.getCategory(), game.getDifficulty()) );
                         triviaModel.scores.postValue(displayedScores);
