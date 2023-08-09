@@ -228,6 +228,27 @@ public class CurrencyResult extends AppCompatActivity {
             }
 
             return true;
+        } else if(item.getItemId() == R.id.currencyHelp) {
+            AlertDialog.Builder builder = new AlertDialog.Builder(CurrencyResult.this);
+            builder.setTitle(R.string.info_title);
+            builder.setMessage(R.string.info_message);
+            builder.setPositiveButton(R.string.ok_button, (dialog, cl) -> {
+            });
+            AlertDialog alert = builder.create();
+            alert.show();
+        }
+        else if (item.getItemId() == R.id.currencyToBear) {
+            Intent bear = new Intent(CurrencyResult.this, BearGeneratorActivity.class);
+            CurrencyResult.this.startActivity(bear);
+
+        }
+        else if (item.getItemId() == R.id.currencyToTrivia) {
+            Intent trivia = new Intent(CurrencyResult.this, TriviaActivity.class);
+            CurrencyResult.this.startActivity(trivia);
+
+        } else if (item.getItemId() == R.id.currencyToFlightTracker) {
+            Intent airTracker = new Intent(CurrencyResult.this, AirportDisplayBoardActivity.class);
+            CurrencyResult.this.startActivity(airTracker);
         }
         return false;
     }
