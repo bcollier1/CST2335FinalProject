@@ -369,7 +369,7 @@ public class AirportDisplayBoardActivity extends AppCompatActivity {
             Intent airTracker = new Intent(this, BearGeneratorActivity.class);
             startActivity(airTracker);
         } else if (item.getItemId() == R.id.flightToTrivia) {
-            Intent bear = new Intent(this, BearGeneratorActivity.class);
+            Intent bear = new Intent(this, TriviaActivity.class);
             startActivity(bear);
         } else if (item.getItemId() == R.id.flightToCurrency) {
             Intent currencyConverter = new Intent(this, CurrencyActivity.class);
