@@ -35,7 +35,7 @@
                 android:id="@+id/titleView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="52dp"
+                android:layout_marginTop="20dp"
                 android:text="@string/trivia_title"
                 android:textSize="30sp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -46,12 +46,12 @@
                 android:id="@+id/questionText"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:textAlignment="center"
-                android:textSize="20sp"
                 android:layout_marginStart="32dp"
-                android:layout_marginTop="52dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginEnd="32dp"
                 android:text="@string/trivia_question_text_placeholder"
+                android:textAlignment="center"
+                android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/questionProgress" />
@@ -63,21 +63,21 @@
                 android:layout_marginTop="24dp"
                 android:text="@string/trivia_question_number_display"
                 android:textSize="20sp"
-                app:layout_constraintEnd_toEndOf="@+id/titleView"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/titleView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/titleView" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/answerList"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="20dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/questionText" />
+                app:layout_constraintTop_toBottomOf="@+id/questionText"
+                app:layout_constraintVertical_bias="1.0" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </FrameLayout>
