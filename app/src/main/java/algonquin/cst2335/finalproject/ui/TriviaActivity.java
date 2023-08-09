@@ -156,14 +156,7 @@ public class TriviaActivity extends AppCompatActivity {
                 .commit();
         binding.answerList.setLayoutManager(new LinearLayoutManager(this));
 
-        Answer answerA = new Answer("Loading...", 0);
-        Answer answerB = new Answer("Loading...", 2);
-        Answer answerC = new Answer("Loading...", 4);
-        Answer answerD = new Answer("Loading...", 6);
-        displayedAnswers.add(answerA);
-        displayedAnswers.add(answerB);
-        displayedAnswers.add(answerC);
-        displayedAnswers.add(answerD);
+
 
         binding.answerList.setAdapter(answerListAdapter = new RecyclerView.Adapter<AnswerHolder>() {
 
