@@ -10,8 +10,9 @@
         android:id="@+id/flightTrackerButton"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:contentDescription="Flight Tracker App Button"
+        android:layout_marginBottom="15dp"
 
+        android:contentDescription="Flight Tracker App Button"
         android:scaleType="fitCenter"
         android:tooltipText="Flight Tracker App"
         app:layout_constraintBottom_toTopOf="@+id/currencyExchangeButton"
@@ -24,6 +25,7 @@
         android:id="@+id/bearButton"
         android:layout_width="150dp"
         android:layout_height="150dp"
+        android:layout_marginBottom="15dp"
         android:contentDescription="Bear Image Generator App Button"
         android:scaleType="fitCenter"
         android:tooltipText="Bear Image Generator App"
@@ -38,6 +40,7 @@
         android:id="@+id/currencyExchangeButton"
         android:layout_width="150dp"
         android:layout_height="150dp"
+        android:layout_marginTop="15dp"
         android:contentDescription="Currency Converter App Button"
         android:scaleType="fitCenter"
         android:tooltipText="Currency Converter App"
@@ -52,6 +55,7 @@
         android:id="@+id/triviaButton"
         android:layout_width="150dp"
         android:layout_height="150dp"
+        android:layout_marginTop="15dp"
         android:contentDescription="Trivia App Button"
         android:scaleType="fitCenter"
         android:tooltipText="Trivia App"
@@ -67,11 +71,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Main Menu"
-        android:textSize="40sp"
+        android:textSize="38sp"
         app:layout_constraintBottom_toTopOf="@+id/flightTrackerButton"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/flightTrackerButtonLabel"

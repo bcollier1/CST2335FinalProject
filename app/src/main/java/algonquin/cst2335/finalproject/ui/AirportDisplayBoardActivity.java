@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.room.Room;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Typeface;
 import android.os.Bundle;
@@ -364,7 +365,16 @@ public class AirportDisplayBoardActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
-        if (item.getItemId() == R.id.item_help) {
+        if (item.getItemId() == R.id.flightToBear) {
+            Intent airTracker = new Intent(this, BearGeneratorActivity.class);
+            startActivity(airTracker);
+        } else if (item.getItemId() == R.id.flightToTrivia) {
+            Intent bear = new Intent(this, TriviaActivity.class);
+            startActivity(bear);
+        } else if (item.getItemId() == R.id.flightToCurrency) {
+            Intent currencyConverter = new Intent(this, CurrencyActivity.class);
+            startActivity(currencyConverter);
+        } else if (item.getItemId() == R.id.item_help) {
             TextView helpTextView = new TextView(this);
 
             helpTextView.setText(getString(R.string.AirportDisplayBoard_TextBlock_Help));
@@ -457,7 +467,7 @@ public class AirportDisplayBoardActivity extends AppCompatActivity {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                Toast.makeText(getApplicationContext(), getString(R.string.AirportDisplayBoard_Exp_Request_Data) + error.getMessage(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), getString(R.string.AirportDisplayBoard_Exp_Request_Data) + error.getLocalizedMessage(), Toast.LENGTH_SHORT).show();
             }
         });
         // Add the request to the RequestQueue.
@@ -486,7 +496,26 @@ public class AirportDisplayBoardActivity extends AppCompatActivity {
             Flight[] flights = DataUtils.getFlightDbObjsFromPojo(flightPOJO);
 
             flightDAO.deleteAllFlightsExceptFav();
-            flightDAO.insertFlights(flights);
+            if (flights == null || flights.length == 0) {
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        Toast.makeText(binding.toolbarAirport.getContext(),
+                                "There's no flight in this airport, showing your list instead!",
+                                Toast.LENGTH_LONG).show();
+
+//                        AlertDialog.Builder builder = new AlertDialog.Builder(AirportDisplayBoardActivity.this);
+//                        builder.setMessage("There's no flight in this airport, showing your list instead!");
+//                        builder.setNeutralButton(getString(R.string.AirportDisplayBoard_Dismiss), ((dialog, which) -> {
+//
+//                        }));
+//                        builder.create().show();
+                    }
+                });
+
+            } else {
+                flightDAO.insertFlights(flights);
+            }
         });
 
         // Initialize the ViewModel for the flight details

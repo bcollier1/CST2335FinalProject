@@ -7,6 +7,7 @@
     <string name="From">From</string>
     <string name="To">To</string>
     <string name="CC">Current Convert</string>
+    <string name="Results">Result</string>
     <string name="heightText">Height</string>
     <string name="heightHint">E.g. 100</string>
     <string name="widthText">Width</string>
@@ -21,8 +22,15 @@
     <string name="trivia_category_header">Category</string>
     <string name="trivia_difficulty_header">Difficulty</string>
     <string name="trivia_select_button_text">Select</string>
-    <string name="trivia_top_scores_header">Top 10 Scores in your category and difficulty:</string>
+    <string name="trivia_top_scores_header">Top Scores in your category and difficulty:</string>
     <string name="trivia_name_input_label">Your Name</string>
     <string name="trivia_submit_button_text">Submit</string>
     <string name="trivia_new_game_button_text">New Game</string>
+    <string name="trivia_score_details_header">Match Details</string>
+    <string name="trivia_score_details_player_name_header">Player Name:</string>
+    <string name="trivia_score_details_score_header">Score:</string>
+    <string name="trivia_score_details_category_header">Category:</string>
+    <string name="trivia_score_details_difficulty_header">Difficulty:</string>
+    <string name="trivia_score_details_back_button_text">Back</string>
+    <string name="trivia_score_details_delete_button_text">Delete</string>
 </resources>

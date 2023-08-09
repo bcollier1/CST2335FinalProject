@@ -115,6 +115,7 @@ public class AirportAdapter extends BaseAdapter {
             airportList.addAll(sourceList);
         } else {
             //Filter by city
+            charText = charText.toLowerCase();
             for (Airport airport : sourceList) {
                 String iata = airport.getIata();
                 String city = airport.getCity();

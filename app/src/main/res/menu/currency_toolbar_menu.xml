@@ -7,6 +7,10 @@
         android:icon="@drawable/help"
         android:title="Info: "
         app:showAsAction="never" />
+    <item
+        android:id="@+id/currencyDel"
+        android:title="Delete"
+        app:showAsAction="never"/>
 
     <item
         android:id="@+id/currencyToFlightTracker"

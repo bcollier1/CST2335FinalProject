@@ -32,14 +32,33 @@ import algonquin.cst2335.finalproject.data.TriviaViewModel;
 import algonquin.cst2335.finalproject.databinding.TriviaCategorySelectionBinding;
 import algonquin.cst2335.finalproject.util.Constants;
 
+/**
+ * This class allows the selection of a category and a difficulty for an OpenTDB trivia.
+ * @author Jay Pyefinch
+ */
 public class TriviaSelectorFragment extends Fragment {
 
+    /**
+     * This field stores the game state of the new trivia.
+     */
     private final TriviaGameState game;
 
+    /**
+     * This field stores the url builder that will be used to retrieve data from the API.
+     */
     private TriviaAPIURLBuilder urlBuilder;
 
+    /**
+     * This field stores the model used in the trivia activity.
+     */
     private TriviaViewModel triviaModel;
 
+    /**
+     * This constructor uses components to start a new trivia.
+     * @param game the game to start
+     * @param urlBuilder the url builder to use
+     * @param triviaModel the model used in the activity
+     */
     public TriviaSelectorFragment(TriviaGameState game, TriviaAPIURLBuilder urlBuilder, TriviaViewModel triviaModel) {
         super();
         this.game = game;
@@ -47,11 +66,9 @@ public class TriviaSelectorFragment extends Fragment {
         this.triviaModel = triviaModel;
     }
 
-    @Override
-    public void onAttach(@NonNull Context context) {
-        super.onAttach(context);
-    }
-
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         super.onCreateView(inflater, container, savedInstanceState);
