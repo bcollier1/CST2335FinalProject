@@ -7,6 +7,7 @@
     <string name="From">From</string>
     <string name="To">To</string>
     <string name="CC">Current Convert</string>
+    <string name="Results">Result</string>
     <string name="heightText">Height</string>
     <string name="heightHint">E.g. 100</string>
     <string name="widthText">Width</string>

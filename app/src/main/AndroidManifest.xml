@@ -22,6 +22,10 @@
             android:exported="true">
         </activity>
         <activity
+            android:name=".ui.CurrencyResult"
+            android:exported="true">
+        </activity>
+        <activity
             android:name=".ui.TriviaActivity"
             android:exported="true">
         </activity>
